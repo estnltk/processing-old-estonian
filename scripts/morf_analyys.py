@@ -21,6 +21,7 @@ from estnltk import Text
 from estnltk.taggers import VabamorfAnalyzer
 from estnltk.taggers.morph_analysis.morf_common import _is_empty_annotation
 from estnltk import Annotation
+import corpus_readers
 # Kas morf analüüsi (TSV) väljundisse tuleks lisada puuduvad punktuatsiooni morf analüüsid?
 lisa_punktuatsiooni_analyysid = True
 lisa_lausepiirid=False
@@ -202,40 +203,30 @@ def find_sentence_boundaries( text ):
 	return results
 
 
-rows=[]
-sents=0
 infile=sys.argv[1]
 outputdir=sys.argv[2]
-with open(infile, encoding="utf-8") as fin:
-	reader=csv.DictReader(fin, delimiter='|', quotechar='"')
-	for row in reader:
-		rows.append(row)
 
 #	 (records, analysed, unamb, unk_title, unk_punct, punct, total)
-def process_area(area):
+def process_location():
 	global lisa_punktuatsiooni_analyysid
-	records = 0
-	analysed  = 0
-	unamb	 = 0
-	total	 = 0
-	unk_title = 0
-	unk_punct = 0
-	punct	 = 0
-	decades_analysed=defaultdict(int)
-	decades_total=defaultdict(int)
-	freq_analysed=defaultdict(int)
-	freq_not_analysed=defaultdict(int)
-	for row in rows:
-		#Kui protokoll ei ole nimetatud maakonnast, läheme edasi
-		if not row['maakond']==area:
-			continue
-		records+=1
-		#Muudame aastaarvu kümnendiks
-		decade=row['year'][:-1]+"0"
-		#Puhastame protokolli teksti html-märgendusest
-		soup=BeautifulSoup(row['text'], "html.parser")
-		text=Text(soup.get_text())
+	records=defaultdict(int)
+	analysed=defaultdict(int)
+	unamb=defaultdict(int)
+	total=defaultdict(int)
+	unk_title=defaultdict(int)
+	unk_punct=defaultdict(int)
+	punct=defaultdict(int)
+	decades_analysed=defaultdict(lambda: defaultdict(int))
+	decades_total=defaultdict(lambda: defaultdict(int))
+	freq_analysed=defaultdict(lambda: defaultdict(int))
+	freq_not_analysed=defaultdict(lambda: defaultdict(int))
+	texts=corpus_readers.read_corpus(infile)
+	for text in texts:
+		location=text.meta['location']
 		text.tag_layer(['sentences'])
+		records[location]+=1
+		#Muudame aastaarvu kümnendiks
+		decade=text.meta['year'][:-1]+"0"
 		vm_analyser = VabamorfAnalyzer(guess=False, propername=False)
 		vm_analyser.tag(text)
 		
@@ -247,73 +238,63 @@ def process_area(area):
 		for word in text.morph_analysis:
 			is_punct = len(word.text) > 0 and not any([c.isalnum() for c in word.text])
 			if not _is_empty_annotation( word.annotations[0] ):
-				analysed += 1
-				decades_analysed[decade]+=1
+				analysed[location] += 1
+				decades_analysed[location][decade]+=1
 				if not is_punct:
-					freq_analysed[word.text]+=1
+					freq_analysed[location][word.text]+=1
 				if len(word.annotations) == 1:
-					unamb += 1
+					unamb[location] += 1
 			if _is_empty_annotation( word.annotations[0] ):
-				freq_not_analysed[word.text]+=1
+				freq_not_analysed[location][word.text]+=1
 				# Jäädvustame tundmatu sõna tüübi
 				
 				if len(word.text) > 0:
 					if word.text[0].isupper():
-						unk_title += 1
+						unk_title[location] += 1
 					if is_punct:
-						unk_punct += 1
+						unk_punct[location] += 1
 			else:
 				# Jäädvustame tavalise sõna tüübi
 				if is_punct:
-					punct += 1
-			total += 1
-			decades_total[decade]+=1
+					punct[location] += 1
+			total[location] += 1
+			decades_total[location][decade]+=1
 		# Kirjutame morf analüüsid TSV faili
-		if not os.path.exists(os.path.join(outputdir, row['maakond'])):
-			os.mkdir(os.path.join(outputdir, row['maakond']))
-		out_file_name = os.path.join("analüüsid", row['maakond'], str(row['id'])+'.tsv')
+		if not os.path.exists(os.path.join(outputdir, text.meta['location'])):
+			os.mkdir(os.path.join(outputdir, text.meta['location']))
+		out_file_name = os.path.join(outputdir, text.meta['location'], str(text.meta['id'])+'.tsv')
 		write_analysis_tsv_file( text, out_file_name )
-	return records, analysed, unamb, unk_title, unk_punct, punct, total, decades_analysed, decades_total, freq_analysed, freq_not_analysed
+	#Agregate the statistics
+	results={}
+	for location in records:
+		if records[location] > 0:
+			# Korrigeerimised
+			if lahuta_punktuatsiooni_analyysid:
+				if lisa_punktuatsiooni_analyysid:
+					# Kui oletamine välja lülitada, siis jääb ka punktuatsioon 
+					# analüüsita. Lahutame selle sõnadest maha:
+					total[location] -= punct[location]
+					analysed[location] -= punct[location]
+					unamb[location] -= punct[location]
+					punct[location] = 0
+				else:
+					# Kui oletamine välja lülitada, siis jääb ka punktuatsioon 
+					# analüüsita. Lahutame selle sõnadest maha:
+					total[location] -= unk_punct[location]
+					unk_punct[location] = 0
+			percent_analysed = (analysed[location] * 100.0) / total[location]
+			results_tuple = (records[location], analysed[location], unamb[location], unk_title[location], unk_punct[location], total[location], percent_analysed)
+			results[location]=results_tuple
+	return results, decades_analysed, decades_total, freq_analysed, freq_not_analysed
 
 
 # >>> Siit algab programm
-results_dict={}
-decades_dict={}
-freq={}
-#kogume kõigepealt maakonnad või vallad csv failist kokku ja hakkame hiljem nende järgi analüüsima.
-areas=[]
-for row in rows:
-	areas.append(row['maakond'])
-areas=set(areas)
-for area in areas:
-	records, analysed, unamb, unk_title, unk_punct, punct, total, decades_analysed, decades_total, freq_analysed, freq_not_analysed =process_area(area)
-	# Agregeerime statistika
-	if records > 0:
-		# Korrigeerimised
-		if lahuta_punktuatsiooni_analyysid:
-			if lisa_punktuatsiooni_analyysid:
-				# Kui oletamine välja lülitada, siis jääb ka punktuatsioon 
-				# analüüsita. Lahutame selle sõnadest maha:
-				total -= punct
-				analysed -= punct
-				unamb -= punct
-				punct = 0
-			else:
-				# Kui oletamine välja lülitada, siis jääb ka punktuatsioon 
-				# analüüsita. Lahutame selle sõnadest maha:
-				total -= unk_punct
-				unk_punct = 0
-		percent_analysed = (analysed * 100.0) / total
-		results_tuple = (records, analysed, unamb, unk_title, unk_punct, total, percent_analysed) 
-		decades_dict[area]=(decades_analysed, decades_total)
-		freq[area]=(freq_analysed, freq_not_analysed)
-		results_dict[area] = results_tuple
-		#debugimiseks piisab ühest maakonnast
-		#break
-print()
+results_dict, decades_analysed, decades_total, freq_analysed, freq_not_analysed = process_location()
 
 # Sorteerime tulemused analüüsitute protsendi järgi;
 # Väljastame pingerea
+#print (results_dict)
+#print (type(results_dict['Viru']))
 aggregated = [0, 0, 0, 0, 0, 0, 0]
 for key in sorted(results_dict, key = lambda x : results_dict[x][-1], reverse=True):
 	(records, analysed, unamb, unk_title, unk_punct, total, percent_analysed) = results_dict[key]
@@ -346,40 +327,39 @@ print ("maakond\t", end="")
 for i in range(1820, 1930, 10):
 	print (i, "\t\t\t", end="")
 print()
-decades_total=(defaultdict(int), defaultdict(int))
-for county in decades_dict:
-	print (county, "\t", end="")
+decades_sum=(defaultdict(int), defaultdict(int))
+for location in results_dict:
+	print (location, "\t", end="")
 	for decade in range(1820, 1930, 10):
 		decade=str(decade)
-		if decade not in decades_dict[county][1] or decades_dict[county][1][decade]==0:
+		if decade not in decades_total[location] or decades_total[location][decade]==0:
 			print ("0\t0\t0%\t", end="")
 		else:
-			percentage=decades_dict[county][0][decade]/decades_dict[county][1][decade]*100
-			print (decades_dict[county][0][decade], "\t", decades_dict[county][1][decade], "\t", round(percentage, 2), "\t", end="")
-		decades_total[0][decade] += decades_dict[county][0][decade]
-		decades_total[1][decade] += decades_dict[county][1][decade]
+			percentage=decades_analysed[location][decade]/decades_total[location][decade]*100
+			print (decades_analysed[location][decade], "\t", decades_total[location][decade], "\t", round(percentage, 2), "\t", end="")
+		decades_sum[0][decade] += decades_analysed[location][decade]
+		decades_sum[1][decade] += decades_total[location][decade]
 	print ()
 print ("Kokku\t", end="")
 for decade in range(1820, 1930, 10):
 	decade=str(decade)
-	if decade not in decades_total[1] or decades_total[1][decade]==0:
+	if decade not in decades_sum[1] or decades_sum[1][decade]==0:
 		print ("0\t0\t0%\t", end="")
 	else:
-		percentage=decades_total[0][decade]/decades_total[1][decade]*100
-		print (decades_total[0][decade], "\t", decades_total[1][decade], "\t", round(percentage, 2), "\t", end="")
+		percentage=decades_sum[0][decade]/decades_sum[1][decade]*100
+		print (decades_sum[0][decade], "\t", decades_sum[1][decade], "\t", round(percentage, 2), "\t", end="")
 
 print()
 print()
 print ("30 sagedasemat analüüsitud ja analüüsimata sõna maakondade kaupa")
 #Tundmatuks jäänud sõnade loend eraldi faili kirjutamiseks
 unknown=[]
-for county in freq:
-	
-	print (county, end="")
-	sorted_analysed=sorted(freq[county][0].items(), key=lambda item: item[1])
-	sorted_analysed.reverse()
-	sorted_not_analysed=sorted(freq[county][1].items(), key=lambda item: item[1])
-	sorted_not_analysed.reverse()
+for location in freq_analysed:
+	print (location, end="")
+	sorted_analysed=sorted(freq_analysed[location].items(), key=lambda item: item[1], reverse=True)
+	#sorted_analysed.reverse()
+	sorted_not_analysed=sorted(freq_not_analysed[location].items(), key=lambda item: item[1], reverse=True)
+	#sorted_not_analysed.reverse()
 	for i in range(30):
 		a=sorted_analysed[i]
 		b=sorted_not_analysed[i]
