@@ -1,122 +1,107 @@
 #!/usr/bin/python3.5
 # -*- coding: utf-8 -*-
-#   Teostab vallakohtu protokollide morf analüüsi, salvestab tulemused 
-#   TSV (tab separated values) failidena ning ühtlasi korjab ja väljastab 
-#   analüüsi tulemuste statistika.
+#Performs the morphological analysis of municipal court records,
+#saves the results as .tsv files
+#and outputs the statistics to standard output.
+#The progress of the script is output to stderr
 
 from __future__ import unicode_literals, print_function, absolute_import
 
 from estnltk.text import Text
 from collections import defaultdict
 from bs4 import BeautifulSoup
-import re
 import csv
 import sys, os, os.path
-import json
 import argparse
-from estnltk.vabamorf.morf import disambiguate
-from estnltk.resolve_layer_dag import make_resolver
-from estnltk.taggers import VabamorfTagger
-from estnltk import Text
 from estnltk.taggers import VabamorfAnalyzer
 from estnltk.taggers.morph_analysis.morf_common import _is_empty_annotation
 from estnltk import Annotation
 import corpus_readers
-# Kas morf analüüsi (TSV) väljundisse tuleks lisada puuduvad punktuatsiooni morf analüüsid?
-lisa_punktuatsiooni_analyysid = True
-lisa_lausepiirid=False
-# Kas statistikast tuleks lahutada punktuatsiooni analüüsid?
-lahuta_punktuatsiooni_analyysid = True
+# If the missing punctuation analysis should be added to the tsv output
+add_punctuation_analyses = True
+add_sentence_boundaries=False
+#If the punctuation analyses should be subtracted from the statistics
 
-# Kas TSV väljundfailidele lisatakse päis?
-lisa_tsv_faili_p2is = False
-# Leiab, mitu % moodustab c a-st ning vormistab tulemused sõne kujul;
+subtract_punctuation_analyses = True
+
+# If the headers should be added to the tsv files
+add_tsv_headers = False
+#If alphabet corrections should be performed
+correct_alphabet=True
+#Finds how many percents C constitutes from A and formats the results as string
 def get_percentage_of_all_str( c, a ):
 	return '{} / {} ({:.2f}%)'.format(c, a, (c*100.0)/a)
 
-# Lisab Text objektile punktuatsiooni analüüsi 
-# (kuna vaikimisi jäetakse ilma olemiseta ka punktuatsioon analüüsimata)
+# Adds punctuation analysis to the text object.
+# Because punctuation is not analysed when guessing is disabled
 def add_punctuation_analysis ( text ):
+	#Redefine the tagger for analysing punctuation
+	punct_analyser = VabamorfAnalyzer(guess=True, propername=True)
 	for word in text.morph_analysis:
 		if _is_empty_annotation( word.annotations[0] ):
-			# Teeme kindlaks, kas tegemist on punktuatsiooniga
+			# Check if it is punctuation
 			if len(word.text) > 0 and not any([c.isalnum() for c in word.text]):
-				# On punktuatsioon: genereerime oletamisega analüüsid ja lisame
+				# It is a punctuation. Generate the analyses with guessing enabled and add them to the text
 				w=Text(word.text)
 				w.tag_layer(['sentences'])
-				vm_analyser = VabamorfAnalyzer(guess=True, propername=True)
-				vm_analyser.tag(w)
+				punct_analyser.tag(w)
 				
 				analysis=w.morph_analysis[0].annotations
-				# Kui mingil põhjusel peaks analüüs olema mitmene, 
-				# jätame alles vaid esimese:
+				# If for some reason there are multiple analyses
+				# the only first one will remain.
 				if len(analysis) > 1:
 					analysis = [ analysis[0] ]
 					
-				#Kirjutame analüüsi üle uuega
+				#Rewrite the analysis
 				word.clear_annotations()
 				word.add_annotation(Annotation(word, **analysis[0]))
 				
 
-#Kontrollib ilma analüüsita sõnade puhul, kas w asendamine w-ga ja I J-ga parandab analüüsi
-def replace_letters(text):
-	for word in text.morph_analysis:
-		if _is_empty_annotation( word.annotations[0] ):
-			tmp=word.text
-			#asendame w v-ga.
-			tmp=tmp.replace("w", "v")
-			tmp=tmp.replace("W", "V")
-			w=Text(tmp)
-			w.tag_layer(['sentences'])
-			vm_analyser = VabamorfAnalyzer(guess=False, propername=False)
-			vm_analyser.tag(w)
-			analysis=w.morph_analysis[0].annotations
-			if not _is_empty_annotation(analysis[0]):
-				word.clear_annotations()
-				for a in analysis:
-					word.add_annotation(Annotation(word, **a))
-				continue
-			tmp=word.text
-			#Kuna gooti kirjas on suur I ja J samasugused, siis teeme asenduse
-			tmp=tmp.replace("I", "J")
-			w=Text(tmp)
-			w.tag_layer(['sentences'])
-			vm_analyser = VabamorfAnalyzer(guess=False, propername=False)
-			vm_analyser.tag(w)
-			analysis=w.morph_analysis[0].annotations
-			if not _is_empty_annotation(analysis[0]):
-				word.clear_annotations()
-				for a in analysis:
-					word.add_annotation(Annotation(word, **a))
-				continue
-				
+#Corrects the differences related to the alphabet. Expects letters as character sequences
+#w word, x letters to be replaced, y letters replaced with
+def alphabet_corrector(w, x, y):
+	old=w.text
+	normalized=[old]
+	#Check if there are already normalized forms present
+	if w.normalized_form[0]!=None:
+		normalized+=w.normalized_form
+	#Iterate over the forms and append the new ones
+	for form in normalized:
+		new=form.replace(x, y)
+		if new!=form:
+			normalized.append(new)
+	#If only the input form is in the list, then there are no normalized forms added
+	if len(normalized)>1:
+		w.clear_annotations()
+		for form in normalized:
+			w.add_annotation( Annotation(w, normalized_form=form) )
+	return w
 
 
-# Kirjutab analüüsid TSV (tab-separated-values) failina
+# Writes the analyses as tsv files
 def write_analysis_tsv_file( text, out_file_name ):
-	global lisa_tsv_faili_p2is
-	global lisa_lausepiirid
-	# Leiame lausepiirid (kokkuleppeliselt: reavahetused)
+	global add_tsv_headers
+	global add_sentence_boundaries
+	# Let's find the sentence boundaries. Newlines.
 	sentence_boundaries = None
-	if lisa_lausepiirid:
+	if add_sentence_boundaries:
 		
 		sentence_boundaries = find_sentence_boundaries(text.text)
-		#print (len(sentence_boundaries))
 		assert len(sentence_boundaries) > 0
 	with open(out_file_name, 'w', encoding='utf-8', newline='\n') as csvfile:
 		fieldnames = ['word', 'root', 'ending', 'clitic', 'partofspeech', 'form']
 		writer = csv.DictWriter(csvfile, delimiter='\t', fieldnames=fieldnames)
-		if lisa_tsv_faili_p2is:
-			writer.writeheader() # Lisame algusesse p2ise
+		if add_tsv_headers:
+			writer.writeheader() # Write the headers at the beginning
 		sentence_id = 0
 		word_count  = 0
-		###
+		
 		for word in text.morph_analysis:
 			analyses=word.annotations
-			# Lause algus
-			if lisa_lausepiirid and sentence_boundaries != None and len(sentence_boundaries) > 0:
+			# Beginning of sentence
+			if add_sentence_boundaries and sentence_boundaries != None and len(sentence_boundaries) > 0:
 				sentence_span = sentence_boundaries[sentence_id]
-				# Lause algus
+				# Beginning of sentence
 				if word.start == sentence_span[0]:
 					analysis_item = {}
 					analysis_item['word']='<s>'
@@ -126,7 +111,7 @@ def write_analysis_tsv_file( text, out_file_name ):
 					analysis_item['partofspeech']=''
 					analysis_item['form']=''
 					writer.writerow(analysis_item)
-			# Väljastame sõna analüüsid (kui neid leidus)
+			# Output the word analyses, if they exist
 			if not _is_empty_annotation(analyses[0]):
 				for aid, analysis in enumerate(analyses):
 					analysis_item = {}
@@ -139,7 +124,7 @@ def write_analysis_tsv_file( text, out_file_name ):
 					if aid > 0:
 						analysis_item['word']=' '*len(word.text)
 					writer.writerow(analysis_item)
-			# Kui analüüse polnudki, väljastame tühja rea
+			# If there are no analyses, output the empty line
 			if _is_empty_annotation(analyses[0]):
 				analysis_item = {}
 				analysis_item['word']=word.text
@@ -149,8 +134,8 @@ def write_analysis_tsv_file( text, out_file_name ):
 				analysis_item['partofspeech']=''
 				analysis_item['form']=''
 				writer.writerow(analysis_item)
-			# Lause lõpp
-			if lisa_lausepiirid and sentence_boundaries != None and len(sentence_boundaries) > 0:
+			# End of sentence
+			if add_sentence_boundaries and sentence_boundaries != None and len(sentence_boundaries) > 0:
 				sentence_span = sentence_boundaries[sentence_id]
 				if word.end == sentence_span[1]:
 				   analysis_item = {}
@@ -162,7 +147,7 @@ def write_analysis_tsv_file( text, out_file_name ):
 				   analysis_item['form']=''
 				   writer.writerow(analysis_item)
 				   sentence_id += 1
-		if lisa_lausepiirid and sentence_boundaries != None and len(sentence_boundaries) > 0:
+		if add_sentence_boundaries and sentence_boundaries != None and len(sentence_boundaries) > 0:
 			assert sentence_id == len(sentence_boundaries), \
 			   '(!) Midagi l2ks lausepiiride panemisel viltu failis '+\
 			   str(out_file_name)+'; Pandi '+str(sentence_id)+' lausepiiri / '+\
@@ -170,9 +155,8 @@ def write_analysis_tsv_file( text, out_file_name ):
 
 
 
-# Leiab sisendteksti (sõne) lausepiirid
-# Kokkuleppeliselt: laused on reavahetusega 
-# eraldatud
+# Finds the sentence boundaries of input text
+# The sentences are separated by a newline.
 def find_sentence_boundaries( text ):
 	
 	assert isinstance(text, str) 
@@ -182,15 +166,14 @@ def find_sentence_boundaries( text ):
 	for char_id, char in enumerate(text):
 		if char == '\n':
 		   end = char_id
-		   # Erand: mõnikord on lause alguses miskipärast tabulaatorid
-		   # Parandus: nihutame lause algust nii, et see poleks tabulaator
+		   # Except sometimes there are tabs in the beginning of sentences
+		   # Shift the beginning of sentence
 		   while start < end:
 			   start_char = text[start]
 			   if not start_char.isspace():
 				   break
 			   start += 1
-		   # Erand: mõnikord on lausepiir miskipärast tabulaatori järel
-		   # Parandus: nihutame lause lõppu nii, et lõpus oleks sõna, mitte tabulaator
+		   # Sometimes there is a tab after sentence boundary
 		   while start < end-1:
 			   end_char = text[end-1]
 			   if not end_char.isspace():
@@ -199,7 +182,6 @@ def find_sentence_boundaries( text ):
 		   if start < end:
 			   results.append( (start, end) )
 		   start = end + 1
-	#print (results)
 	return results
 
 
@@ -208,7 +190,8 @@ outputdir=sys.argv[2]
 
 #	 (records, analysed, unamb, unk_title, unk_punct, punct, total)
 def process_location():
-	global lisa_punktuatsiooni_analyysid
+	vm_analyser = VabamorfAnalyzer(guess=False, propername=False)
+	global add_punctuation_analyses
 	records=defaultdict(int)
 	analysed=defaultdict(int)
 	unamb=defaultdict(int)
@@ -225,16 +208,20 @@ def process_location():
 		location=text.meta['location']
 		text.tag_layer(['sentences'])
 		records[location]+=1
-		#Muudame aastaarvu kümnendiks
+		#Change the year into decade
 		decade=text.meta['year'][:-1]+"0"
-		vm_analyser = VabamorfAnalyzer(guess=False, propername=False)
+		#Correct the alphabet
+		if correct_alphabet:
+			for word in text.words:
+				word=alphabet_corrector(word, "W", "V")
+				word=alphabet_corrector(word, "w", "v")
+				word=alphabet_corrector(word, "I", "J")
 		vm_analyser.tag(text)
 		
-		# Teostame järelparandused
-		if lisa_punktuatsiooni_analyysid:
+		# Perform the fixes
+		if add_punctuation_analyses:
 			add_punctuation_analysis( text )
-		replace_letters(text)
-		# Kogume kokku statistika
+		# Collect the statistics
 		for word in text.morph_analysis:
 			is_punct = len(word.text) > 0 and not any([c.isalnum() for c in word.text])
 			if not _is_empty_annotation( word.annotations[0] ):
@@ -246,7 +233,7 @@ def process_location():
 					unamb[location] += 1
 			if _is_empty_annotation( word.annotations[0] ):
 				freq_not_analysed[location][word.text]+=1
-				# Jäädvustame tundmatu sõna tüübi
+				# save the type of unknown word
 				
 				if len(word.text) > 0:
 					if word.text[0].isupper():
@@ -254,12 +241,12 @@ def process_location():
 					if is_punct:
 						unk_punct[location] += 1
 			else:
-				# Jäädvustame tavalise sõna tüübi
+				# Save the type of regular word
 				if is_punct:
 					punct[location] += 1
 			total[location] += 1
 			decades_total[location][decade]+=1
-		# Kirjutame morf analüüsid TSV faili
+		# Write the morph analyses into tsv files
 		if not os.path.exists(os.path.join(outputdir, text.meta['location'])):
 			os.mkdir(os.path.join(outputdir, text.meta['location']))
 		out_file_name = os.path.join(outputdir, text.meta['location'], str(text.meta['id'])+'.tsv')
@@ -268,18 +255,16 @@ def process_location():
 	results={}
 	for location in records:
 		if records[location] > 0:
-			# Korrigeerimised
-			if lahuta_punktuatsiooni_analyysid:
-				if lisa_punktuatsiooni_analyysid:
-					# Kui oletamine välja lülitada, siis jääb ka punktuatsioon 
-					# analüüsita. Lahutame selle sõnadest maha:
+			# Corrections
+			if subtract_punctuation_analyses:
+				if add_punctuation_analyses:
+					# The punctuation won't be analysed if guessing is disabled
 					total[location] -= punct[location]
 					analysed[location] -= punct[location]
 					unamb[location] -= punct[location]
 					punct[location] = 0
 				else:
-					# Kui oletamine välja lülitada, siis jääb ka punktuatsioon 
-					# analüüsita. Lahutame selle sõnadest maha:
+					# If guessing is disabled, the punctuation won't be analysed.
 					total[location] -= unk_punct[location]
 					unk_punct[location] = 0
 			percent_analysed = (analysed[location] * 100.0) / total[location]
@@ -288,12 +273,11 @@ def process_location():
 	return results, decades_analysed, decades_total, freq_analysed, freq_not_analysed
 
 
-# >>> Siit algab programm
+
 results_dict, decades_analysed, decades_total, freq_analysed, freq_not_analysed = process_location()
 
-# Sorteerime tulemused analüüsitute protsendi järgi;
-# Väljastame pingerea
-#print (results_dict)
+# Sort the results according to percentages
+# Output the results
 #print (type(results_dict['Viru']))
 aggregated = [0, 0, 0, 0, 0, 0, 0]
 for key in sorted(results_dict, key = lambda x : results_dict[x][-1], reverse=True):
@@ -303,26 +287,26 @@ for key in sorted(results_dict, key = lambda x : results_dict[x][-1], reverse=Tr
 	print('			 sh ühesed: '+get_percentage_of_all_str( unamb, analysed ))
 	print('	2. morf analüüsita: '+get_percentage_of_all_str( (total-analysed), total ))
 	print('  sh suure algustähega: '+get_percentage_of_all_str( unk_title,(total-analysed) ))
-	if not lahuta_punktuatsiooni_analyysid:
+	if not subtract_punctuation_analyses:
 		print('	  sh punkuatsioon: '+get_percentage_of_all_str( unk_punct,(total-analysed) ))
 	print()
 	for i in range(len(results_dict[key])):
 		aggregated[i] += results_dict[key][i]
 print()
 print()
-# Väljastame koondtulemuse
+# Output the results for whole corpus
 print(' Kogu korpuse koondtulemus: ')
 [records, analysed, unamb, unk_title, unk_punct, total, percent_analysed] = aggregated
 print('	1. morf analüüsiga: '+get_percentage_of_all_str( analysed, total ))
 print('			 sh ühesed: '+get_percentage_of_all_str( unamb, analysed ))
 print('	2. morf analüüsita: '+get_percentage_of_all_str( (total-analysed), total ))
 print('  sh suure algustähega: '+get_percentage_of_all_str( unk_title,(total-analysed) ))
-if not lahuta_punktuatsiooni_analyysid:
+if not subtract_punctuation_analyses:
 	print('	  sh punkuatsioon: '+get_percentage_of_all_str( unk_punct,(total-analysed) ))
 
 print ()
 print ()
-#Kuvab morf statistika maakondade kaupa
+#Output the results by location and decade
 print ("maakond\t", end="")
 for i in range(1820, 1930, 10):
 	print (i, "\t\t\t", end="")
@@ -352,14 +336,12 @@ for decade in range(1820, 1930, 10):
 print()
 print()
 print ("30 sagedasemat analüüsitud ja analüüsimata sõna maakondade kaupa")
-#Tundmatuks jäänud sõnade loend eraldi faili kirjutamiseks
+#List of unknown words for outputting them into file
 unknown=[]
 for location in freq_analysed:
 	print (location, end="")
 	sorted_analysed=sorted(freq_analysed[location].items(), key=lambda item: item[1], reverse=True)
-	#sorted_analysed.reverse()
 	sorted_not_analysed=sorted(freq_not_analysed[location].items(), key=lambda item: item[1], reverse=True)
-	#sorted_not_analysed.reverse()
 	for i in range(30):
 		a=sorted_analysed[i]
 		b=sorted_not_analysed[i]
