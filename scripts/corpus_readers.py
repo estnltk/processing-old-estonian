@@ -28,7 +28,7 @@ def read_from_xml(path):
 				for file in files:
 					if not file.endswith(".xml"):
 						continue
-					with open(os.path.join(root, file)) as fin:
+					with open(os.path.join(root, file), encoding="utf-8") as fin:
 						content=fin.read()
 					soup=BeautifulSoup(content, "lxml")
 					content=soup.find("sisu").getText()
