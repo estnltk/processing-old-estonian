@@ -16,10 +16,16 @@ import argparse
 from estnltk.taggers import VabamorfAnalyzer
 from estnltk.taggers.morph_analysis.morf_common import _is_empty_annotation
 from estnltk import Annotation
+from estnltk.taggers import SentenceTokenizer
+from nltk.tokenize.simple import LineTokenizer
+from estnltk.taggers import TokensTagger
+from estnltk.taggers import CompoundTokenTagger
+from estnltk.taggers.text_segmentation.whitespace_tokens_tagger import WhiteSpaceTokensTagger
+from estnltk.taggers.text_segmentation.pretokenized_text_compound_tokens_tagger import PretokenizedTextCompoundTokensTagger
 import corpus_readers
 # If the missing punctuation analysis should be added to the tsv output
 add_punctuation_analyses = True
-add_sentence_boundaries=False
+add_sentence_boundaries=True
 #If the punctuation analyses should be subtracted from the statistics
 
 subtract_punctuation_analyses = True
@@ -138,18 +144,20 @@ def write_analysis_tsv_file( text, out_file_name ):
 			if add_sentence_boundaries and sentence_boundaries != None and len(sentence_boundaries) > 0:
 				sentence_span = sentence_boundaries[sentence_id]
 				if word.end == sentence_span[1]:
-				   analysis_item = {}
-				   analysis_item['word']='</s>'
-				   analysis_item['root']=''
-				   analysis_item['ending']=''
-				   analysis_item['clitic']=''
-				   analysis_item['partofspeech']=''
-				   analysis_item['form']=''
-				   writer.writerow(analysis_item)
-				   sentence_id += 1
+					analysis_item = {}
+					analysis_item['word']='</s>'
+					analysis_item['root']=''
+					analysis_item['ending']=''
+					analysis_item['clitic']=''
+					analysis_item['partofspeech']=''
+					analysis_item['form']=''
+					writer.writerow(analysis_item)
+					sentence_id += 1
 		if add_sentence_boundaries and sentence_boundaries != None and len(sentence_boundaries) > 0:
+			#if sentence_id != len(sentence_boundaries):
+	#			print ("Midagi läks lausepiiride panemisel viltu failis ", out_file_name, "; pandi ", sentence_id, " lausepiiri. Tegelikult oli ", len(sentence_boundaries), "lausepiiri.")
 			assert sentence_id == len(sentence_boundaries), \
-			   '(!) Midagi l2ks lausepiiride panemisel viltu failis '+\
+			  '(!) Midagi l2ks lausepiiride panemisel viltu failis '+\
 			   str(out_file_name)+'; Pandi '+str(sentence_id)+' lausepiiri / '+\
 			   'tegelikult oli '+str(len(sentence_boundaries))+' lausepiiri;'
 
@@ -184,13 +192,20 @@ def find_sentence_boundaries( text ):
 		   start = end + 1
 	return results
 
-
+def find_sentence_boundaries_alt(text):
+	results=[]
+	for sentence in text['sentences']:
+		results.append((sentence.start, sentence.end))
+	return results
 infile=sys.argv[1]
 outputdir=sys.argv[2]
-
+if not os.path.exists(outputdir):
+	os.mkdir(outputdir)
 #	 (records, analysed, unamb, unk_title, unk_punct, punct, total)
 def process_location():
 	vm_analyser = VabamorfAnalyzer(guess=False, propername=False)
+	newline_sentence_tokenizer = SentenceTokenizer( base_sentence_tokenizer=LineTokenizer() )
+	tokens_tagger = WhiteSpaceTokensTagger()
 	global add_punctuation_analyses
 	records=defaultdict(int)
 	analysed=defaultdict(int)
@@ -206,7 +221,28 @@ def process_location():
 	texts=corpus_readers.read_corpus(infile)
 	for text in texts:
 		location=text.meta['location']
-		text.tag_layer(['sentences'])
+		#For testing the pretokenized functions
+		txt=text.text
+		multiword_expressions = []
+		raw_words = txt.split(' ')
+		for raw_word in raw_words:
+			if ' ' in raw_word:
+				multiword_expressions.append(raw_token)
+		text_str = ' '.join(raw_words)
+		meta=text.meta
+		text=Text(text_str)
+		text.meta=meta
+		
+		TokensTagger().tag(text)
+		multiword_expressions = [mw.split() for mw in multiword_expressions]
+		compound_tokens_tagger = PretokenizedTextCompoundTokensTagger( multiword_units = multiword_expressions )
+		compound_tokens_tagger.tag(text)
+		#CompoundTokenTagger(tag_initials = False).tag(text)
+		#text.tag_layer(['sentences'])
+		text.tag_layer(['words'])
+		newline_sentence_tokenizer.tag(text)
+		
+		
 		records[location]+=1
 		#Change the year into decade
 		decade=text.meta['year'][:-1]+"0"
