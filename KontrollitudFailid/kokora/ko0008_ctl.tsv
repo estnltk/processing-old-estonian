@@ -1,0 +1,681 @@
+Tulli	tull	0		S	adt
+     	tull	0		S	sg g
+     	tull	0		S	sg p
+	£tule	li		V	s
+ette	@ette	0		D	
+    	ette	0		K	
+    	esi	tte		S	adt
+Josep	####				
+	#Josep	0		H	sg n
+Kallaste	Kallas	te		H	pl g
+        	@Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	Kallaste	0		H	sg n
+naene	####				
+	#naine 	0		S	sg n
+lesk	lesk	0		S	sg n
+Lena	####				
+	#Lena	0		H	sg n
+Kallaste	Kallas	te		H	pl g
+        	Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	@Kallaste	0		H	sg n
+ja	ja	0		J	
+kaebas	kaeba	s		V	s
+et	et	0		J	
+temmal	####				
+	#tema	l		P	sg ad
+11	11	0		N	?
+1/2	1/2	0		N	?
+rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+on	@ole	0		V	b
+  	ole	0		V	vad
+ühhesolnud	####				
+	#ühes_ole	nud		V	nud
+kui	kui	0		D	
+   	@kui	0		J	
+temma	####				
+	#tema	0		P	sg n
+Josep	####				
+	#Josep	0		H	sg n
+Kallastele	Kallas	tele		H	pl all
+          	@Kallaste	le		H	sg all
+          	kallas	tele		S	pl all
+on	@ole	0		V	b
+  	ole	0		V	vad
+mehhe	####				
+	#mees	0		S	sg g
+saanud	@saa	nud		V	nud
+      	saa=nud	0		A	
+      	saa=nud	0		A	sg n
+      	saa=nud	d		A	pl n
+      	saanu	d		S	pl n
+ja	ja	0		J	
+nüüd	nüüd	0		D	
+ei	ei	0		D	
+  	@ei	0		V	neg
+lubbavad	####				
+	#luba	vad		V	vat
+mehhe	####				
+	#mees	0		S	sg g
+emma	####				
+	#ema	0		S	sg n
+Kadri	Kadri	0		H	sg g
+     	@Kadri	0		H	sg n
+     	kadri	0		S	sg g
+     	kadri	0		S	sg n
+Kallaste	Kallas	te		H	pl g
+        	Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	@Kallaste	0		H	sg n
+temmale	####				
+	#tema	le		P	sg all
+mitte	mitte	0		D	
+sedda	####				
+	#see	da		P	sg p
+rahha	####				
+	#raha	0		P	sg p
+välja	@välja	0		D	
+     	välja	0		V	o
+     	väli	0		S	adt
+     	väli	0		S	sg g
+     	väli	0		S	sg p
+makssa	####				
+	#maks	a		V	da
+,	,			Z	
+mees	@mees	0		S	sg n
+    	mesi	s		S	sg in
+lubbanud	####				
+	#luba	nud		V	nud
+temmale	####				
+	#tema	le		P	sg all
+selle	@see	0		P	sg g
+     	sell	e		S	pl p
+rahha	####				
+	#raha	0		P	sg g
+ette	@ette	0		D	
+    	ette	0		K	
+    	esi	tte		S	adt
+Ait	ait	0		S	sg n
+ja	ja	0		J	
+üks	üks	0		N	sg n
+   	@üks	0		P	sg n
+Pulliks	pull	ks		A	sg tr
+       	pull	ks		S	sg tr
+       	pulli	ks		V	ks
+	£Pulliks	0		H	sg n
+.	.			Z	
+Tunnistas	tunnista	s		V	s
+Mihkel	@Mihkel	0		H	sg n
+      	mihkel	0		A	sg n
+      	mihkel	0		S	sg n
+Õunap	####				
+	#Õunap	0		H	sg n
+,	,			Z	
+et	et	0		J	
+temma	####				
+	#tema	0		P	sg n
+sedda	####				
+	#see	da		P	sg p
+ei	ei	0		D	
+  	@ei	0		V	neg
+olle	####				
+	#ole	0		V	o
+kulnud	####				
+	#kuul	nud		V	nud
+,	,			Z	
+et	et	0		J	
+Josep	####				
+	#Josep	0		H	sg n
+Kallaste	Kallas	te		H	pl g
+        	Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	@Kallaste	0		H	sg n
+kui	kui	0		D	
+   	@kui	0		J	
+ta	tema	0		P	sg g
+  	@tema	0		P	sg n
+surnud	surnu	d		S	pl n
+      	surnud	0		A	
+      	surnud	0		A	sg n
+      	surnud	d		A	pl n
+      	@sure	nud		V	nud
+omma	####				
+	#oma 	0		P	sg g
+naisele	naine	le		S	sg all
+keik	####				
+	#kõik	0		P	sg n
+sedda	####				
+	#see	da		P	sg p
+on	@ole	0		V	b
+  	ole	0		V	vad
+lubbanud	####				
+	#luba	nud		V	nud
+,	,			Z	
+vait	vait	0		D	
+    	vait	0		I	
+	£vaid	0		D
+agga	####				
+	#aga	0		J		
+kui	kui	0		D	
+   	@kui	0		J	
+laps	laps	0		S	sg n
+ellab	####				
+	#ela 	b		V	b
+,	,			Z	
+siis	@siis	0		D	
+    	siis	0		J	
+temma	####				
+	#tema	0		P	sg n
+sedda	####				
+	#see	da		P	sg p
+saab	saa	b		V	b
+.	.			Z	
+Kaebas	kaeba	s		V	s
+Lena	####				
+	#Lena	0		H	sg n
+Kallaste	Kallas	te		H	pl g
+        	Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	@Kallaste	0		H	sg n
+et	et	0		J	
+kui	kui	0		D	
+   	@kui	0		J	
+temma	####				
+	#tema	0		P	sg g
+mees	@mees	0		S	sg n
+    	mesi	s		S	sg in
+haige	haige	0		A	sg g
+     	@haige	0		A	sg n
+     	haige	0		S	sg g
+     	haige	0		S	sg n
+olnud	ol=nud	0		A	
+     	ol=nud	0		A	sg n
+     	ol=nud	d		A	pl n
+     	@ole	nud		V	nud
+     	olnu	d		S	pl n
+siis	@siis	0		D	
+    	siis	0		J	
+tahtnud	@taht	nud		V	nud
+       	taht=nu	d		S	pl n
+       	taht=nud	0		A	
+       	taht=nud	0		A	sg n
+       	taht=nud	d		A	pl n
+temma	####				
+	#tema	0		P	sg n
+et	et	0		J	
+üks	üks	0		N	sg n
+   	@üks	0		P	sg n
+kohtomees	####				
+	#kohtu_mees	0		S	sg n
+jurde	####				
+	#juurde	0		D		
+tulleks	####				
+	#tule	ks		V	ks
+kis	####				
+	#kes	0		P	sg n
+keik	####				
+	#kõik	0		P	sg n
+sedda	####				
+	#see	da		P	sg p
+varrandust	varr_and_uks	t		S	sg p
+olleks	####				
+	#ole	ks		V	ks
+ülles	####				
+	#üles	0		D		
+kirjotanud	####				
+	#kirjuta	nud		V	nud
+,	,			Z	
+sedda	####				
+	#see	da		P	sg p
+ei	ei	0		D	
+  	@ei	0		V	neg
+olle	####				
+	#ole	0		V	o
+agga	####				
+	#aga	0		D		
+mehhe	####				
+	#mees	0		S	sg g
+suggulased	####				
+	#sugulane	d		S	pl n
+teinud	@tege	nud		V	nud
+      	tei=nud	0		A	
+      	tei=nud	0		A	sg n
+      	tei=nud	d		A	pl n
+      	teinu	d		S	pl n
+.	.			Z	
+Tunnistas	tunnista	s		V	s
+Marri	####				
+	#Marri	0		H	sg n
+Nukka	nukk	0		S	adt
+     	nukk	0		S	sg p
+	£Nukka	0		H	sg n
+et	et	0		J	
+temma	####				
+	#tema	0		P	sg n
+agga	####				
+	#aga	0		D		
+sedda	####				
+	#see	da		P	sg p
+üks	üks	0		N	sg n
+   	@üks	0		P	sg n
+nes	####				
+	¤			
+kuulnud	@kuul	nud		V	nud
+       	kuul=nud	0		A	
+       	kuul=nud	0		A	sg n
+       	kuul=nud	d		A	pl n
+       	kuulnu	d		S	pl n
+et	et	0		J	
+üks	üks	0		N	sg n
+   	@üks	0		P	sg n
+Ait	ait	0		S	sg n
+Naesele	####				
+	#naine	le		S	sg all
+lubbadut	####				
+	#luba	dut		V	tud
+kui	kui	0		D	
+   	@kui	0		J	
+laps	laps	0		S	sg n
+ellama	####				
+	#ela	ma		V	ma
+jäb	####				
+	#jää	b		V	b
+.	.			Z	
+Sedda	####				
+	#see	da		P	sg p
+varrandust	varr_and_uks	t		S	sg p
+	£varandus	t		S	sg p
+on	@ole	0		V	b
+  	ole	0		V	vad
+järrele	####				
+	#järele	0		D		
+jänud	####				
+	#jää	nud		V	nud
+kui	kui	0		D	
+   	@kui	0		J	
+Josep	####				
+	#Josep	0		H	sg n
+kallaste	kallas	te		S	pl g
+	£Kallaste	0		H	sg n
+on	@ole	0		V	b
+  	ole	0		V	vad
+surnud	surnu	d		S	pl n
+      	surnud	0		A	
+      	surnud	0		A	sg n
+      	surnud	d		A	pl n
+      	@sure	nud		V	nud
+.	.			Z	
+1	1	0		N	?
+lehm	lehm	0		S	sg n
+värt	####				
+	#väärt 	0		A		
+16	16	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+50	50	0		N	?
+kp	####				
+	#kp	0		Y	?
+1	1	0		N	?
+sigga	####				
+	#siga	0		S	sg n
+8	8	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+naese	####				
+	#naine	0		S	sg g
+jaggo	####				
+	#jagu	0		S	sg n
+1	1	0		N	?
+emmis	####				
+	#emis	0		S	sg n
+põrsas	@põrsas	0		S	sg n
+      	põrsas	s		S	sg in
+3	3	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+pullikenne	####				
+	#pulli=kene	0		S	sg n
+8	8	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+Õhvakenne	####				
+	#õhva=kene	0		S	sg n
+6	6	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+Vanker	vanker	0		S	sg n
+8	8	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+raud	raud	0		S	sg n
+reggi	####				
+	#regi	0		S	sg n
+3	3	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+Obbone	####				
+	#hobune	0		S	sg n
+keige	####				
+	#kõik	0		P	sg g
+ristatega	####				
+	#riist	tega		S	pl kom
+27	27	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+Ait	ait	0		S	sg n
+10	10	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+Aida	ait	0		S	sg g
+lukk	lukk	0		S	sg n
+2	2	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+uus	uus	0		A	sg n
+sarri	####				
+	#sari	0		S	sg n
+60	60	0		N	?
+kop	kop	0		Y	?
+2	2	0		N	?
+kervest	####				
+	#kirves	t		S	sg p
+70	70	0		N	?
+kop	kop	0		Y	?
+ühhed	####				
+	#üks	d		P	pl n
+äkket	####				
+	#äke	d		S	pl n
+35	35	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+2	2	0		N	?
+uut	uus	t		A	sg p
+kuube	kuub	0		S	adt
+     	@kuub	0		S	sg p
+ja	ja	0		J	
+üks	@üks	0		N	sg n
+   	üks	0		P	sg n
+pool	pool	0		K	
+    	@pool	0		N	sg n
+    	pool	0		S	sg n
+    	pool	0		S	sg n
+piddune	####				
+	#pidune	0		A	sg n
+15	15	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+kassuk	####				
+	#kasukas	0		S	sg n
+värt	####				
+	#väärt	0		A		
+5	5	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+2	2	0		N	?
+vööd	vöö	d		S	pl n
+    	@vöö	d		S	sg p
+1	1	0		N	?
+Rubla	rubla	0		S	sg g
+     	rubla	0		S	sg n
+     	@rubla	0		S	sg p
+1	1	0		N	?
+villased	villane	d		A	pl n
+püksid	püks	d		S	pl n
+50	50	0		N	?
+kop	kop	0		Y	?
+1	1	0		N	?
+vest	vest	0		S	sg n
+50	50	0		N	?
+kop	kop	0		Y	?
+1	1	0		N	?
+nahkkindat	####				
+	#nahk_kinnas	t		S	pl n
+ja	ja	0		J	
+saapa	saabas	0		S	sg g
+säred	####				
+	#säär	d		S	 pl n
+80	80	0		N	?
+kop	kop	0		Y	?
+Summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+112	112	0		N	?
+Rbl	####				
+	#Rbl	0		Y	?
+95	95	0		N	?
+kp	####				
+	#kp	0		Y	?
+Mõistetud	@mõist	tud		V	tud
+         	mõiste=tu	d		S	pl n
+         	mõiste=tud	0		A	
+         	mõiste=tud	0		A	sg n
+         	mõiste=tud	d		A	pl n
+:	:			Z	
+Josep	####				
+	#Josep	0		H	sg n
+Kallaste	Kallas	te		H	pl g
+        	@Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	Kallaste	0		H	sg n
+naene	####				
+	#naine 	0		S	sg n
+lesk	lesk	0		S	sg n
+Lena	####				
+	#Lena	0		H	sg n
+Kallaste	Kallas	te		H	pl g
+        	Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	@Kallaste	0		H	sg n
+pärrib	####				
+	#päri	b		V	b
+veel	@veel	0		D	
+    	vesi	l		S	sg ad
+1	1	0		N	?
+õhvakenne	####				
+	#õhva=kene	0		S	sg n
+ja	ja	0		J	
+jääb	jää	b		V	b
+siis	@siis	0		D	
+    	siis	0		J	
+kraami	kraam	0		S	adt
+      	@kraam	0		S	sg g
+      	kraami	0		V	o
+      	kraam	0		S	sg p
+jaggaminne	####				
+	#jagamine	0		S	sg n
+ni	####				
+	#nii	0		D				
+kui	kui	0		D	
+   	@kui	0		J	
+enne	enne	0		D	
+    	@enne	0		K	
+    	enne	0		S	sg n
+sedda	####				
+	#see	da		P	sg p
+on	@ole	0		V	b
+  	ole	0		V	vad
+olnud	ol=nud	0		A	
+     	ol=nud	0		A	sg n
+     	ol=nud	d		A	pl n
+     	@ole	nud		V	nud
+     	olnu	d		S	pl n
+:	:			Z	
+Lisa	lisa	0		S	sg g
+    	lisa	0		V	o
+    	lisa	0		S	sg n
+    	lisa	0		S	sg p
+	£Lisa	0		H	sg n
+Kallastele	Kallas	tele		H	pl all
+          	@Kallaste	le		H	sg all
+          	kallas	tele		S	pl all
+ei	ei	0		D	
+  	@ei	0		V	neg
+saanud	@saa	nud		V	nud
+      	saa=nud	0		A	
+      	saa=nud	0		A	sg n
+      	saa=nud	d		A	pl n
+      	saanu	d		S	pl n
+mud	####				
+	#muu	d		P	sg p
+varranduse	####				
+	#varandus	0		S	sg g
+perranduse	####				
+	#pärandus	0		S	sg g
+jaggo	####				
+	#jagu	0		S	sg p
+,	,			Z	
+sest	see	st		P	sg el
+    	@sest	0		J	
+et	et	0		J	
+tema	tema	0		P	sg g
+    	@tema	0		P	sg n
+,	,			Z	
+kui	kui	0		D	
+   	@kui	0		J	
+agga	####				
+	#aga	0		D			
+se	####				
+	#see	0		P	sg n
+3mal	####				
+	¤		
+jaggo	####				
+	#jagu	0		S	sg n
+üle	@üle	0		D	
+   	üle	0		K	
+jänud	####				
+	#jää	nud		V	nud
+talvisest	talvine	st		A	sg el
+villast	@vill	st		S	sg el
+       	villa	st		S	sg el
+       	villane	t		A	sg p
+sest	see	st		P	sg el
+    	@sest	0		J	
+temmal	####				
+	#tema	l		P	sg ad
+10	10	0		N	?
+aaste	####				
+	#aastane	0		A	sg n
+laps	laps	0		S	sg n
+2	2	0		N	?
+astad	####				
+	#aasta	d		S	sg p
+venna	vend	0		S	sg g
+jures	####				
+	#juures	0		K		
+söömas	@söö	mas		V	mas
+      	sööm	s		S	sg in
+olli	####				
+	#ole	li		V	s
+.	.			Z	
+Sai	@saa	i		V	s
+   	sai	0		S	sg n
+kulutud	kulu	tud		V	tud
+       	kulu=tu	d		S	pl n
+       	kulu=tud	0		A	
+       	kulu=tud	0		A	sg n
+       	kulu=tud	d		A	pl n
+	£kuuluta	tud		V	tud
+T.R.S.R	####				
+	#T.R.S.R	0		Y	?
+.	.			Z	
+§	§	0		Y	?
+773	773	0		N	?
+ja	ja	0		J	
+774	774	0		N	?
+mis	mis	0		P	pl n
+   	@mis	0		P	sg n
+peale	pea	le		S	sg all
+     	peale	0		D	
+     	@peale	0		K	
+Kadri	Kadri	0		H	sg g
+     	@Kadri	0		H	sg n
+     	kadri	0		S	sg g
+     	kadri	0		S	sg n
+Kallaste	Kallas	te		H	pl g
+        	Kallaste	0		H	sg g
+        	kallas	te		S	pl g
+        	@Kallaste	0		H	sg n
+rahhul	####				
+	#rahul	0		D		
+ei	ei	0		D	
+  	@ei	0		V	neg
+olnud	ol=nud	0		A	
+     	ol=nud	0		A	sg n
+     	ol=nud	d		A	pl n
+     	@ole	nud		V	nud
+     	olnu	d		S	pl n
+ja	ja	0		J	
+protoolli	####				
+	#protokoll	0		S	sg g
+välja	@välja	0		D	
+     	välja	0		V	o
+     	väli	0		S	adt
+     	väli	0		S	sg g
+     	väli	0		S	sg p
+pallus	####				
+	#palu	s		V	s
+mis	mis	0		P	pl n
+   	@mis	0		P	sg n
+temmale	####				
+	#tema	le		P	sg all
+ka	ka	0		D	
+8	8	0		N	?
+päiva	####				
+	#päev	0		S	sg g
+perrast	####				
+	#pärast	0		K		
+lubbati	####				
+	#luba	ti		V	ti
+.	.			Z	
+koggokonna	####				
+	#kogukond	0		S	sg g
+kohto	####				
+	#kohus	0		S	sg g
+nimmel	nimme	l		S	sg ad
+Peakohtomees	####				
+	#pea_kohtu_mees	0		S	sg n
+:	:			Z	
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Kiili	kiil	0		S	adt
+     	kiil	0		S	sg g
+     	kiil	0		S	sg p
+	£Kiili	0		H	sg n
+kohtomees	####				
+	#kohtu_mees	0		S	sg n
+Karel	####				
+	#Karel	0		H	sg n
+Vilde	Vilde	0		H	sg g
+     	@Vilde	0		H	sg n
+Mart	@Mart	0		H	sg n
+    	mart	0		S	sg n
+Polakse	####				
+	#Polakse	0		H	sg n

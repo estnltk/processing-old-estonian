@@ -1,0 +1,847 @@
+Kaibas	####				
+	#kaeba	s		V	s
+Vana	vana	0		A	sg g
+    	@vana	0		A	sg n
+    	vana	0		A	sg p
+    	vana	0		S	sg g
+    	vana	0		S	sg n
+    	vana	0		S	sg p
+Vallavanemb	####				
+	#valla_vanem	0		S	sg n
+Johann	Johann	0		H	sg n
+Tiido	####				
+	#Tiido	0		H	sg n
+,	,			Z	
+et	et	0		J	
+temal	tema	l		P	sg ad
+jäänu	jäänu	0		S	sg g
+     	jäänu	0		S	sg n
+     	jäänud	0		A	sg g
+	£jää	nu		V	nud
+vana	@vana	0		A	sg g
+    	vana	0		A	sg n
+    	vana	0		A	sg p
+    	vana	0		S	sg g
+    	vana	0		S	sg n
+    	vana	0		S	sg p
+vallavanemba	####				
+	#valla_vanem	0		S	sg g
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Tigase	####				
+	#Tigane	0		H	sg g
+kätte	@kätte	0		K	
+     	käsi	tte		S	adt
+raha	raha	0		S	sg g
+    	raha	0		S	sg n
+    	@raha	0		S	sg p
+võlga	võlg	0		S	adt
+     	võlg	0		S	sg p
+	£võlgu	0		D	
+,	,			Z	
+veel	@veel	0		D	
+    	vesi	l		S	sg ad
+selle	@see	0		P	sg g
+     	sell	e		S	pl p
+Brottocolli	####				
+	#protokoll	0		S	sg g
+manu	manu	0		D	
+    	@manu	0		K	
+sest	@see	st		P	sg el
+    	sest	0		J	
+27	27	0		N	?
+Mai	Mai	0		H	sg g
+   	Mai	0		H	sg n
+   	mai	0		S	sg g
+   	@mai	0		S	sg n
+1881	1881	0		N	?
+Nr	Nr	0		Y	?
+37	37	0		N	?
+andmata	@and	mata		V	mata
+       	and=mata	0		A	
+!	!			Z	
+nink	####				
+	#ning	0		J	
+palus	palu	s		S	sg in
+     	@palu	s		V	s
+seda	see	da		P	sg p
+oma	oma	0		A	sg g
+   	oma	0		D	
+   	@oma	0		P	sg g
+   	oma	0		S	sg g
+   	oma	0		V	o
+   	oma	0		A	sg n
+   	oma	0		A	sg p
+   	oma	0		P	sg n
+   	oma	0		P	sg p
+   	oma	0		S	sg n
+   	oma	0		S	sg p
+rehknungi	####				
+	#rehnung	0		S	sg p
+vastselt	vastne	lt		A	sg abl
+        	vastne	lt		S	sg abl
+        	@vastselt	0		D	
+seletada	seleta	da		V	da
+!	!			Z	
+Nii	nii	0		D	
+kui	kui	0		D	
+   	@kui	0		J	
+Olevat	@ole	vat		V	vat
+      	olev	t		A	sg p
+      	olev	t		S	sg p
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Tigasel	####				
+	#Tigane	l		H	sg ad
+temale	tema	le		P	sg all
+massa	####				
+	#maks	a		V	da
+!	!			Z	
+1.	1.	0		O	?
+Jaan	Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	@jaan	0		Y	?
+Tigane	####				
+	#Tigane	0		H	sg n
+lainanu	####				
+	#laena	nu		V	nud
+140	140	0		N	?
+rbl	rbl	0		Y	?
+81	81	0		N	?
+kop	kop	0		Y	?
+2.	2.	0		O	?
+Cassa	####				
+	#kassa	0		S	sg g
+raha	raha	0		S	sg g
+    	raha	0		S	sg n
+    	@raha	0		S	sg p
+7	7	0		N	?
+rbl	rbl	0		Y	?
+3.	3.	0		O	?
+palgas	palk	s		S	sg in
+	£palk	s		S	sg tr
+saanu	saanu	0		S	sg g
+     	saanu	0		S	sg n
+	£saa	nu		V	nud
+3	3	0		N	?
+rbl	rbl	0		Y	?
+5	5	0		N	?
+kop	kop	0		Y	?
+4.	4.	0		O	?
+Oppus	####				
+	¤
+lehe	leht	0		S	sg g
+90	90	0		N	?
+kop	kop	0		Y	?
+5.	5.	0		O	?
+Contract	####				
+	#kontraht	0		S	sg n
+saatmise	saatmine	0		S	sg g
+eest	eest	0		D	
+    	@eest	0		K	
+    	esi	st		S	sg el
+1	1	0		N	?
+rbl	rbl	0		Y	?
+5	5	0		N	?
+kop	kop	0		Y	?
+6.	6.	0		O	?
+Uderna	####				
+	#Uderna	0		H	sg g
+jaama	jaam	0		S	adt
+     	@jaam	0		S	sg g
+     	jaam	0		S	sg p
+puie	####				
+	#puu	ie		S	pl g
+raha	raha	0		S	sg g
+    	raha	0		S	sg n
+    	@raha	0		S	sg p
+5	5	0		N	?
+rbl	rbl	0		Y	?
+50	50	0		N	?
+kop	kop	0		Y	?
+7.	7.	0		O	?
+Carl	Carl	0		H	sg n
+Tigase	####				
+	#Tigane	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	pea_raha	0		S	sg n
+       	@pea_raha	0		S	sg p
+7	7	0		N	?
+rbl	rbl	0		Y	?
+30	30	0		N	?
+kop	kop	0		Y	?
+8.	8.	0		O	?
+temal	tema	l		P	sg ad
+hendal	####				
+	#ise	l		P	sg ad
+30	30	0		N	?
+kop	kop	0		Y	?
+9.	9.	0		O	?
+Koro	####				
+	¤
+Johann	Johann	0		H	sg n
+Tido	####				
+	#Tiido	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	pea_raha	0		S	sg n
+       	@pea_raha	0		S	sg p
+4	4	0		N	?
+rbl	rbl	0		Y	?
+10.	10.	0		O	?
+Hendrik	Hendrik	0		H	sg n
+Tiido	####				
+	#Tiido	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	pea_raha	0		S	sg n
+       	@pea_raha	0		S	sg p
+9	9	0		N	?
+kop	kop	0		Y	?
+53	53	0		N	?
+kop	kop	0		Y	?
+11.	11.	0		O	?
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Sikka	####				
+	#Sikka	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	pea_raha	0		S	sg n
+       	@pea_raha	0		S	sg p
+6	6	0		N	?
+rbl	rbl	0		Y	?
+47	47	0		N	?
+kop	kop	0		Y	?
+12.	12.	0		O	?
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Obeti	####				
+	#Obeti	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	pea_raha	0		S	sg n
+       	@pea_raha	0		S	sg p
+7	7	0		N	?
+rbl	rbl	0		Y	?
+30	30	0		N	?
+kop	kop	0		Y	?
+13.	13.	0		O	?
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Tigase	####				
+	#Tigane	0		H	sg g
+rendi	@rent	0		S	sg g
+     	renti	0		V	o
+ja	ja	0		J	
+kirjo	####				
+	#kiri	o		S	pl g
+raha	raha	0		S	sg g
+    	raha	0		S	sg n
+    	@raha	0		S	sg p
+10	10	0		N	?
+rbl	rbl	0		Y	?
+23	23	0		N	?
+kop	kop	0		Y	?
+14.	14.	0		O	?
+Jacob	Jacob	0		H	sg n
+Kuk	####				
+	#Kukk	0		H	sg n
+pearaha	pea_raha	0		S	sg g
+       	pea_raha	0		S	sg n
+       	@pea_raha	0		S	sg p
+3	3	0		N	?
+rbl	rbl	0		Y	?
+33	33	0		N	?
+kop	kop	0		Y	?
+15.	15.	0		O	?
+Kohtomeeste	####				
+	#kohtu_mees	te		S	pl g
+palk	palk	0		S	sg n
+    	@palk	0		S	sg n
+57	57	0		N	?
+rbl	rbl	0		Y	?
+36	36	0		N	?
+kop	kop	0		Y	?
+16.	16.	0		O	?
+Hendriksoni	####				
+	#Hendrikson	0		H	sg g
+rentiraha	renti_raha	0		S	sg g
+         	renti_raha	0		S	sg n
+         	renti_raha	0		S	sg p
+	£rendi_raha	0		S	sg p
+1	1	0		N	?
+rbl	rbl	0		Y	?
+23	23	0		N	?
+kop	kop	0		Y	?
+17.	17.	0		O	?
+Pille	Pille	0		H	sg g
+     	pill	e		S	pl p
+     	Pille	0		H	sg n
+	¤
+raha	raha	0		S	sg g
+    	raha	0		S	sg n
+    	@raha	0		S	sg p
+1	1	0		N	?
+rbl	rbl	0		Y	?
+18.	18.	0		O	?
+Tee	@tee	0		S	sg g
+   	tege	0		V	o
+   	tee	0		S	sg n
+teo	@tegu	0		S	sg g
+   	tigu	0		S	sg g
+raha	raha	0		S	sg g
+    	raha	0		S	sg n
+    	@raha	0		S	sg p
+1	1	0		N	?
+rbl	rbl	0		Y	?
+Summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+267	267	0		N	?
+rbl	rbl	0		Y	?
+36	36	0		N	?
+kop	kop	0		Y	?
+Sest	@see	st		P	sg el
+    	sest	0		J	
+Summast	summ	st		S	sg el
+       	@summa	st		S	sg el
+ollev	####				
+	#ole	v		V	vat
+kätte	kätte	0		K	
+     	käsi	tte		S	adt
+	£kätte	0		D	
+saanu	saanu	0		S	sg g
+     	saanu	0		S	sg n
+	£saa	nu		V	nud
+35	35	0		N	?
+rbl	rbl	0		Y	?
+jäävat	@jää	vat		V	vat
+      	jääv	t		A	sg p
+veel	@veel	0		D	
+    	vesi	l		S	sg ad
+masmata	####				
+	#maks	mata		V	mata
+232	232	0		N	?
+rbl	rbl	0		Y	?
+26	26	0		N	?
+kop	kop	0		Y	?
+ja	ja	0		J	
+ollev	####				
+	#ole	v		V	vat
+veel	@veel	0		D	
+    	vesi	l		S	sg ad
+8	8	0		N	?
+rbl	rbl	0		Y	?
+ka	ka	0		D	
+sellest	see	st		P	sg el
+Summast	summ	st		S	sg el
+       	@summa	st		S	sg el
+kätte	kätte	0		K	
+     	käsi	tte		S	adt
+	£kätte	0		D	
+saanu	saanu	0		S	sg g
+     	saanu	0		S	sg n
+	£saa	nu		V	nud
+!	!			Z	
+siis	@siis	0		D	
+    	siis	0		J	
+tulev	tule	v		V	v
+     	tulev	0		A	sg n
+	£tule	v		V	vat
+veel	@veel	0		D	
+    	vesi	l		S	sg ad
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Tigase	####				
+	#Tigane	0		H	sg g
+temale	tema	le		P	sg all
+massa	####				
+	#maks	a		V	da
+Summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+224	224	0		N	?
+rbl	rbl	0		Y	?
+26	26	0		N	?
+kop	kop	0		Y	?
+palus	palu	s		S	sg in
+     	@palu	s		V	s
+seda	see	da		P	sg p
+temalt	tema	lt		P	sg abl
+ära	@ära	0		D	
+   	ära	0		V	neg o
+nõuda	nõud	a		V	da
+!	!			Z	
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Tigane	####				
+	#Tigane	0		H	sg n
+sai	@saa	i		V	s
+   	sai	0		S	sg n
+ette	@ette	0		D	
+    	ette	0		K	
+    	esi	tte		S	adt
+kutsutus	kutsutu	s		S	sg in
+        	kutsutud	s		A	sg in
+	£kutsu	tus		V	tud tr
+nink	####				
+	#ning	0		J	
+vastutas	vastuta	s		V	s
+:	:			Z	
+""""	""""			Z	
+Et	et	0		J	
+see	see	0		P	sg n
+100	100	0		N	?
+rbl	rbl	0		Y	?
+mis	mis	0		P	pl n
+   	@mis	0		P	sg n
+Tiido	####				
+	#Tiido	0		H	sg n
+tema	@tema	0		P	sg g
+    	tema	0		P	sg n
+käest	@käest	0		K	
+     	käsi	st		S	sg el
+nõvvap	####				
+	#nõud	p		V	b
+tare	@tare	0		S	sg g
+    	tare	0		S	sg n
+teo	@tegu	0		S	sg g
+   	tigu	0		S	sg g
+raha	raha	0		S	sg g
+    	@raha	0		S	sg n
+    	raha	0		S	sg p
+ollo	####				
+	#ole	o		V	nud
+!	!			Z	
+Seda	see	da		P	sg p
+40	40	0		N	?
+rbl	rbl	0		Y	?
+ei	ei	0		D	
+  	@ei	0		V	neg
+teedvat	####				
+	#tead	vat		V	vat
+tema	tema	0		P	sg g
+    	@tema	0		P	sg n
+suguki	####				
+	#sugugi	0		D	
+!	!			Z	
+Seda	see	da		P	sg p
+7	7	0		N	?
+rbl	rbl	0		Y	?
+cassa	####				
+	#kassa	0		S	sg g
+rahast	raha	st		S	sg el
+ei	ei	0		D	
+  	@ei	0		V	neg
+teedvad	####				
+	#tead	vad		V	vat
+tema	tema	0		P	sg g
+    	@tema	0		P	sg n
+ka	ka	0		D	
+suguki	####				
+	#sugugi	0		D	
+.	.			Z	
+Palgas	palk	s		S	sg in
+ollev	####				
+	#ole	v		V	vat
+saanu	saanu	0		S	sg g
+     	saanu	0		S	sg n
+	£saa	nu		V	nud
+2	2	0		N	?
+rbl	rbl	0		Y	?
+5	5	0		N	?
+kop	kop	0		Y	?
+.	.			Z	
+Oppus	####				
+	¤
+lehti	leht	i		S	pl p
+     	lehti	0		V	o
+	¤
+eest	eest	0		D	
+    	@eest	0		K	
+    	esi	st		S	sg el
+ollev	####				
+	#ole	v		V	vat
+ollo	####				
+	#ole	o		V	nud
+90	90	0		N	?
+kop	kop	0		Y	?
+!	!			Z	
+Condratist	####				
+	#kontraht	st		S	sg el
+ei	ei	0		D	
+  	@ei	0		V	neg
+teedvat	####				
+	#tead	vat		V	vat
+midagi	miski	dagi		P	sg p
+!	!			Z	
+Saitsme	####				
+	#seitse	0		N	sg g
+talo	####				
+	#talu	0		S	sg g
+raha	raha	0		S	sg g
+    	@raha	0		S	sg n
+    	raha	0		S	sg p
+ollev	####				
+	#ole	v		V	vat
+tema	@tema	0		P	sg g
+    	tema	0		P	sg n
+käen	####				
+	#käes	0		K	
+1	1	0		N	?
+rbl	rbl	0		Y	?
+40	40	0		N	?
+kop	kop	0		Y	?
+Karl	Karl	0		H	sg n
+Tigase	####				
+	#Tigane	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	@pea_raha	0		S	sg n
+       	pea_raha	0		S	sg p
+7	7	0		N	?
+rbl	rbl	0		Y	?
+30	30	0		N	?
+kop	kop	0		Y	?
+om	####				
+	#ole	0		V	b
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+.	.			Z	
+Temal	tema	l		P	sg ad
+hendal	####				
+	#ise	l		P	sg ad
+30	30	0		N	?
+kop	kop	0		Y	?
+ollev	####				
+	#ole	v		V	vat
+ka	ka	0		D	
+õigus	õigus	0		S	sg n
+!	!			Z	
+Koro	####				
+	¤
+Johan	Johan	0		H	sg n
+	£Johann	0		H	sg n
+Tiido	####				
+	#Tiido	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	@pea_raha	0		S	sg n
+       	pea_raha	0		S	sg p
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+4	4	0		N	?
+rbl	rbl	0		Y	?
+Hendrik	Hendrik	0		H	sg n
+Tiido	####				
+	#Tiido	0		H	sg g
+pearahast	pea_raha	st		S	sg el
+ei	ei	0		D	
+  	@ei	0		V	neg
+midagi	miski	dagi		P	sg p
+teedvat	####				
+	#tead	vat		V	vat
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Sikka	####				
+	#Sikka	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	@pea_raha	0		S	sg n
+       	pea_raha	0		S	sg p
+ollev	####				
+	#ole	v		V	vat
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+6	6	0		N	?
+rbl	rbl	0		Y	?
+47	47	0		N	?
+kop	kop	0		Y	?
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Obeti	####				
+	#Obeti	0		H	sg g
+pearaha	pea_raha	0		S	sg g
+       	@pea_raha	0		S	sg n
+       	pea_raha	0		S	sg p
+ei	ei	0		D	
+  	@ei	0		V	neg
+ole	ole	0		V	o
+mitte	mitte	0		D	
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Tigase	####				
+	#Tigane	0		H	sg g
+henda	####				
+	#ise	0		P	sg g
+rent	rent	0		S	sg n
+ei	ei	0		D	
+  	@ei	0		V	neg
+ollev	####				
+	#ole	v		V	vat
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+Jacob	Jacob	0		H	sg n
+Kuk	####				
+	#Kukk	0		H	sg n
+pearaha	pea_raha	0		S	sg g
+       	@pea_raha	0		S	sg n
+       	pea_raha	0		S	sg p
+ei	ei	0		D	
+  	@ei	0		V	neg
+ole	ole	0		V	o
+mitte	mitte	0		D	
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+Kohto	####				
+	#kohus	0		S	sg g
+meeste	meene	te		A	pl g
+      	@mees	te		S	pl g
+palk	@palk	0		S	sg n
+    	palk	0		S	sg n
+ei	ei	0		D	
+  	@ei	0		V	neg
+ollev	####				
+	#ole	v		V	vat
+mitte	mitte	0		D	
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+Hendriksoni	####				
+	#Hendrikson	0		H	sg g
+rendiraha	rendi_raha	0		S	sg g
+         	@rendi_raha	0		S	sg n
+         	rendi_raha	0		S	sg p
+ei	ei	0		D	
+  	@ei	0		V	neg
+ole	ole	0		V	o
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+Pille	Pille	0		H	sg g
+     	pill	e		S	pl p
+     	Pille	0		H	sg n
+	¤
+raha	raha	0		S	sg g
+    	@raha	0		S	sg n
+    	raha	0		S	sg p
+ollev	####				
+	#ole	v		V	vat
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+1	1	0		N	?
+rbl	rbl	0		Y	?
+Tee	@tee	0		S	sg g
+   	tege	0		V	o
+   	tee	0		S	sg n
+teo	@tegu	0		S	sg g
+   	tigu	0		S	sg g
+raha	raha	0		S	sg g
+    	@raha	0		S	sg n
+    	raha	0		S	sg p
+ei	ei	0		D	
+  	@ei	0		V	neg
+ollev	####				
+	#ole	v		V	vat
+õige	õige	0		A	sg g
+    	@õige	0		A	sg n
+    	õige	0		D	
+!	!			Z	
+Ollev	####				
+	#ole	v		V	vat
+temal	tema	l		P	sg ad
+Tiidole	####				
+	#Tiido	le		H	sg all
+massa	####				
+	#maks	a		V	da
+Summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+23	23	0		N	?
+rbl	rbl	0		Y	?
+42	42	0		N	?
+kop	kop	0		Y	?
+Ent	ent	0		J	
+ollev	####				
+	#ole	v		V	vat
+Tiido	####				
+	#Tiido	0		H	sg g
+käest	@käest	0		K	
+     	käsi	st		S	sg el
+veel	@veel	0		D	
+    	vesi	l		S	sg ad
+temal	tema	l		P	sg ad
+saada	@saa	da		V	da
+     	saat	0		V	o
+     	saa	da		V	ta
+taretegemiste	tare_tegemine	te		S	pl g
+raha	raha	0		S	sg g
+    	@raha	0		S	sg n
+    	raha	0		S	sg p
+25	25	0		N	?
+rbl	rbl	0		Y	?
+28	28	0		N	?
+kop	kop	0		Y	?
+Posditee	####				
+	#posti_tee	0		S	sg g
+nink	####				
+	#ning	0		J	
+keriko	####				
+	#kirik	0		S	sg g
+tee	@tee	0		S	sg g
+   	tege	0		V	o
+   	tee	0		S	sg n
+eest	eest	0		D	
+    	@eest	0		K	
+    	esi	st		S	sg el
+6	6	0		N	?
+rbl	rbl	0		Y	?
+Cassa	####				
+	#kassa	0		S	sg g
+rehknungi	####				
+	#rehnung	0		S	sg g
+manu	manu	0		D	
+    	@manu	0		K	
+andmata	@and	mata		V	mata
+       	and=mata	0		A	
+13	13	0		N	?
+rbl	rbl	0		Y	?
+Koolitare	@kooli_tare	0		S	sg g
+         	kooli_tare	0		S	sg n
+tegemise	tegemine	0		S	sg g
+raha	raha	0		S	sg g
+    	raha	0		S	sg n
+    	@raha	0		S	sg p
+saada	@saa	da		V	da
+     	saat	0		V	o
+     	saa	da		V	ta
+2	2	0		N	?
+rbl	rbl	0		Y	?
+95	95	0		N	?
+kop	kop	0		Y	?
+Kaupa	kaup	0		S	adt
+     	@kaup	0		S	sg p
+     	kaupa	0		K	
+võtnu	võt=nu	0		S	sg g
+     	võt=nu	0		S	sg n
+	£võt	nu		V	nud
+1	1	0		N	?
+rbl	rbl	0		Y	?
+Kirjotus	####				
+	#kirjutus	0		S	sg n
+karp	karp	0		S	sg n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+50	50	0		N	?
+kop	kop	0		Y	?
+Kantslei	####				
+	#kantselei	0		S	sg g
+kulu	kulg	0		S	sg g
+    	kulu	0		S	sg g
+    	kulu	0		V	o
+    	@kulu	0		S	sg n
+    	kulu	0		S	sg p
+4	4	0		N	?
+rbl	rbl	0		Y	?
+10	10	0		N	?
+kop	kop	0		Y	?
+saada	@saa	da		V	da
+     	saat	0		V	o
+     	saa	da		V	ta
+Summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+53	53	0		N	?
+rbl	rbl	0		Y	?
+83	83	0		N	?
+kop	kop	0		Y	?
+See	see	0		P	sg n
+kohtomeeste	####				
+	#kohtu_mees	te		S	pl g
+palk	palk	0		S	sg n
+    	@palk	0		S	sg n
+57	57	0		N	?
+rbl	rbl	0		Y	?
+36	36	0		N	?
+kop	kop	0		Y	?
+ja	ja	0		J	
+40	40	0		N	?
+rbl	rbl	0		Y	?
+81	81	0		N	?
+kop	kop	0		Y	?
+valla	@vald	0		S	sg g
+     	valla	0		D	
+rent	rent	0		S	sg n
+saisvat	####				
+	#seis	vat		V	vat
+Nõumeeste	nõu_mees	te		S	pl g
+Brottocollin	####				
+	#protokoll	n		S	sg in
+kus	kus	0		D	
+kiik	kiik	0		S	sg n
+	£kõik	0		P	sg n
+ilusast	ilus	st		A	sg el
+	£ilusasti	0		D	
+nätta	####				
+	#näge	ta		V	da
+ollev	####				
+	#ole	v		V	vat
+kelle	kes	0		P	pl g
+     	@kes	0		P	sg g
+massa	####				
+	#maks	a		V	da
+need	see	d		P	pl n
+omma	####				
+	#ole	0		V	vad
+!	!			Z	
+Otsus	otsus	0		S	sg n
+.	.			Z	
+Et	et	0		J	
+Kogokonna	####				
+	#kogukond	0		S	sg g
+valitsuse	valitsus	0		S	sg g
+Brottocolli	####				
+	#protokoll	0		S	sg g
+raamatut	raamat	t		S	sg p
+siin	@siin	0		D	
+    	siin	0		S	sg n
+ei	ei	0		D	
+  	@ei	0		V	neg
+ole	ole	0		V	o
+saap	####				
+	#saa	p		V	b
+neide	neid	e		S	pl p
+	£see	ide		P	pl g
+otsus	otsus	0		S	sg n
+tõine	####				
+	#teine	0		P	sg n
+kohto	####				
+	#kohus	0		S	sg g
+päiv	####				
+	#päev	0		S	sg n
+ära	@ära	0		D	
+   	ära	0		V	neg o
+seletetus	####				
+	#seleta	tus		V	tud tr
+!	!			Z	

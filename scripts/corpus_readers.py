@@ -8,7 +8,7 @@ from estnltk.taggers.text_segmentation.whitespace_tokens_tagger import WhiteSpac
 from estnltk.taggers.text_segmentation.pretokenized_text_compound_tokens_tagger import PretokenizedTextCompoundTokensTagger
 
 from estnltk import Layer
-
+from estnltk.taggers.morph_analysis.morf_common import _postprocess_root
 def read_from_csv(path):
 	with open(path, encoding="utf-8") as fin:
 		records=[]
@@ -72,8 +72,18 @@ def read_from_tsv(path):
 						raw_text=""
 						multiword_expressions = []
 						
-						for row in reader:
+						for index, row in enumerate(reader):
 							row[0]=row[0].strip()
+							#Check if the row has correct number of elements
+							#If there are less than 6 then it is probably an adverb, abbreviation etc.
+							#But if there are more, then there's something wrond and the user has to be notified.
+							if len(row) > 6:
+								#If the elements after the 6th one contain nothing, then we can continue.
+								for x in row[6:]:
+									x=x.strip()
+									if x !="":
+										sys.stderr.write("Something is wrong with the following file: "+file+" In the following line: "+str(index+1)+"\n"+"\t".join(row)+"\n")
+										sys.exit(1)
 							#If the first element of a row is empty then it is an alternative analysis of a word.
 							if row[0]=="" and word:
 								word.append(row)
@@ -85,19 +95,32 @@ def read_from_tsv(path):
 						for word in words:
 							#Iterate over the analyses and check for manual fixes.
 							#Remove all other analyses if they exist.
+							type_of_fix=""
 							for analysis in word:
 								if "¤" in analysis:
-									word[0][1:]=["¤", "", "", "", ""]
+									word[0][1:]=["", "", "", "", ""]
 									word=[word[0]]
+									type_of_fix="No_correct_analysis_available"
+									break
 								elif analysis[1].startswith("@"):
 									word[0][1:]=analysis[1:]
 									word=[word[0]]
+									word[0][1]=word[0][1].strip("@")
+									type_of_fix="correct_analysis_provided"
+									break
 								elif analysis[1].startswith("£"):
 									word[0][1:]=analysis[1:]
 									word=[word[0]]
+									word[0][1]=word[0][1].strip("£")
+									type_of_fix="correct_analysis_not_provided"
+									break
 								elif re.match("#[A-Üa-ü0-9]", analysis[1]):
 									word[0][1:]=analysis[1:]
 									word=[word[0]]
+									word[0][1]=word[0][1].strip("#")
+									type_of_fix="correct_analysis_manually_added"
+									break
+								"""
 								elif analysis[1].startswith("###"):
 									word_tuple=(word[0][0], [])
 									
@@ -106,16 +129,15 @@ def read_from_tsv(path):
 									if ' ' in word[0][0]:
 										multiword_expressions.append(word[0][0])
 									continue
+							"""
 							analyses=[]
 							for a in word:
 								analysis={}
 								analysis['root']=a[1]
-								#Clear the fixing symbols from the root
-								analysis['root']=re.sub(r'#|£@', '', analysis['root'])
 								#If it is an abbreviation some fields may be missing.
 								#Sometimes there are also missing tabs in the end of a line, so the last element has to be checked.
 								if a[-1]=="Y" or a[-1]=='D' or a[-1]=='K':
-									analysis['partofspeech']="Y"
+									analysis['partofspeech']=a[-1]
 									analysis['ending']=""
 									analysis['form']=""
 									analysis['clitic']=""
@@ -124,11 +146,13 @@ def read_from_tsv(path):
 									analysis['clitic']=a[3]
 									analysis['partofspeech']=a[4]
 									analysis['form']=a[5] if len(a) ==6 else ""
-								analysis['root_tokens']=[analysis['root']]
-								analysis['lemma']=analysis['root']
-								#Will be implemented
-								analysis['type_of_fix']=""
-								analyses.append(analysis)
+								analysis['root'], analysis['root_tokens'], analysis['lemma'] = _postprocess_root( analysis['root'], analysis['partofspeech'])
+								analysis['type_of_fix']=type_of_fix
+								#If the root is empty then there is no analysis available and then let's leave it empty
+								if analysis['root']=="":
+									analysis=[]
+								else:
+									analyses.append(analysis)
 							word_tuple=(word[0][0], analyses)
 							morph_analysis.append(word_tuple)
 							raw_text+=word[0][0]+" "
@@ -141,15 +165,22 @@ def read_from_tsv(path):
 						compound_tokens_tagger = PretokenizedTextCompoundTokensTagger( multiword_units = multiword_expressions )
 						compound_tokens_tagger.tag(text)
 						text.tag_layer(['sentences'])
-						layer=Layer(name='morph_analysis',
+						layer_morph=Layer(name='manual_morph',
 							text_object=text,
-							attributes=['root', 'lemma', 'root_tokens', 'ending', 'clitic', 'partofspeech', 'form', 'type_of_fix', 'normalized_form'],
+							attributes=['root', 'lemma', 'root_tokens', 'ending', 'clitic', 'partofspeech', 'form', 'normalized_form'],
 							parent='words',
 							ambiguous=True)
+						layer_fix=Layer(name='type_of_fix',
+							text_object=text,
+							attributes=['type_of_fix'],
+							parent='manual_morph')
+						
 						for ind, word in enumerate(text.words):
 							for analysis in morph_analysis[ind][1]:
-								layer.add_annotation((word.start, word.end), **analysis)
-						text.add_layer(layer)
+								layer_morph.add_annotation((word.start, word.end), **analysis)
+								layer_fix.add_annotation((word.start, word.end), type_of_fix=analysis['type_of_fix'])
+						text.add_layer(layer_morph)
+						text.add_layer(layer_fix)
 						text.meta['id']=file.split(".")[0]
 						texts.append(text)
 	return texts

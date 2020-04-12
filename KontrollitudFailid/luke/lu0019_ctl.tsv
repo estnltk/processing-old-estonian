@@ -1,0 +1,661 @@
+Lukke	lukk	e		S	pl p
+	£Luke	0		H	sg g
+mõisa	mõis	0		S	sg g
+Opmanni	####				
+	#opman	0		S	sg g
+Bandti	####				
+	#Bandt	0		H	sg g
+varrantus	varr_antud	s		A	sg in
+	£varandus	0		S	sg n
+mis	mis	0		P	pl n
+   	@mis	0		P	sg n
+2se	####				
+	#2	se		O	sg g
+Kihhelkonnakohtu	####				
+	#kihelkonna_kohus	0		S	sg g
+kässo	####				
+	#käsk	0		S	sg g
+päle	####				
+	#peale	0		K
+oksjoni	oksjon	0		S	sg g
+visil	####				
+	#viisil	0		K
+müitus	####				
+	#müü	tus		V	tud
+sai	@saa	i		V	s
+   	sai	0		S	sg n
+:	:			Z	
+Asjade	asi	de		S	pl g
+nimmed	nimme	d		S	pl n
+	£nimi	d		S	sg g
+Pakkote	####				
+	#pakku	te		V	tud
+hind	hind	0		S	sg n
+Osja	osi	0		S	adt
+    	osi	0		S	sg g
+    	osi	0		S	sg p
+	£ostja	0		S	sg g
+nimmed	nimme	d		S	pl n
+	£nimi	d		S	pl n
+2	2	0		N	?
+poliiritut	####				
+	#poleeri	tut		V	tud
+Sängid	@säng	d		S	pl n
+9	9	0		N	?
+rbl	rbl	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+mõsso	####				
+	¤
+Laud	@laud	0		S	sg n
+    	laug	d		S	pl n
+2	2	0		N	?
+rbl	rbl	0		Y	?
+50	50	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Sohva	sohva	0		S	sg g
+     	@sohva	0		S	sg n
+13	13	0		N	?
+rbl	rbl	0		Y	?
+90	90	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Sohva	sohva	0		S	sg g
+     	@sohva	0		S	sg n
+3	3	0		N	?
+rbl	rbl	0		Y	?
+45	45	0		N	?
+kop	kop	0		Y	?
+Kroon	kroon	0		S	sg n
+	£Kroon	0		H	sg n
+1	1	0		N	?
+Sohvalaud	sohva_laud	0		S	sg n
+3	3	0		N	?
+rbl	rbl	0		Y	?
+65	65	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Klaplaud	####				
+	#klapp_laud	0		S	sg n
+4	4	0		N	?
+rbl	rbl	0		Y	?
+55	55	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+ümargune	####				
+	#ümmargune	0		A	sg n
+Laud	@laud	0		S	sg n
+    	laug	d		S	pl n
+5	5	0		N	?
+rbl	rbl	0		Y	?
+Maibach	####				
+	#Maibach	0		H	sg n
+1	1	0		N	?
+Kummud	kummu	d		V	d
+	£kummut	0		S	sg n
+10	10	0		N	?
+rbl	rbl	0		Y	?
+10	10	0		N	?
+kop	kop	0		Y	?
+Hohlfeld	####				
+	#Hohlfeld	0		H	sg n
+1	1	0		N	?
+veike	####				
+	#väike	0		S	sg n
+Pegli	####				
+	#peegel	0		S	sg n
+3	3	0		N	?
+rbl	rbl	0		Y	?
+15	15	0		N	?
+kop	kop	0		Y	?
+Döring	####				
+	#Döring	0		H	sg n
+1	1	0		N	?
+Kappi	kapp	0		S	adt
+     	kapp	0		S	sg p
+	£kapp	0		S	sg n
+7	7	0		N	?
+rbl	rbl	0		Y	?
+10	10	0		N	?
+kop	kop	0		Y	?
+Schwarz	####				
+	#Schwarz	0		H	sg n
+1	1	0		N	?
+veike	####				
+	#väike	0		S	sg n
+Laud	@laud	0		S	sg n
+    	laug	d		S	pl n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+25	25	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+2	2	0		N	?
+Tooli	tool	0		S	adt
+     	tool	0		S	sg g
+     	@tool	0		S	sg p
+2	2	0		N	?
+rbl	rbl	0		Y	?
+15	15	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+2	2	0		N	?
+Tooli	tool	0		S	adt
+     	tool	0		S	sg g
+     	@tool	0		S	sg p
+2	2	0		N	?
+rbl	rbl	0		Y	?
+50	50	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+2	2	0		N	?
+Tooli	tool	0		S	adt
+     	tool	0		S	sg g
+     	@tool	0		S	sg p
+3	3	0		N	?
+rbl	rbl	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+2	2	0		N	?
+Tooli	tool	0		S	adt
+     	tool	0		S	sg g
+     	@tool	0		S	sg p
+3	3	0		N	?
+rbl	rbl	0		Y	?
+65	65	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+2	2	0		N	?
+Bildi	####				
+	#pilt	0		S	sg p
+51	51	0		N	?
+kop	kop	0		Y	?
+Johan	Johan	0		H	sg n
+Johanson	Johanson	0		H	sg n
+3	3	0		N	?
+Bildi	####				
+	#pilt	0		S	sg p
+1	1	0		N	?
+rbl	rbl	0		Y	?
+26	26	0		N	?
+kop	kop	0		Y	?
+Stamberg	####				
+	#Stamberg	0		H	sg n
+2	2	0		N	?
+Õlletooli	õlle_tool	0		S	adt
+         	õlle_tool	0		S	sg g
+         	õlle_tool	0		S	sg p
+	£õle_tool	0		S	sg p
+34	34	0		N	?
+kop	kop	0		Y	?
+Johan	Johan	0		H	sg n
+Johanson	Johanson	0		H	sg n
+1	1	0		N	?
+all	all	0		D	
+   	all	0		K	
+	£hall	0		S	sg n
+Obbene	####				
+	#hobune	0		S	sg n
+varsaga	varss	ga		S	sg kom
+69	69	0		N	?
+rbl	rbl	0		Y	?
+10	10	0		N	?
+kop	kop	0		Y	?
+Rosini	####				
+	#Rosini	0		H	sg n
+1	1	0		N	?
+kõrv	kõrv	0		S	sg n
+	£kõrb	0		A	sg n
+Obbene	####				
+	#hobune	0		S	sg n
+42	42	0		N	?
+rbl	rbl	0		Y	?
+Blum	####				
+	#Blum	0		H	sg n
+1	1	0		N	?
+Lehm	lehm	0		S	sg n
+19	19	0		N	?
+rbl	rbl	0		Y	?
+10	10	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+2	2	0		N	?
+Lehma	lehm	0		S	adt
+     	lehm	0		S	sg g
+     	@lehm	0		S	sg p
+must	@must	0		A	sg n
+    	must	0		S	sg n
+    	mina	st		P	sg el
+nink	####				
+	#ning	0		J
+verrev	####				
+	#verev	0		A	sg n
+36	36	0		N	?
+rbl	rbl	0		Y	?
+20	20	0		N	?
+kop	kop	0		Y	?
+Martin	Martin	0		H	sg n
+Johanson	Johanson	0		H	sg n
+1	1	0		N	?
+Lehm	lehm	0		S	sg n
+20	20	0		N	?
+rbl	rbl	0		Y	?
+35	35	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Sigga	####				
+	#siga	0		S	sg n
+11	11	0		N	?
+rbl	rbl	0		Y	?
+30	30	0		N	?
+kop	kop	0		Y	?
+Kroon	kroon	0		S	sg n
+	£Kroon	0		H	sg n
+1	1	0		N	?
+Sigga	####				
+	#siga	0		S	sg n
+4	4	0		N	?
+rbl	rbl	0		Y	?
+70	70	0		N	?
+kop	kop	0		Y	?
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Vind	vind	0		S	sg n
+	£Vind	0		H	sg n
+1	1	0		N	?
+Korv	korv	0		S	sg n
+Vanger	####				
+	#vanker	0		S	sg n
+vedrudega	vedru	dega		S	pl kom
+80	80	0		N	?
+rbl	rbl	0		Y	?
+2	2	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+korv	korv	0		S	sg n
+Vanger	####				
+	#vanker	0		S	sg n
+10	10	0		N	?
+rbl	rbl	0		Y	?
+70	70	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Troschka	####				
+	#troska	0		S	sg n
+12	12	0		N	?
+rbl	rbl	0		Y	?
+60	60	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Kresla	kresla	0		S	sg g
+      	@kresla	0		S	sg n
+2	2	0		N	?
+rbl	rbl	0		Y	?
+1	1	0		N	?
+kop	kop	0		Y	?
+Schmidt	Schmidt	0		H	sg n
+1	1	0		N	?
+Saddul	####				
+	#sadul	0		S	sg n
+teggiga	####				
+	#tekk	ga		S	sg kom
+,	,			Z	
+Suitze	####				
+	#suitsed	0		S	pl n
+6	6	0		N	?
+rbl	rbl	0		Y	?
+80	80	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+2	2	0		N	?
+paari	paar	0		N	adt
+     	paar	0		N	sg g
+     	paar	0		S	adt
+     	paar	0		S	sg g
+     	paari	0		D	
+     	paari	0		V	o
+     	paar	0		N	sg p
+     	@paar	0		S	sg p
+Saksa	saks	0		S	adt
+     	@saks	0		S	sg g
+     	saksa	0		G	
+     	saks	0		S	sg p
+Obbesteriista	####				
+	#hobuste_riist	0		S	sg p
+10	10	0		N	?
+rbl	rbl	0		Y	?
+Blum	####				
+	#Blum 	0		H	sg n
+1	1	0		N	?
+Taose	####				
+	#taosed	0		S	pl n
+4	4	0		N	?
+rbl	rbl	0		Y	?
+70	70	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Taose	####				
+	#taosed	0		S	sg n
+,	,			Z	
+1	1	0		N	?
+Lentzi	####				
+	¤
+n	n	0		Y	?
+	¤
+.	.			Z	
+Saddulka	####				
+	¤
+5	5	0		N	?
+rbl	rbl	0		Y	?
+60	60	0		N	?
+kop	kop	0		Y	?
+Rosini	####				
+	#Rosini	0		H	sg n
+2	2	0		N	?
+paari	paar	0		N	adt
+     	paar	0		N	sg g
+     	paar	0		S	adt
+     	paar	0		S	sg g
+     	paari	0		D	
+     	paari	0		V	o
+     	paar	0		N	sg p
+     	@paar	0		S	sg p
+Ohjo	####				
+	#ohjad	0		S	pl n
+nink	####				
+	#ning	0		J
+1	1	0		N	?
+Look	look	0		S	sg n
+2	2	0		N	?
+rbl	rbl	0		Y	?
+60	60	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+Saddulka	####				
+	¤
+,	,			Z	
+2	2	0		N	?
+Obbese	####				
+	#hobune	0		S	sg g
+Tekki	tekk	0		S	adt
+     	tekki	0		V	o
+     	@tekk	0		S	sg p
+4	4	0		N	?
+rbl	rbl	0		Y	?
+86	86	0		N	?
+kop	kop	0		Y	?
+Rosini	####				
+	#Rosini	0		H	sg n
+3	3	0		N	?
+Õlle	õlu	0		S	adt
+    	õlu	0		S	sg g
+	£õlg	0		S	sg g
+tooli	tool	0		S	adt
+     	tool	0		S	sg g
+     	@tool	0		S	sg p
+50	50	0		N	?
+kop	kop	0		Y	?
+Kroon	kroon	0		S	sg n
+	£Kroon	0		H	sg n
+n	n	0		Y	?
+.	.			Z	
+Rosini	####				
+	#Rosini	0		H	sg n
+1	1	0		N	?
+Köögi	köök	0		S	sg g
+Laud	@laud	0		S	sg n
+    	laug	d		S	pl n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+5	5	0		N	?
+kop	kop	0		Y	?
+Kroon	kroon	0		S	sg n
+	£Kroon	0		H	sg n
+1	1	0		N	?
+Laud	@laud	0		S	sg n
+    	laug	d		S	pl n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+10	10	0		N	?
+kop	kop	0		Y	?
+Schwarz	####				
+	#Schwarz	0		H	sg n
+1	1	0		N	?
+Matratz	####				
+	#madrats	0		S	sg n
+nink	####				
+	#ning	0		J
+3	3	0		N	?
+Patja	padi	0		S	adt
+     	@padi	0		S	sg p
+4	4	0		N	?
+rbl	rbl	0		Y	?
+55	55	0		N	?
+kop	kop	0		Y	?
+Ergens	####				
+	#Ergens	0		H	sg n
+1	1	0		N	?
+Kappi	kapp	0		S	adt
+     	kapp	0		S	sg p
+	£kapp	0		S	sg n
+7	7	0		N	?
+rbl	rbl	0		Y	?
+Doring	####				
+	#Doring	0		H	sg n
+2	2	0		N	?
+Tirrinad	####				
+	#tirin	0		S	sg p
+,	,			Z	
+2	2	0		N	?
+Talrikud	####				
+	#taldrik	0		S	sg p
+2	2	0		N	?
+Kausi	kauss	0		S	sg g
+	£kauss	0		S	sg p
+70	70	0		N	?
+kop	kop	0		Y	?
+Schmidt	Schmidt	0		H	sg n
+1	1	0		N	?
+Kohvi	kohv	0		S	adt
+     	@kohv	0		S	sg g
+     	kohv	0		S	sg p
+veski	veski	0		S	sg g
+     	@veski	0		S	sg n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+70	70	0		N	?
+kop	kop	0		Y	?
+Schmidt	Schmidt	0		H	sg n
+2	2	0		N	?
+Taporetti	####				
+	#taburet	0		S	sg p
+2	2	0		N	?
+rbl	rbl	0		Y	?
+50	50	0		N	?
+kop	kop	0		Y	?
+Schulz	####				
+	#Schulz	0		H	sg n
+1	1	0		N	?
+vee	vesi	0		S	sg g
+Pang	pang	0		S	sg n
+45	45	0		N	?
+kop	kop	0		Y	?
+Biderman	####				
+	#Biderman	0		H	sg n
+1	1	0		N	?
+Säng	säng	0		S	sg n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+45	45	0		N	?
+kop	kop	0		Y	?
+Schwarz	####				
+	#Schwarz	0		H	sg n
+1	1	0		N	?
+suur	suur	0		A	sg n
+Kast	kast	0		S	sg n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+20	20	0		N	?
+kop	kop	0		Y	?
+Schmid	####				
+	#Schmid	0		H	sg n
+Summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+448	448	0		N	?
+rbl	rbl	0		Y	?
+60	60	0		N	?
+kop	kop	0		Y	?
+Sest	@see	st		P	sg el
+    	sest	0		J	
+sisse	siss	e		S	pl p
+     	@sisse	0		D	
+     	sisse	0		K	
+tulnod	####				
+	#tule	nud		V	nud
+rahha	####				
+	#raha	0		S	sg g
+Summast	summ	st		S	sg el
+       	@summa	st		S	sg el
+448	448	0		N	?
+rbl	rbl	0		Y	?
+60	60	0		N	?
+kop	kop	0		Y	?
+läks	mine	s		V	s
+mahha	####				
+	#maha	0		D
+arvada	####				
+	#arva	da		V	da
+Zeitungi	####				
+	#seitung	0		S	adt
+panniko	####				
+	#panek	0		S	sg p
+eest	eest	0		D	
+    	@eest	0		K	
+    	esi	st		S	sg el
+70	70	0		N	?
+kop	kop	0		Y	?
+3	3	0		N	?
+kerriko	####				
+	#kirik	0		S	sg g
+man	man	0		D	
+   	@man	0		K	
+kuulutusse	kuulutus	se		S	adt
+	£kuulutus	0		S	sg g
+eest	eest	0		D	
+    	@eest	0		K	
+    	esi	st		S	sg el
+75	75	0		N	?
+kop	kop	0		Y	?
+Summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+1	1	0		N	?
+rbl	rbl	0		Y	?
+45	45	0		N	?
+kop	kop	0		Y	?
+Opmanil	opman	l		S	sg ad
+Johanson	Johanson	0		H	sg n
+2	2	0		N	?
+Obbese	####				
+	#hobune	0		S	sg g
+söötmisse	söötmine	se		S	adt
+	£söötmine	0		S	sg g
+eest	eest	0		D	
+    	@eest	0		K	
+    	esi	st		S	sg el
+23	23	0		N	?
+Aprilist	####				
+	#aprill	st		S	sg el
+senni	####				
+	#seni	0		K
+kui	kui	0		D	
+   	@kui	0		J	
+23	23	0		N	?
+Maini	Main	0		H	adt
+     	Main	0		H	sg g
+     	Mai	ni		H	sg ter
+     	maa	ini		S	pl ter
+     	@mai	ni		S	sg ter
+     	maini	0		V	o
+     	Main	0		H	sg p
+12	12	0		N	?
+rbl	rbl	0		Y	?
+Sis	####				
+	#siis	0		D
+jäi	jää	i		V	s
+oksjoni	oksjon	0		S	sg g
+rahha	####				
+	#raha	0		S	sg p
+ülle	ülle	0		D	
+	£üle	0		D
+435	435	0		N	?
+rbl	rbl	0		Y	?
+15	15	0		N	?
+kop	kop	0		Y	?
+Se	####				
+	#see	0		P	sg n
+rahha	####				
+	#raha	0		S	sg g
+summa	summ	0		S	adt
+     	summ	0		S	sg g
+     	summ	0		S	sg p
+     	summa	0		S	sg g
+     	@summa	0		S	sg n
+435	435	0		N	?
+rbl	rbl	0		Y	?
+15	15	0		N	?
+kop	kop	0		Y	?
+sai	@saa	i		V	s
+   	sai	0		S	sg n
+Jaan	@Jaan	0		H	sg n
+    	jaan	0		S	sg n
+    	jaan	0		Y	?
+Orrava	####				
+	#Orrav	0		H	sg g
+läbbi	####				
+	#läbi	0		K
+Keiserlikko	####				
+	#keiserlik	0		A	sg g
+Kihhelkonna	####				
+	#kihelkond	0		S	sg g
+kohto	####				
+	#kohus	0		S	sg g
+kätte	@kätte	0		K	
+     	käsi	tte		S	adt
+sadetut	####				
+	#saat	tut		V	tud
+.	.			Z	
