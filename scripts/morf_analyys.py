@@ -22,10 +22,12 @@ from estnltk.taggers import TokensTagger
 from estnltk.taggers import CompoundTokenTagger
 from estnltk.taggers.text_segmentation.whitespace_tokens_tagger import WhiteSpaceTokensTagger
 from estnltk.taggers.text_segmentation.pretokenized_text_compound_tokens_tagger import PretokenizedTextCompoundTokensTagger
+from estnltk.taggers import Retagger
+from estnltk.taggers import UserDictTagger
 import corpus_readers
 # If the missing punctuation analysis should be added to the tsv output
 add_punctuation_analyses = True
-add_sentence_boundaries=True
+add_sentence_boundaries=False
 #If the punctuation analyses should be subtracted from the statistics
 
 subtract_punctuation_analyses = True
@@ -33,7 +35,9 @@ subtract_punctuation_analyses = True
 # If the headers should be added to the tsv files
 add_tsv_headers = False
 #If alphabet corrections should be performed
-correct_alphabet=True
+prenormalize=True
+use_user_dictionary=True
+
 #Finds how many percents C constitutes from A and formats the results as string
 def get_percentage_of_all_str( c, a ):
 	return '{} / {} ({:.2f}%)'.format(c, a, (c*100.0)/a)
@@ -197,15 +201,61 @@ def find_sentence_boundaries_alt(text):
 	for sentence in text['sentences']:
 		results.append((sentence.start, sentence.end))
 	return results
+
+class word_prenormalizer( Retagger ):
+    """A prenormalizer that replaces some letters that were used in the old writing system with the ones used in contemporary system"""
+    conf_param = ['letters_replaced']
+    
+    def __init__(self):
+        # Set input/output layers
+        self.input_layers = ['words']
+        self.output_layer = 'words'
+        self.output_attributes = ['normalized_form', 'is_normalized']
+        # Set other configuration parameters
+        self.letters_replaced = {'W':'V', 'w':'v', 'I':'j'}
+    
+    def _change_layer(self, text, layers, status):
+        # Get changeble layer
+        changeble_layer = layers[self.output_layer]
+        # Add new attribute to the layer
+        changeble_layer.attributes += (self.output_attributes[-1], )
+        # Iterate over words and add new normalizations
+        for span in changeble_layer:
+            # Get current normalized forms of the word
+            current_norm_forms = [a['normalized_form'] for a in span.annotations]
+            if current_norm_forms == [None]:
+                current_norm_forms = [span.text]
+            # Try to replace current normalized forms with forms from the lexicon
+            new_forms = []
+            change_status = []
+            for cur_form in current_norm_forms:
+                for letter in self.letters_replaced:
+                    new_form=cur_form.replace(letter, self.letters_replaced[letter])
+                    if new_form != cur_form:
+                        new_forms.append(new_form)
+                        change_status.append(True)
+                    else:
+                        new_forms.append(cur_form)
+                        change_status.append(False)
+            # Clear existing annotations and add new ones that have 1 extra attribute
+            span.clear_annotations()
+            for form_id, new_form in enumerate( new_forms ):
+                span.add_annotation( Annotation(span, normalized_form=new_form, 
+                                                      is_normalized=change_status[form_id]) )
+
 infile=sys.argv[1]
 outputdir=sys.argv[2]
 if not os.path.exists(outputdir):
 	os.mkdir(outputdir)
+if use_user_dictionary:
+	user_dict_dir=sys.argv[3]
+
 #	 (records, analysed, unamb, unk_title, unk_punct, punct, total)
 def process_location():
 	vm_analyser = VabamorfAnalyzer(guess=False, propername=False)
 	newline_sentence_tokenizer = SentenceTokenizer( base_sentence_tokenizer=LineTokenizer() )
 	tokens_tagger = WhiteSpaceTokensTagger()
+	prenormalizer=word_prenormalizer()
 	global add_punctuation_analyses
 	records=defaultdict(int)
 	analysed=defaultdict(int)
@@ -241,20 +291,30 @@ def process_location():
 		#text.tag_layer(['sentences'])
 		text.tag_layer(['words'])
 		newline_sentence_tokenizer.tag(text)
-		
+		if prenormalize:
+			prenormalizer.retag(text)
 		
 		records[location]+=1
 		#Change the year into decade
 		decade=text.meta['year'][:-1]+"0"
 		#Correct the alphabet
-		if correct_alphabet:
-			for word in text.words:
-				word=alphabet_corrector(word, "W", "V")
-				word=alphabet_corrector(word, "w", "v")
-				word=alphabet_corrector(word, "I", "J")
+		#if correct_alphabet:
+		#	for word in text.words:
+		#		word=alphabet_corrector(word, "W", "V")
+		#		word=alphabet_corrector(word, "w", "v")
+		#		word=alphabet_corrector(word, "I", "J")
 		vm_analyser.tag(text)
 		
 		# Perform the fixes
+		if use_user_dictionary:
+			userdict = UserDictTagger()
+			user_dict_location_file=os.path.join(user_dict_dir, text.meta['location']+".tsv")
+			user_dict_global_file=os.path.join(user_dict_dir, 'global.tsv')
+			if os.path.exists(user_dict_location_file):
+				userdict.add_words_from_csv_file(user_dict_location_file, encoding='utf-8', delimiter='\t')
+			if os.path.exists(user_dict_global_file):
+				userdict.add_words_from_csv_file(user_dict_global_file, encoding='utf-8', delimiter='\t')
+			userdict.retag(text)
 		if add_punctuation_analyses:
 			add_punctuation_analysis( text )
 		# Collect the statistics

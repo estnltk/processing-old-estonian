@@ -167,7 +167,7 @@ def read_from_tsv(path):
 						text.tag_layer(['sentences'])
 						layer_morph=Layer(name='manual_morph',
 							text_object=text,
-							attributes=['root', 'lemma', 'root_tokens', 'ending', 'clitic', 'partofspeech', 'form', 'normalized_form'],
+							attributes=['root', 'lemma', 'root_tokens', 'ending', 'clitic', 'partofspeech', 'form'],
 							parent='words',
 							ambiguous=True)
 						layer_fix=Layer(name='type_of_fix',
@@ -176,9 +176,9 @@ def read_from_tsv(path):
 							parent='manual_morph')
 						
 						for ind, word in enumerate(text.words):
+							layer_fix.add_annotation((word.start, word.end), type_of_fix=analysis['type_of_fix'])
 							for analysis in morph_analysis[ind][1]:
 								layer_morph.add_annotation((word.start, word.end), **analysis)
-								layer_fix.add_annotation((word.start, word.end), type_of_fix=analysis['type_of_fix'])
 						text.add_layer(layer_morph)
 						text.add_layer(layer_fix)
 						text.meta['id']=file.split(".")[0]
