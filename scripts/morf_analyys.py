@@ -249,6 +249,8 @@ if not os.path.exists(outputdir):
 	os.mkdir(outputdir)
 if use_user_dictionary:
 	user_dict_dir=sys.argv[3]
+	userdict = UserDictTagger(validate_vm_categories=False)
+
 
 #	 (records, analysed, unamb, unk_title, unk_punct, punct, total)
 def process_location():
@@ -307,7 +309,6 @@ def process_location():
 		
 		# Perform the fixes
 		if use_user_dictionary:
-			userdict = UserDictTagger()
 			user_dict_location_file=os.path.join(user_dict_dir, text.meta['location']+".tsv")
 			user_dict_global_file=os.path.join(user_dict_dir, 'global.tsv')
 			if os.path.exists(user_dict_location_file):

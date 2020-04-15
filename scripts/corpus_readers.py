@@ -148,6 +148,8 @@ def read_from_tsv(path):
 									analysis['form']=a[5] if len(a) ==6 else ""
 								analysis['root'], analysis['root_tokens'], analysis['lemma'] = _postprocess_root( analysis['root'], analysis['partofspeech'])
 								analysis['type_of_fix']=type_of_fix
+								#If not otherwize specified the normalized_text will remain the same as the word form
+								analysis['normalized_text']=word[0][0]
 								#If the root is empty then there is no analysis available and then let's leave it empty
 								if analysis['root']=="":
 									analysis=[]
