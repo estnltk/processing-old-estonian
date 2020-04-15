@@ -18,6 +18,10 @@ def remove_attribs_from_layer(text, layer_name, new_layer_name, remove_attribs):
 			new_layer.add_annotation((span.start, span.end), **analysis)
 	return new_layer
 
+from morph_eval_utils import get_estnltk_morph_analysis_diff_annotations
+from morph_eval_utils import get_estnltk_morph_analysis_annotation_alignments
+from morph_eval_utils import get_concise_morph_diff_alignment_str
+
 vm_analyzer=VabamorfAnalyzer()
 
 diff_tagger = DiffTagger(layer_a='morph_analysis_flat',
@@ -38,4 +42,16 @@ for text in manually_tagged:
 	#for word in text.manual_morph:
 	#	print (word)
 	print (text.diff_layer.meta)
-	print (text.diff_layer)
+	#print (text.diff_layer)
+
+	# Get differences grouped by word spans
+	ann_diffs_grouped = get_estnltk_morph_analysis_diff_annotations( text, 'morph_analysis_flat','manual_morph_flat', 'diff_layer')
+	# Align annotation differences for each word: find common, modified, missing and extra annotations
+	focus_attributes=['root', 'partofspeech', 'form'] # which attributes will be displayed
+	diff_word_alignments = get_estnltk_morph_analysis_annotation_alignments( ann_diffs_grouped, ['morph_analysis_flat','manual_morph_flat'],focus_attributes=focus_attributes  )
+	# Display results word by word
+	for word_alignment in diff_word_alignments:
+		align_str = get_concise_morph_diff_alignment_str(word_alignment['alignments'], 'morph_analysis_flat','manual_morph_flat',focus_attributes=focus_attributes)
+		print('{!r}'.format( word_alignment['text']) )
+		print(align_str)
+		print()
