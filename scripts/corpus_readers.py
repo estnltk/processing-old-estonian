@@ -6,7 +6,7 @@ import sys
 import re
 from estnltk.taggers.text_segmentation.whitespace_tokens_tagger import WhiteSpaceTokensTagger
 from estnltk.taggers.text_segmentation.pretokenized_text_compound_tokens_tagger import PretokenizedTextCompoundTokensTagger
-
+from estnltk.taggers.text_segmentation.word_tagger import WordTagger
 from estnltk import Layer
 from estnltk.taggers.morph_analysis.morf_common import _postprocess_root
 def read_from_csv(path):
@@ -71,7 +71,6 @@ def read_from_tsv(path):
 						morph_analysis=[]
 						raw_text=""
 						multiword_expressions = []
-						
 						for index, row in enumerate(reader):
 							row[0]=row[0].strip()
 							#Check if the row has correct number of elements
@@ -92,6 +91,8 @@ def read_from_tsv(path):
 									words.append(word)
 								#After appending the word into the words list let's initialize a new word.
 								word=[row]
+						#As the loop terminates before adding the last word into the list, let's do it now
+						words.append(word)
 						for word in words:
 							#Iterate over the analyses and check for manual fixes.
 							#Remove all other analyses if they exist.
@@ -162,22 +163,23 @@ def read_from_tsv(path):
 								multiword_expressions.append(word[0][0])
 						text = Text(raw_text)
 						
-						tokens_tagger.tag(text)
+						tokens_layer=tokens_tagger.make_layer(text)
 						multiword_expressions = [mw.split() for mw in multiword_expressions]
 						compound_tokens_tagger = PretokenizedTextCompoundTokensTagger( multiword_units = multiword_expressions )
-						compound_tokens_tagger.tag(text)
-						text.tag_layer(['sentences'])
+						compound_tokens_layer=compound_tokens_tagger.make_layer(text, layers={'tokens':tokens_layer})
+						word_tagger=WordTagger()
+						words_layer=word_tagger.make_layer(text, layers={'compound_tokens':compound_tokens_layer, 'tokens':tokens_layer})
+						#text.tag_layer(['sentences'])
 						layer_morph=Layer(name='manual_morph',
 							text_object=text,
 							attributes=['root', 'lemma', 'root_tokens', 'ending', 'clitic', 'partofspeech', 'form'],
-							parent='words',
 							ambiguous=True)
 						layer_fix=Layer(name='type_of_fix',
 							text_object=text,
 							attributes=['type_of_fix'],
 							parent='manual_morph')
 						
-						for ind, word in enumerate(text.words):
+						for ind, word in enumerate(words_layer):
 							layer_fix.add_annotation((word.start, word.end), type_of_fix=analysis['type_of_fix'])
 							for analysis in morph_analysis[ind][1]:
 								layer_morph.add_annotation((word.start, word.end), **analysis)
