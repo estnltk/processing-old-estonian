@@ -101,6 +101,7 @@ def read_from_tsv(path):
 								if "¤" in analysis:
 									word[0][1:]=["", "", "", "", ""]
 									word=[word[0]]
+									
 									type_of_fix="No_correct_analysis_available"
 									break
 								elif analysis[1].startswith("@"):
@@ -153,7 +154,9 @@ def read_from_tsv(path):
 								analysis['normalized_text']=word[0][0]
 								#If the root is empty then there is no analysis available and then let's leave it empty
 								if analysis['root']=="":
-									analysis=[]
+									for key in analysis:
+										analysis[key]=None
+									analyses=[analysis]
 								else:
 									analyses.append(analysis)
 							word_tuple=(word[0][0], analyses)
