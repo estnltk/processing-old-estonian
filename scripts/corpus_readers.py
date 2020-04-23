@@ -18,7 +18,7 @@ def read_from_csv(path):
 			soup=BeautifulSoup(row['text'], "html.parser")
 			content=soup.get_text()
 			meta={
-				'location':row['maakond'],
+				'location':row['maakond'].lower(),
 				'year' : row['year'],
 				'id' : row['id']}
 			records.append((content, meta))
@@ -37,7 +37,7 @@ def read_from_xml(path):
 						content=fin.read()
 					soup=BeautifulSoup(content, "lxml")
 					content=soup.find("sisu").getText()
-					location=soup.find("vald").getText()
+					location=soup.find("vald").getText().lower()
 					#Sometimes the date is not written
 					try:
 						date=soup.find("aeg").getText()
@@ -189,6 +189,7 @@ def read_from_tsv(path):
 						text.add_layer(layer_morph)
 						text.add_layer(layer_fix)
 						text.meta['id']=file.split(".")[0]
+						text.meta['location']=root.split("/")[-1].lower()
 						texts.append(text)
 	return texts
 

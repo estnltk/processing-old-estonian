@@ -6,8 +6,13 @@ from estnltk.taggers import DiffTagger
 from estnltk.layer_operations import flatten
 from estnltk.taggers.text_segmentation.whitespace_tokens_tagger import WhiteSpaceTokensTagger
 from estnltk.taggers.morph_analysis.morf_common import _is_empty_annotation
-from morph_tagger import *
+from morph_pipeline import *
 manually_tagged=corpus_readers.read_from_tsv(sys.argv[1])
+if len(sys.argv) > 2:
+	user_dict_dir=sys.argv[2]
+else:
+	user_dict_dir=""
+
 #Function gotten from Siim Orasmaa
 def remove_attribs_from_layer(text, layer_name, new_layer_name, remove_attribs):
 	new_attribs = [a for a in text[layer_name].attributes if a not in remove_attribs] 
@@ -33,12 +38,12 @@ diff_tagger = DiffTagger(layer_a='manual_morph_flat',
 	output_layer='diff_layer',
 	output_attributes=('span_status', 'root', 'lemma', 'root_tokens', 'ending', 'clitic', 'partofspeech', 'form'),
 	span_status_attribute='span_status')
-
+morph_configuration={'add_punctuation_analysis':False, 'tokens_tagger':WhiteSpaceTokensTagger(), 'user_dictionaries':create_user_dict_taggers(user_dict_dir)}
 print ("filename\tprecision\trecall\tf-score\tpercentage of ambiguous words\taverage number of analyses per ambiguous word\ttotal words\ttotal with no punctuation\ttotal number of manually analyzed\tunambiguous\tunambiguous with no punctuation\tambiguous correctly analyzed\tambiguously analyzed total\tambiguous analyses total\tcorrectly analyzed\tincorrectly analyzed\tautomatically analyzed total\tnot automatically analyzed\tnot manually analyzed")
 whole_corpus=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for text in manually_tagged:
 	#print (text.meta['id'])
-	text=morph_tagger(text, {'add_punctuation_analysis':False, 'tokens_tagger':WhiteSpaceTokensTagger()})
+	text=apply_pipeline(text, morph_configuration)
 	morph_analysis_proc=remove_attribs_from_layer(text, 'morph_analysis', 'morph_analysis_processed', ['normalized_text'])
 	manual_morph_proc=remove_attribs_from_layer(text, 'manual_morph', 'manual_morph_processed', ['normalized_text'])
 	text.add_layer(flatten(morph_analysis_proc, 'morph_analysis_flat'))
@@ -74,12 +79,14 @@ for text in manually_tagged:
 	total=0
 	ambiguous_analyses=0
 	for word in text['manual_morph'].spans:
-		if diff_index==len(diff_word_alignments):
-			break
 		total+=1
 		#Check if a word is punctuation
 		if len(word.text) > 0 and not any([c.isalnum() for c in word.text]):
 			punct+=1
+		#Check if the loop is at the end of differences. Analyses after that should be correct and unambiguous
+		if diff_index==len(diff_word_alignments):
+			unambiguous+=1
+			continue
 		
 		alignments=diff_word_alignments[diff_index]
 		#If the word does not exist in the diff layer, then it is unambiguous and analyzed correctly

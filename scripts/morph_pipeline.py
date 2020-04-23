@@ -10,7 +10,7 @@ from estnltk.taggers.text_segmentation.whitespace_tokens_tagger import WhiteSpac
 from estnltk.taggers.text_segmentation.pretokenized_text_compound_tokens_tagger import PretokenizedTextCompoundTokensTagger
 from estnltk.taggers import Retagger
 from estnltk.taggers import UserDictTagger
-
+import os
 # Adds punctuation analysis to the text object.
 # Because punctuation is not analysed when guessing is disabled
 def add_punctuation_analysis ( text ):
@@ -76,9 +76,22 @@ class word_prenormalizer( Retagger ):
             for form_id, new_form in enumerate( new_forms ):
                 span.add_annotation( Annotation(span, normalized_form=new_form, 
                     is_normalized=change_status[form_id]) )
+#Creates the user dict taggers for each location and global usage
+#Currently accepts only files with .tsv extension
+def create_user_dict_taggers(user_dict_dir):
+	user_dictionaries={}
+	if user_dict_dir=="":
+		return None
+	for i in os.listdir(user_dict_dir):
+		if not i.endswith(".tsv"):
+			continue
+		location=i.replace(".tsv", "")
+		user_dictionaries[location]=UserDictTagger(validate_vm_categories=False)
+		user_dictionaries[location].add_words_from_csv_file(os.path.join(user_dict_dir, i), encoding='utf-8', delimiter='\t')
+	return user_dictionaries
 
 
-def morph_tagger(text, conf):
+def apply_pipeline(text, conf):
 	#Initialize the configuration
 	#If alphabet corrections should be performed
 	if 'prenormalize' not in conf:
@@ -86,11 +99,8 @@ def morph_tagger(text, conf):
 	if 'add_punctuation_analyses' not in conf:
 		conf['add_punctuation_analyses'] = True
 	#If user dictionary should be used
-	if 'use_user_dictionary' not in conf:
-		conf['use_user_dictionary']=False
-	if conf['use_user_dictionary']:
-		if 'userdict' not in conf:
-			conf['userdict']=UserDictTagger(validate_vm_categories=False)
+	if 'user_dictionaries' not in conf:
+		conf['user_dictionaries']=None
 	if 'vm_analyzer' not in conf:
 		conf['vm_analyzer'] = VabamorfAnalyzer(guess=False, propername=False)
 	if 'newline_sentence_tokenizer' not in conf:
@@ -99,7 +109,6 @@ def morph_tagger(text, conf):
 		conf['tokens_tagger'] = TokensTagger()
 	if conf['prenormalize'] and 'prenormalizer' not in conf:
 		conf['prenormalizer']=word_prenormalizer()
-	global add_punctuation_analyses
 	#For testing the pretokenized functions
 	txt=text.text
 	multiword_expressions = []
@@ -123,14 +132,11 @@ def morph_tagger(text, conf):
 		conf['prenormalizer'].retag(text)
 	conf['vm_analyzer'].tag(text)
 	# Perform the fixes
-	if conf['use_user_dictionary']:
-		user_dict_location_file=os.path.join(conf['user_dict_path'], text.meta['location']+".tsv")
-		user_dict_global_file=os.path.join(conf['user_dict_dir'], 'global.tsv')
-		if os.path.exists(user_dict_location_file):
-			conf['userdict'].add_words_from_csv_file(user_dict_location_file, encoding='utf-8', delimiter='\t')
-		if os.path.exists(user_dict_global_file):
-			conf['userdict'].add_words_from_csv_file(user_dict_global_file, encoding='utf-8', delimiter='\t')
-		conf['userdict'].retag(text)
+	if conf['user_dictionaries']:
+		if text.meta['location'] in conf['user_dictionaries']:
+			conf['user_dictionaries'][text.meta['location']].retag(text)
+		if 'global' in conf['user_dictionaries']:
+			conf['user_dictionaries']['global'].retag(text)
 	if conf['add_punctuation_analyses']:
 		add_punctuation_analysis( text )
 	return text

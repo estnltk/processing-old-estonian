@@ -12,7 +12,7 @@ from collections import defaultdict
 import csv
 import sys, os, os.path
 import corpus_readers
-from morph_tagger import *
+from morph_pipeline import *
 from estnltk.taggers.morph_analysis.morf_common import _is_empty_annotation
 # If the missing punctuation analysis should be added to the tsv output
 add_punctuation_analyses = True
@@ -154,14 +154,13 @@ else:
 #	 (records, analysed, unamb, unk_title, unk_punct, punct, total)
 def process_location():
 	#Setup the configuration for the morphological analysis
-	"""morph_conf={'vm_analyzer' : VabamorfAnalyzer(guess=False, propername=False),
+	
+	morph_conf={'vm_analyzer' : VabamorfAnalyzer(guess=False, propername=False),
 		'newline_sentence_tokenizer' : SentenceTokenizer( base_sentence_tokenizer=LineTokenizer() ),
 		'tokens_tagger' : TokensTagger(),
 		'prenormalizer' : word_prenormalizer(),
 		'add_punctuation_analyses' : add_punctuation_analyses,
-		'use_user_dictionary' : False}"""
-	if user_dict_dir !="":
-		conf['user_dict_path'] = user_dict_dir
+		'user_dictionaries' : create_user_dict_taggers(user_dict_dir)}
 	records=defaultdict(int)
 	analysed=defaultdict(int)
 	unamb=defaultdict(int)
@@ -179,7 +178,7 @@ def process_location():
 		records[location]+=1
 		#Change the year into decade
 		decade=text.meta['year'][:-1]+"0"
-		text=morph_tagger(text, {})
+		text=apply_pipeline(text, morph_conf)
 		# Collect the statistics
 		for word in text.morph_analysis:
 			is_punct = len(word.text) > 0 and not any([c.isalnum() for c in word.text])
