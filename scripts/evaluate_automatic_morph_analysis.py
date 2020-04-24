@@ -58,7 +58,7 @@ for text in manually_tagged:
 	ann_diffs_grouped = get_estnltk_morph_analysis_diff_annotations( text, 'manual_morph_flat','morph_analysis_flat', 'diff_layer')
 	# Align annotation differences for each word: find common, modified, missing and extra annotations
 	focus_attributes=['root', 'partofspeech', 'form'] # which attributes will be displayed
-	diff_word_alignments = get_estnltk_morph_analysis_annotation_alignments( ann_diffs_grouped, ['morph_analysis_flat','manual_morph_flat'],focus_attributes=focus_attributes  )
+	diff_word_alignments = get_estnltk_morph_analysis_annotation_alignments( ann_diffs_grouped, ['manual_morph_flat','morph_analysis_flat'],focus_attributes=focus_attributes  )
 	# Display results word by word
 	"""
 	for word_alignment in diff_word_alignments:
@@ -83,9 +83,12 @@ for text in manually_tagged:
 		#Check if a word is punctuation
 		if len(word.text) > 0 and not any([c.isalnum() for c in word.text]):
 			punct+=1
-		#Check if the loop is at the end of differences. Analyses after that should be correct and unambiguous
+		#Check if the loop is at the end of differences.
 		if diff_index==len(diff_word_alignments):
-			unambiguous+=1
+			if _is_empty_annotation( word.annotations[0] ):
+				manually_not_analyzed+=1
+			else:
+				unambiguous+=1
 			continue
 		
 		alignments=diff_word_alignments[diff_index]
@@ -110,8 +113,8 @@ for text in manually_tagged:
 		elif 'MISSING' in statuses:
 			not_automatically_analyzed+=1
 		diff_index+=1
-	correctly_analyzed=unambiguous + ambiguous_correct - punct
 	unambiguous_no_punct=unambiguous - punct
+	correctly_analyzed=unambiguous_no_punct + ambiguous_correct
 	total_no_punct=total - punct
 	total_manually_analyzed=total_no_punct - not_manually_analyzed
 	analyzed=total_no_punct - not_automatically_analyzed -not_manually_analyzed
