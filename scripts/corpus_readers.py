@@ -189,7 +189,7 @@ def read_from_tsv(path):
 						text.add_layer(layer_morph)
 						text.add_layer(layer_fix)
 						text.meta['id']=file.split(".")[0]
-						text.meta['location']=root.split("/")[-1].lower()
+						text.meta['location']=root.split(os.sep)[-1].lower()
 						texts.append(text)
 	return texts
 
