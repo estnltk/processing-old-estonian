@@ -49,25 +49,14 @@ for text in manually_tagged:
 	text.add_layer(flatten(morph_analysis_proc, 'morph_analysis_flat'))
 	text.add_layer(flatten(manual_morph_proc, 'manual_morph_flat'))
 	diff_tagger.tag(text)
-	#for word in text.manual_morph:
-	#	print (word)
-	#print ("***", text.meta['id'], text.diff_layer.meta)
-	#print (text.diff_layer)
-
+	
 	# Get differences grouped by word spans
 	ann_diffs_grouped = get_estnltk_morph_analysis_diff_annotations( text, 'manual_morph_flat','morph_analysis_flat', 'diff_layer')
 	# Align annotation differences for each word: find common, modified, missing and extra annotations
 	focus_attributes=['root', 'partofspeech', 'form'] # which attributes will be displayed
 	diff_word_alignments = get_estnltk_morph_analysis_annotation_alignments( ann_diffs_grouped, ['manual_morph_flat','morph_analysis_flat'],focus_attributes=focus_attributes  )
 	# Display results word by word
-	"""
-	for word_alignment in diff_word_alignments:
-		align_str = get_concise_morph_diff_alignment_str(word_alignment['alignments'], 'morph_analysis_flat','manual_morph_flat',focus_attributes=focus_attributes)
-		print('{!r}'.format( word_alignment['text']) )
-		print(align_str)
-		#print (word_alignment)
-	#print()
-	"""
+	
 	diff_index=0
 	unambiguous=0
 	ambiguous_correct=0
@@ -85,33 +74,34 @@ for text in manually_tagged:
 			punct+=1
 		#Check if the loop is at the end of differences.
 		if diff_index==len(diff_word_alignments):
-			if _is_empty_annotation( word.annotations[0] ):
+			if word.annotations[0]['lemma']==None:
 				manually_not_analyzed+=1
 			else:
 				unambiguous+=1
+				#print (word.annotations)
 			continue
 		
 		alignments=diff_word_alignments[diff_index]
 		#If the word does not exist in the diff layer, then it is unambiguous and analyzed correctly
-		if alignments['start'] != word.start and alignments['end'] != word.end and not _is_empty_annotation( word.annotations[0] ):
+		if alignments['start'] != word.start and alignments['end'] != word.end and word.annotations[0]['lemma']!=None:
 			unambiguous+=1
+			#print (word.annotations)
 			continue
-		if _is_empty_annotation( word.annotations[0] ):
+		if word.annotations[0]['lemma']==None:
 			not_manually_analyzed+=1
-		
-		statuses=[]
-		for alignment in alignments['alignments']:
-			statuses.append(alignment['__status'])
-		if len(statuses) > 1:
-			ambiguous_total+=1
-			ambiguous_analyses+=len(statuses)
-
-		if 'COMMON' in statuses:
-			ambiguous_correct += 1
-		elif 'MODIFIED' in statuses:
-			incorrectly_analyzed+=1
-		elif 'MISSING' in statuses:
-			not_automatically_analyzed+=1
+		if word.annotations[0]['lemma']!=None:
+			statuses=[]
+			for alignment in alignments['alignments']:
+				statuses.append(alignment['__status'])
+			if len(statuses) > 1:
+				ambiguous_total+=1
+				ambiguous_analyses+=len(statuses)
+			if 'COMMON' in statuses:
+				ambiguous_correct += 1
+			elif 'MODIFIED' in statuses:
+				incorrectly_analyzed+=1
+			elif 'MISSING' in statuses:
+				not_automatically_analyzed+=1
 		diff_index+=1
 	unambiguous_no_punct=unambiguous - punct
 	correctly_analyzed=unambiguous_no_punct + ambiguous_correct

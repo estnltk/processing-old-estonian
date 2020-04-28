@@ -6,11 +6,16 @@ from estnltk.layer_operations import flatten
 from estnltk.taggers.text_segmentation.whitespace_tokens_tagger import WhiteSpaceTokensTagger
 from estnltk.taggers.morph_analysis.morf_common import _is_empty_annotation
 from morph_pipeline import *
+from estnltk.taggers import VabamorfAnalyzer
+from estnltk import Annotation
 import os
 import csv
 
-manually_tagged=corpus_readers.read_from_tsv(sys.argv[1])
-user_dict_dir=sys.argv[2]
+
+
+manually_tagged=corpus_readers.read_from_tsv(sys.argv[2])
+user_dict_dir=sys.argv[1]
+normalized_words_dir=sys.argv[3]
 if not os.path.exists(user_dict_dir):
 	os.mkdir(user_dict_dir)
 #Function gotten from Siim Orasmaa
@@ -66,6 +71,35 @@ for text in manually_tagged:
 				#print (analysis['manual_morph_flat'])
 	#print()
 	
+#Collect the words with their specified standard counterparts.
+if os.path.exists(normalized_words_dir):
+	vm=VabamorfAnalyzer(guess=False, propername=False)
+	for file in os.listdir(normalized_words_dir):
+		location=file.replace(".srt", "")
+		if location not in dicts:
+			dicts[location]=[]
+		
+		with open(os.path.join(normalized_words_dir, file)) as fin:
+			raw_words=[]
+			normalized_forms=[]
+			for line in fin:	
+				line=line.strip()
+				line=line.split(" ")
+				#The first element of a line is the non-standard word, the other one is the normalized form
+				raw_words.append(line[0])
+				normalized_forms.append(line[1])
+			raw_text=" ".join(raw_words)
+			text=Text(raw_text)
+			text.tag_layer(['sentences'])
+			for index, w in enumerate(text['words']):
+				w.clear_annotations()
+				w.add_annotation( Annotation(w, normalized_form=normalized_forms[index]) )
+			vm.tag(text)
+			for w in text['morph_analysis']:
+				for annotation in w.annotations:
+					annotation['text']=w.text
+					dicts[location].append(annotation)
+
 #Write the dicts into tsv files
 for location in dicts:
 	dict=dicts[location]

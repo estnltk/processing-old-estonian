@@ -99,7 +99,7 @@ def read_from_tsv(path):
 							type_of_fix=""
 							for analysis in word:
 								if "¤" in analysis:
-									word[0][1:]=["", "", "", "", ""]
+									word[0][1:]=[None, None, None, None, None]
 									word=[word[0]]
 									
 									type_of_fix="No_correct_analysis_available"
@@ -122,16 +122,6 @@ def read_from_tsv(path):
 									word[0][1]=word[0][1].strip("#")
 									type_of_fix="correct_analysis_manually_added"
 									break
-								"""
-								elif analysis[1].startswith("###"):
-									word_tuple=(word[0][0], [])
-									
-									morph_analysis.append(word_tuple)
-									raw_text+=word[0][0]+" "
-									if ' ' in word[0][0]:
-										multiword_expressions.append(word[0][0])
-									continue
-							"""
 							analyses=[]
 							for a in word:
 								analysis={}
@@ -148,17 +138,17 @@ def read_from_tsv(path):
 									analysis['clitic']=a[3]
 									analysis['partofspeech']=a[4]
 									analysis['form']=a[5] if len(a) ==6 else ""
-								analysis['root'], analysis['root_tokens'], analysis['lemma'] = _postprocess_root( analysis['root'], analysis['partofspeech'])
+								if analysis['root']!=None:
+									analysis['root'], analysis['root_tokens'], analysis['lemma'] = _postprocess_root( analysis['root'], analysis['partofspeech'])
+								else:
+									analysis['root_tokens']=None
+									analysis['lemma'] =None
 								analysis['type_of_fix']=type_of_fix
 								#If not otherwize specified the normalized_text will remain the same as the word form
 								analysis['normalized_text']=word[0][0]
-								#If the root is empty then there is no analysis available and then let's leave it empty
-								if analysis['root']=="":
-									for key in analysis:
-										analysis[key]=None
-									analyses=[analysis]
-								else:
-									analyses.append(analysis)
+								analyses.append(analysis)
+							#if len(analyses) > 1:
+							#	print (analyses)
 							word_tuple=(word[0][0], analyses)
 							morph_analysis.append(word_tuple)
 							raw_text+=word[0][0]+" "
@@ -208,7 +198,8 @@ def read_corpus(path):
 	percent_displayed=""
 	progress=""
 	for i in records:
-		text=i[0].replace("\n\n", "\n")
+		#text=i[0].replace("\n\n", "\n")
+		text=i[0]
 		#text=text.replace(chr(10), "")
 		#text = os.linesep.join([s for s in text.splitlines() if s])
 		text=Text(text)
