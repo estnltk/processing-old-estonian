@@ -89,6 +89,8 @@ for text in manually_tagged:
 			continue
 		if word.annotations[0]['lemma']==None:
 			not_manually_analyzed+=1
+		# Sanity check: at this point, words should be equal or skipped
+		assert word.text == alignments['text'], '(!) Mismatching words {!r} vs {!r}'.format(word.text, alignments['text'])
 		if word.annotations[0]['lemma']!=None:
 			statuses=[]
 			for alignment in alignments['alignments']:
