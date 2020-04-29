@@ -82,9 +82,12 @@ for text in manually_tagged:
 			continue
 		
 		alignments=diff_word_alignments[diff_index]
-		#If the word does not exist in the diff layer, then it is unambiguous and analyzed correctly
-		if alignments['start'] != word.start and alignments['end'] != word.end and word.annotations[0]['lemma']!=None:
-			unambiguous+=1
+		#If the word does not exist in the diff layer
+		if alignments['start'] != word.start and alignments['end'] != word.end:
+			if word.annotations[0]['lemma']==None:
+				not_manually_analyzed+=1
+			else:
+				unambiguous+=1
 			#print (word.annotations)
 			continue
 		if word.annotations[0]['lemma']==None:
