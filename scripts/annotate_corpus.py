@@ -4,13 +4,18 @@
 #saves the results as .tsv files
 #and outputs the statistics to standard output.
 #The progress of the script is output to stderr
-
+#Author: Gerth Jaanimäe
 from __future__ import unicode_literals, print_function, absolute_import
+import sys
+if len(sys.argv) < 3:
+	sys.stderr.write("Error: You must specify the input corpus and output directory for automatic annotations. Optionally you can also add the directory for user dictionaries.\nUsage: annotate_corpus.py <input_corpus> <output_directory_for_annotated-files> <optional-user_dictionaries>\n")
+	sys.exit(1)
+
 
 from estnltk.text import Text
 from collections import defaultdict
 import csv
-import sys, os, os.path
+import os, os.path
 import corpus_readers
 from morph_pipeline import *
 from estnltk.taggers.morph_analysis.morf_common import _is_empty_annotation
@@ -35,7 +40,7 @@ def write_analysis_tsv_file( text, out_file_name ):
 	sentence_boundaries = None
 	if add_sentence_boundaries:
 		
-		sentence_boundaries = find_sentence_boundaries(text.text)
+		sentence_boundaries = find_sentence_boundaries_alt(text)
 		assert len(sentence_boundaries) > 0
 	with open(out_file_name, 'w', encoding='utf-8', newline='\n') as csvfile:
 		fieldnames = ['word', 'root', 'ending', 'clitic', 'partofspeech', 'form']
@@ -140,7 +145,6 @@ def find_sentence_boundaries_alt(text):
 	for sentence in text['sentences']:
 		results.append((sentence.start, sentence.end))
 	return results
-
 infile=sys.argv[1]
 outputdir=sys.argv[2]
 if not os.path.exists(outputdir):

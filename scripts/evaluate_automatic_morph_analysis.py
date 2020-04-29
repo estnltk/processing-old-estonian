@@ -1,5 +1,12 @@
-import corpus_readers
+#A script for evaluating automatic morphological analysis.
+#Takes the manually tagged corpus and compares it to the automatic morph analysis.
+#Author: Gerth Jaanimäe
 import sys
+if len(sys.argv) < 2:
+	sys.stderr.write("Error: You must specify the directory of the manually tagged files. Optionally you can also specify the directory for the user dictionaries.\nUsage: evaluate_automatic_morph_analysis.py <manually-tagged-files> <optional-user-dictionaries>\n")
+	sys.exit(1)
+
+import corpus_readers
 from estnltk import Layer, Text
 from estnltk.taggers import VabamorfAnalyzer
 from estnltk.taggers import DiffTagger

@@ -1,5 +1,11 @@
-import corpus_readers
+#Makes the user dictionaries from manually annotated corpus and specified words with their normalized forms.
+#author: Gerth Jaanimäe
 import sys
+if len(sys.argv) < 2:
+	sys.stderr.write("Error: You must specify at least the output directory for the user dictionaries and input for the manually annotated files. You can also add the directory containing files with non-standard and normalized forms.\nUsage: make_user_dictionaries.py <output-directory> <input-directory-with-manual-annotations> <optional-normalized-words>\n")
+	sys.exit(1)
+
+import corpus_readers
 from estnltk import Layer, Text
 from estnltk.taggers import DiffTagger
 from estnltk.layer_operations import flatten

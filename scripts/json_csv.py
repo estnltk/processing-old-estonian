@@ -1,9 +1,18 @@
+#!/usr/bin/python3
+#Converts the user dictionaries from json to tsv.
+#Author: Gerth Jaanimäe
 import sys
 import os
 import json
 import csv
+if len(sys.argv) < 3:
+	sys.stderr.write("Error: not enough arguments.\nUsage: json_csv.py <json-input-file> <tsv-output-directory>\n")
+	sys.exit(1)
 inputfile=sys.argv[1]
 outputdir=sys.argv[2]
+if not os.path.exists(outputdir):
+	os.mkdir(outputdir)
+
 with open (inputfile) as fin:
 	user_dict_json=json.loads(fin.read())
 for location in user_dict_json:
