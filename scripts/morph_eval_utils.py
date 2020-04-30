@@ -10,11 +10,29 @@
 #      Siim Orasmaa
 # ===========================================================
 
-from estnltk.text import Text
+from estnltk import Layer, Text
 from estnltk.taggers.standard_taggers.diff_tagger import iterate_diff_conflicts
 from estnltk.taggers.standard_taggers.diff_tagger import iterate_modified
 
 from collections import defaultdict
+
+
+def remove_attribs_from_layer(text, layer_name, new_layer_name, remove_attribs):
+    ''' Rewrites given layer in a way that attributes from the list remove_attribs
+        will be completely removed. Returns the new layer.
+    '''
+    new_attribs = [a for a in text[layer_name].attributes if a not in remove_attribs] 
+    new_layer=Layer(name=new_layer_name,
+        text_object=text,
+        attributes=new_attribs,
+        parent=text[layer_name].parent if text[layer_name].parent else None,
+        ambiguous=text[layer_name].ambiguous)
+    for span in text[layer_name]:
+        for annotation in span.annotations:
+            analysis = { attrib:annotation[attrib] for attrib in new_attribs}
+            new_layer.add_annotation((span.start, span.end), **analysis)
+    return new_layer
+
 
 def get_estnltk_morph_analysis_diff_annotations( text_obj, layer_a, layer_b, diff_layer ):
     ''' Collects differing sets of annotations from EstNLTK's morph_analysis diff_layer. 

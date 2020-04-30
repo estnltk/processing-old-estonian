@@ -24,19 +24,8 @@ user_dict_dir=sys.argv[1]
 normalized_words_dir=sys.argv[3]
 if not os.path.exists(user_dict_dir):
 	os.mkdir(user_dict_dir)
-#Function gotten from Siim Orasmaa
-def remove_attribs_from_layer(text, layer_name, new_layer_name, remove_attribs):
-	new_attribs = [a for a in text[layer_name].attributes if a not in remove_attribs] 
-	new_layer=Layer(name=new_layer_name,
-		text_object=text,
-		attributes=new_attribs,		parent=text[layer_name].parent if text[layer_name].parent else None,
-		ambiguous=text[layer_name].ambiguous)
-	for span in text[layer_name]:
-		for annotation in span.annotations:
-			analysis = { attrib:annotation[attrib] for attrib in new_attribs}
-			new_layer.add_annotation((span.start, span.end), **analysis)
-	return new_layer
 
+from morph_eval_utils import remove_attribs_from_layer
 from morph_eval_utils import get_estnltk_morph_analysis_diff_annotations
 from morph_eval_utils import get_estnltk_morph_analysis_annotation_alignments
 from morph_eval_utils import get_concise_morph_diff_alignment_str
@@ -85,7 +74,7 @@ if os.path.exists(normalized_words_dir):
 		if location not in dicts:
 			dicts[location]=[]
 		
-		with open(os.path.join(normalized_words_dir, file)) as fin:
+		with open(os.path.join(normalized_words_dir, file), 'r', encoding='utf-8') as fin:
 			raw_words=[]
 			normalized_forms=[]
 			for line in fin:	

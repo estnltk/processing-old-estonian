@@ -20,19 +20,7 @@ if len(sys.argv) > 2:
 else:
 	user_dict_dir=""
 
-#Function gotten from Siim Orasmaa
-def remove_attribs_from_layer(text, layer_name, new_layer_name, remove_attribs):
-	new_attribs = [a for a in text[layer_name].attributes if a not in remove_attribs] 
-	new_layer=Layer(name=new_layer_name,
-		text_object=text,
-		attributes=new_attribs,		parent=text[layer_name].parent if text[layer_name].parent else None,
-		ambiguous=text[layer_name].ambiguous)
-	for span in text[layer_name]:
-		for annotation in span.annotations:
-			analysis = { attrib:annotation[attrib] for attrib in new_attribs}
-			new_layer.add_annotation((span.start, span.end), **analysis)
-	return new_layer
-
+from morph_eval_utils import remove_attribs_from_layer
 from morph_eval_utils import get_estnltk_morph_analysis_diff_annotations
 from morph_eval_utils import get_estnltk_morph_analysis_annotation_alignments
 from morph_eval_utils import get_concise_morph_diff_alignment_str
