@@ -16,12 +16,15 @@ from estnltk.taggers import VabamorfAnalyzer
 from estnltk import Annotation
 import os
 import csv
-
+import operator
 
 
 manually_tagged=corpus_readers.read_from_tsv(sys.argv[2])
 user_dict_dir=sys.argv[1]
-normalized_words_dir=sys.argv[3]
+if len(sys.argv) == 4:
+	normalized_words_dir=sys.argv[3]
+else:
+	normalized_words_dir=""
 if not os.path.exists(user_dict_dir):
 	os.mkdir(user_dict_dir)
 
@@ -101,14 +104,12 @@ for location in dicts:
 	outfile=os.path.join(user_dict_dir, location+".tsv")
 	with open(outfile, 'w', encoding='utf-8', newline='\n') as csvfile:
 		fieldnames = ['text', 'root', 'ending', 'clitic', 'partofspeech', 'form']
-		writer = csv.DictWriter(csvfile, delimiter='\t', fieldnames=fieldnames)
-		writer.writeheader() # Write the headers at the beginning
+		writer = csv.writer(csvfile, delimiter='\t')
+		writer.writerow(fieldnames) # Write the headers at the beginning
+		rows=[]
 		for analysis in dict:
-			row={}
-			row['text']=analysis['text']
-			row['root']=analysis['root']
-			row['ending']=analysis['ending']
-			row['clitic']=analysis['clitic']
-			row['partofspeech']=analysis['partofspeech']
-			row['form']=analysis['form']
+			row=[analysis['text'], analysis['root'], analysis['ending'], analysis['clitic'], analysis['partofspeech'], analysis['form']]
+			rows.append(row)
+		sorted_rows = sorted(rows, key=operator.itemgetter(0))
+		for row in sorted_rows:
 			writer.writerow(row)

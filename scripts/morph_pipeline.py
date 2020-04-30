@@ -44,7 +44,7 @@ class word_prenormalizer( Retagger ):
         # Set input/output layers
         self.input_layers = ['words']
         self.output_layer = 'words'
-        self.output_attributes = ['normalized_form', 'is_normalized']
+        self.output_attributes = ['normalized_form', 'is_prenormalized']
         # Set other configuration parameters
         self.letters_replaced = {'W':'V', 'w':'v', 'I':'j'}
     
@@ -75,7 +75,7 @@ class word_prenormalizer( Retagger ):
             span.clear_annotations()
             for form_id, new_form in enumerate( new_forms ):
                 span.add_annotation( Annotation(span, normalized_form=new_form, 
-                    is_normalized=change_status[form_id]) )
+                    is_prenormalized=change_status[form_id]) )
 #Creates the user dict taggers for each location and global usage
 #Currently accepts only files with .tsv extension
 def create_user_dict_taggers(user_dict_dir):
@@ -89,6 +89,47 @@ def create_user_dict_taggers(user_dict_dir):
 		user_dictionaries[location]=UserDictTagger(validate_vm_categories=False)
 		user_dictionaries[location].add_words_from_csv_file(os.path.join(user_dict_dir, i), encoding='utf-8', delimiter='\t')
 	return user_dictionaries
+
+class rule_based_normalizer( Retagger ):
+    """A rule based normalizer that applies the specified normalization rules"""
+    conf_param = ['normalizing_rules']
+    
+    def __init__(self):
+        # Set input/output layers
+        self.input_layers = ['morph_analysis']
+        self.output_layer = 'morph_analysis'
+        # Set other configuration parameters
+        self.normalizing_rules = {'nu$':'nud', 'nd$':'nud', 'bb':'b', 'dd':'d', 'gg':'g'}
+    
+    def _change_layer(self, text, layers, status):
+        # Get changeble layer
+        changeble_layer = layers[self.output_layer]
+        # Add new attribute to the layer
+        changeble_layer.attributes += (self.output_attributes[-1], )
+        # Iterate over words and add new normalizations
+        for span in changeble_layer:
+            # Get current normalized forms of the word
+            current_norm_forms = [a['normalized_form'] for a in span.annotations]
+            if current_norm_forms == [None]:
+                current_norm_forms = [span.text]
+            # Try to replace current normalized forms with forms from the lexicon
+            new_forms = []
+            change_status = []
+            for cur_form in current_norm_forms:
+                for letter in self.letters_replaced:
+                    new_form=cur_form.replace(letter, self.letters_replaced[letter])
+                    if new_form != cur_form:
+                        new_forms.append(new_form)
+                        change_status.append(True)
+                    else:
+                        new_forms.append(cur_form)
+                        change_status.append(False)
+            # Clear existing annotations and add new ones that have 1 extra attribute
+            span.clear_annotations()
+            for form_id, new_form in enumerate( new_forms ):
+                span.add_annotation( Annotation(span, normalized_form=new_form, 
+                    is_normalized=change_status[form_id]) )
+
 
 
 def apply_pipeline(text, conf):
@@ -116,10 +157,6 @@ def apply_pipeline(text, conf):
 	for raw_word in raw_words:
 		if ' ' in raw_word:
 			multiword_expressions.append(raw_token)
-	#text_str = ' '.join(raw_words)
-	#meta=text.meta
-	#text=Text(text_str)
-	#text.meta=meta
 	conf['tokens_tagger'].tag(text)
 	multiword_expressions = [mw.split() for mw in multiword_expressions]
 	compound_tokens_tagger = PretokenizedTextCompoundTokensTagger( multiword_units = multiword_expressions )
@@ -133,10 +170,10 @@ def apply_pipeline(text, conf):
 	conf['vm_analyzer'].tag(text)
 	# Perform the fixes
 	if conf['user_dictionaries']:
-		if text.meta['location'] in conf['user_dictionaries']:
-			conf['user_dictionaries'][text.meta['location']].retag(text)
 		if 'global' in conf['user_dictionaries']:
 			conf['user_dictionaries']['global'].retag(text)
+		if text.meta['location'] in conf['user_dictionaries']:
+			conf['user_dictionaries'][text.meta['location']].retag(text)
 	if conf['add_punctuation_analyses']:
 		add_punctuation_analysis( text )
 	return text
