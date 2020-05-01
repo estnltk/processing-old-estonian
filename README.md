@@ -1,4 +1,12 @@
 # Workflows for processing 19th century communal court minute books
+
+The repository contains scripts and user dictionaries for processing the Estonian texts written mainly in the second half of 19th century.
+As the texts from this period contain a lot of spelling and dialectal variations, tools for analysing contemporary Estonian do not work so well on them.
+The parish court records are the main corpora the scripts are tested on.
+The first corpus consists of the court records which are manually typed by Tõnis türna. It can be obtained from https://bitbucket.org/utDigiHum/materjalid
+
+The second corpus consists of court records entered by the people in the croudsourcing project. It can be obtained from https://bitbucket.org/utDigiHum/ekkd_vallakohtud/
+
 The repository contains following files and directories.
 
 ## Scripts
@@ -74,3 +82,15 @@ Contains functions for making the output of diff_layer more readable and human f
 ###morph_pipeline.py
 
 Contains the functions and default configuration for the morphological analysis pipeline.
+
+## manually_annotated_Türna
+
+The directory consists of manually analyzed and corrected morphological analyses of parish court records from the first corpus (refer to above).
+
+## normalized_wordforms
+
+Contains files with non-standard Estonian wordforms with their normalized counterparts.
+
+## user_dict_Türna
+
+Contains the user dictionaries for analyzing the records from the first corpus (refer to above).
