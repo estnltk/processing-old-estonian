@@ -105,6 +105,8 @@ for text in manually_tagged:
 			if 'COMMON' in statuses:
 				ambiguous_correct += 1
 			elif 'MODIFIED' in statuses:
+				#print ("automatic: ", text['morph_analysis_flat'].spans[word_id])
+				#print ("manual: ", text['manual_morph_flat'].spans[word_id])
 				incorrectly_analyzed+=1
 			elif 'MISSING' in statuses:
 				not_automatically_analyzed+=1
@@ -114,8 +116,16 @@ for text in manually_tagged:
 	total_no_punct=total - punct
 	total_manually_analyzed=total_no_punct - not_manually_analyzed
 	analyzed=total_no_punct - not_automatically_analyzed -not_manually_analyzed
+	analyzed_count=0
+	for index, word in enumerate(text['morph_analysis'].spans):
+		if not (len(word.text) > 0 and not any([c.isalnum() for c in word.text])):
+			if word.annotations[0]['lemma']!=None and text['manual_morph_flat'].spans[index].annotations[0]['lemma']!=None:
+				analyzed_count+=1
+	#print (analyzed_count)
 	# TODO: should the following assertion hold?
+
 	#assert auto_analysis_chk - not_manually_analyzed == analyzed
+	#print (auto_analysis_chk - not_manually_analyzed)
 	precision=correctly_analyzed /analyzed
 	recall=correctly_analyzed/total_manually_analyzed
 	f_score=(2 * precision * recall) / (precision + recall)
