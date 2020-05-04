@@ -3,11 +3,11 @@
 The repository contains scripts and user dictionaries for processing the Estonian texts written mainly in the second half of 19th century.
 As the texts from this period contain a lot of spelling and dialectal variations, tools for analysing contemporary Estonian do not work so well on them.
 The parish court records are the main corpora the scripts are tested on.
-The first corpus consists of the court records which are manually typed by Tõnis türna. It can be obtained from https://bitbucket.org/utDigiHum/materjalid
+The first corpus consists of the court records which are manually typed by Tõnis türna. It can be obtained from https://bitbucket.org/utDigiHum/vallakohtuprotokollid/ 
 
 The second corpus consists of court records entered by the people in the croudsourcing project. It can be obtained from https://bitbucket.org/utDigiHum/ekkd_vallakohtud/
 
-The repository contains following files and directories.
+The current repository contains the following files and directories:
 
 ## Scripts
 
@@ -75,11 +75,11 @@ mõtsan metsas
 
 Usage: make_user_dictionaries.py <output-directory> <input-directory-with-manual-annotations> <optional-normalized-words>
 
-###morph_eval_utils.py
+### morph_eval_utils.py
 
 Contains functions for making the output of diff_layer more readable and human friendly.
 
-###morph_pipeline.py
+### morph_pipeline.py
 
 Contains the functions and default configuration for the morphological analysis pipeline.
 
