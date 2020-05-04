@@ -3,7 +3,7 @@
 The repository contains scripts and user dictionaries for processing the Estonian texts written mainly in the second half of 19th century.
 As the texts from this period contain a lot of spelling and dialectal variations, tools for analysing contemporary Estonian do not work so well on them.
 The parish court records are the main corpora the scripts are tested on.
-The first corpus consists of the court records which are manually typed by Tõnis türna. It can be obtained from https://bitbucket.org/utDigiHum/vallakohtuprotokollid/ 
+The first corpus consists of the court records which are manually typed by Tõnis Türna. It can be obtained from https://bitbucket.org/utDigiHum/vallakohtuprotokollid/ 
 
 The second corpus consists of court records entered by the people in the croudsourcing project. It can be obtained from https://bitbucket.org/utDigiHum/ekkd_vallakohtud/
 

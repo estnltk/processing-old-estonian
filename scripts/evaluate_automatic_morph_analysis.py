@@ -62,7 +62,7 @@ for text in manually_tagged:
 	punct=0
 	total=0
 	ambiguous_analyses=0
-	for word in text['manual_morph'].spans:
+	for word in text['manual_morph_flat'].spans:
 		total+=1
 		#Check if a word is punctuation
 		if len(word.text) > 0 and not any([c.isalnum() for c in word.text]):
@@ -70,7 +70,7 @@ for text in manually_tagged:
 		#Check if the loop is at the end of differences.
 		if diff_index==len(diff_word_alignments):
 			if word.annotations[0]['lemma']==None:
-				manually_not_analyzed+=1
+				not_manually_analyzed+=1
 			else:
 				unambiguous+=1
 				#print (word.annotations)
