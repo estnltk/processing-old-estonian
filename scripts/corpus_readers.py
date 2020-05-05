@@ -98,7 +98,9 @@ def read_from_tsv(path):
 							#Remove all other analyses if they exist.
 							type_of_fix=""
 							for analysis in word:
-								if "¤" in analysis:
+								#As it may be sometimes necessary to look at the whole line, join the elements of a row back together.
+								line="\t".join(analysis)
+								if "¤" in line:
 									word[0][1:]=[None, None, None, None, None]
 									word=[word[0]]
 									
