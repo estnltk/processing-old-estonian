@@ -62,17 +62,11 @@ for text in manually_tagged:
 	punct=0
 	total=0
 	ambiguous_analyses=0
-	auto_analysis_chk=0
 	for word_id, word in enumerate( text['manual_morph_flat'].spans ):
 		total+=1
 		#Check if a word is punctuation
 		if len(word.text) > 0 and not any([c.isalnum() for c in word.text]):
 			punct+=1
-		auto_analysis = text['morph_analysis_flat'].spans[word_id]
-		if auto_analysis.annotations[0]['lemma'] != None:
-			# Check: count separately auto analyses that are not punctuation
-			if not (len(word.text) > 0 and not any([c.isalnum() for c in word.text])):
-				auto_analysis_chk += 1
 		#Check if the loop is at the end of differences.
 		if diff_index==len(diff_word_alignments):
 			if word.annotations[0]['lemma']==None:
@@ -116,16 +110,14 @@ for text in manually_tagged:
 	total_no_punct=total - punct
 	total_manually_analyzed=total_no_punct - not_manually_analyzed
 	analyzed=total_no_punct - not_automatically_analyzed -not_manually_analyzed
+	# Check: count auto analysed also separately
 	analyzed_count=0
 	for index, word in enumerate(text['morph_analysis'].spans):
 		if not (len(word.text) > 0 and not any([c.isalnum() for c in word.text])):
 			if word.annotations[0]['lemma']!=None and text['manual_morph_flat'].spans[index].annotations[0]['lemma']!=None:
 				analyzed_count+=1
-	#print (analyzed_count)
-	# TODO: should the following assertion hold?
-
-	#assert auto_analysis_chk - not_manually_analyzed == analyzed
-	#print (auto_analysis_chk - not_manually_analyzed)
+	#print (analyzed_count, analyzed)
+	assert 0 <= analyzed_count - analyzed <= 2  # TODO: resolve this anomaly in future
 	precision=correctly_analyzed /analyzed
 	recall=correctly_analyzed/total_manually_analyzed
 	f_score=(2 * precision * recall) / (precision + recall)
