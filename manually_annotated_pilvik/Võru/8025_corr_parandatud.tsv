@@ -1,0 +1,531 @@
+Selsammal	####	####				
+         	#selsamal	seesama	l		P	sg ad
+üllewan	####	####				
+       	#üleval	ülevan	0		D	
+nimmitetu	####	####				
+         	#nimetatud	nimeta	tu		V	tud
+paiwal	####	####				
+      	#päeval	päev	l		S	sg ad
+,	,	,			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+üllewan	####	####				
+       	#üleval	ülevan	0		D	
+nimmittetu	####	####				
+          	#nimetatud	nimeta	tu		V	tud
+kohtomeeste	####	####				
+           	#kohtumeeste	kohtu_mees	te		S	pl g
+man	man	man	0		D	
+   	@man	man	0		K	
+ollen	####	####				
+     	#olles	ole	en		V	des
+tulli	tull	tull	0		S	adt
+     	tull	tull	0		S	sg g
+     	tull	tull	0		S	sg p
+     	@tuli	tule	i		V	s
+     	tuli	tuli	0		S	sg n
+kaibussega	####	####				
+          	#kaebusega	kaebus	ga		S	sg kom
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+Juhhan	####	####				
+      	#Juhan	Juhhan	0		H	sg n
+Pepernik	####	####				
+        	#Pepernik	Pepernik	0		H	sg n
+ette	esi	esi	tte		S	adt
+    	@ette	ette	0		D	
+    	ette	ette	0		K	
+,	,	,			Z	
+et	et	et	0		J	
+17nel	####	####				
+     	#17ndal	17=s	l		O	sg ad
+Decembril	####	####				
+         	#detsembril	detsember	l		S	sg ad
+öddango	####	####				
+       	#õhtul	õdak	0		S	sg g
+,	,	,			Z	
+om	####	####				
+  	#on	ole	0		V	b
+üts	####	####				
+   	üks	üks	0		N	sg n
+   	#üks	üks	0		P	sg n
+mees	@mees	mees	0		S	sg n
+    	mesi	mesi	s		S	sg in
+kedda	####	####				
+     	#keda	kes	da		P	sg p
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+mitte	mitte	mitte	0		D	
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+olle	####	####				
+    	#ole	ole	0		V	o
+tunnu	####	####				
+     	#tundnud	tund	nu		V	nud
+,	,	,			Z	
+moisa	####	####				
+     	#mõisa	mõis	0		S	sg g
+köki	####	####				
+    	#kööki	köök	0		S	adt
+tulnu	tulnu	tulnu	0		S	sg g
+     	tulnu	tulnu	0		S	sg n
+     	£tulnud	tule	nu		V	nud
+,	,	,			Z	
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+temmalt	####	####				
+       	#temalt	tema	lt		P	sg abl
+küssinu	####	####				
+       	#küsinud	küsi	nu		V	nud
+kes	kes	kes	0		P	pl n
+   	@kes	kes	0		P	sg n
+ta	tema	tema	0		P	sg g
+  	@ta	tema	0		P	sg n
+olles	ole	ole	es		V	des
+     	£oleks	ole	s		V	ks
+nink	####	####				
+    	#ning	ning	0		J	
+mes	####	####				
+   	mis	mis	0		P	pl n
+   	#mis	mis	0		P	sg n
+tal	tal	tema	l		P	sg ad
+ütlemist	ütlemist	ütlemine	t		S	sg p
+om	####	####				
+  	#on	ole	0		V	b
+,	,	,			Z	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+wastus	vastus	vastus	0		S	sg n
+olnu	olnu	olnu	0		S	sg g
+    	olnu	olnu	0		S	sg n
+    	@olnud	ole	nu		V	nud
+,	,	,			Z	
+et	et	et	0		J	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+om	####	####				
+  	#on	ole	0		V	b
+wahhimees	####	####				
+         	#vahimees	vahi_mees	0		S	sg n
+,	,	,			Z	
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+ütlenu	####	####				
+      	#ütelnud	ütle	nu		V	nud
+henda	####	####				
+     	#enda	ise	0		P	sg g
+wahhimeest	####	####				
+          	#vahimeest	vahi_mees	t		S	sg p
+tundwa	tundev	tundev	0		A	sg g
+       	£tundvat	tund	va		V	vat
+nink	####	####				
+    	#ning	ning	0		J	
+üttelnu	####	####				
+       	#ütelnud	ütle	nu		V	nud
+tälle	####	####				
+     	#talle	tema	le		P	sg all
+;	;	;			Z	
+""""	""""	""""			Z	
+sinna	sinna	sinna	0		D	
+     	£sina	sina	0		P	sg n
+wahhimees	####	####				
+         	#vahimees	vahi_mees	0		S	sg n
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+olle	####	####				
+    	#ole	ole	0		V	o
+""""	""""	""""			Z	
+!	!	!			Z	
+Sepäle	####	####				
+      	#seepeale	seepeale	0		D	
+om	####	####				
+  	#on	ole	0		V	b
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+wälja	väli	väli	0		S	adt
+     	väli	väli	0		S	sg g
+     	väli	väli	0		S	sg p
+     	@välja	välja	0		D	
+     	välja	välja	0		V	o
+     	välja	väli	0		S	adt
+     	välja	väli	0		S	sg g
+     	välja	väli	0		S	sg p
+lännu	####	####				
+     	läinud	mine	nu		V	nud
+     	#läinud	mine	nnu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+lännu	####	####				
+     	läinud	mine	nu		V	nud
+     	#läinud	mine	nnu		V	nud
+tälle	####	####				
+     	#talle	tema	le		P	sg all
+taggast	####	####				
+       	#tagant	tagast	0		D	
+perra	####	####				
+     	#perra	perra	0		D	
+     	perra	perra	0		K	
+kaema	kaema	kae	ma		V	ma
+;	;	;			Z	
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+om	####	####				
+  	#on	ole	0		V	b
+sääl	####	####				
+    	#seal	seal	0		D	
+üts	####	####				
+   	üks	üks	0		N	sg n
+   	#üks	üks	0		P	sg n
+mees	@mees	mees	0		S	sg n
+    	mesi	mesi	s		S	sg in
+jooskma	####	####				
+       	#jooksma	jooks	ma		V	ma
+nakkanu	####	####				
+       	#nakanud	nakka	nu		V	nud
+tarre	tare	tare	0		S	adt
+     	tarre	tarre	0		S	sg n
+     	£tare	tare	0		S	sg g
+nukka	nukk	nukk	0		S	adt
+     	nukk	nukk	0		S	sg p
+     	£nurga	nukk	0		S	sg g
+mant	mant	mant	0		D	
+    	@mant	mant	0		K	
+    	mant	mant	0		S	sg n
+,	,	,			Z	
+kus	kus	kus	0		D	
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+juttu	jutt	jutt	0		S	adt
+     	jutt	jutt	0		S	sg p
+     	£jutu	jutt	0		S	sg g
+hölli	####	####				
+     	¤					
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+tahtnu	taht=nu	taht=nu	0		S	sg g
+      	taht=nu	taht=nu	0		S	sg n
+      	@tahtnud	taht	nu		V	nud
+kaema	kaema	kae	ma		V	ma
+minna	minna	mine	a		V	da
+,	,	,			Z	
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+tolle	toll	toll	e		S	pl p
+     	@tolle	too	0		P	sg g
+mehhele	####	####				
+       	#mehele	mees	le		S	sg all
+perra	####	####				
+     	#perra	perra	0		D	
+     	perra	perra	0		K	
+joosknu	####	####				
+       	#jooksnud	jooks	nu		V	nud
+.	.	.			Z	
+Ni	####	####				
+  	#nii	nii	0		D	
+pea	@pea	pea	0		D	
+   	pea	pea	0		S	sg g
+   	pea	pea	0		S	sg n
+   	pida	pida	0		V	o
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+om	####	####				
+  	#on	ole	0		V	b
+nännu	####	####				
+     	näinud	näge	nu		V	nud
+     	#näinud	näge	nnu		V	nud
+kubbia	####	####				
+      	#kubjast	kubjas	0		S	sg p
+henda	####	####				
+     	#enda	ise	0		P	sg g
+perran	####	####				
+      	#perra	perra	0		K	
+jooskma	####	####				
+       	#jooksma	jooks	ma		V	ma
+,	,	,			Z	
+om	####	####				
+  	#on	ole	0		V	b
+ta	tema	tema	0		P	sg g
+  	@ta	tema	0		P	sg n
+henda	####	####				
+     	#end	ise	0		P	sg p
+ümbre	####	####				
+     	#ümber	ümber	0		D	
+käändnu	####	####				
+       	#käänanud	kääna	nu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+kubbial	####	####				
+       	#kubjal	kubjas	l		S	sg ad
+töise	töine	töine	0		A	sg g
+     	£teise	teine	0		P	sg g
+käega	käega	käsi	ga		S	sg kom
+kalarättist	####	####				
+           	#kaelarätist	kaela_rätt	st		S	sg el
+kinni	kinni	kinni	0		D	
+wötnu	####	####				
+     	#võtnud	võt	nu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+töise	töine	töine	0		A	sg g
+     	£teise	teine	0		P	sg g
+käe	käe	käsi	0		S	sg g
+supäle	####	####				
+      	#suu_peale	suu_peale	0		K	
+pannu	pan=nu	pan=nu	0		S	sg g
+     	pan=nu	pan=nu	0		S	sg n
+     	@pannud	pane	nu		V	nud
+,	,	,			Z	
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+henda	####	####				
+     	enda	ise	0		P	sg g
+     	#end	ise	0		P	sg p
+walla	vald	vald	0		S	sg g
+     	@valla	valla	0		D	
+     	valla	vald	0		S	sg g
+tömmanu	####	####				
+       	#tõmmanud	tõmba	nu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+pakku	pakk	pakk	0		S	adt
+     	pakk	pakk	0		S	sg p
+     	£pakku	pagu	0		S	adt
+joosknu	####	####				
+       	#jooksnud	jooks	nu		V	nud
+.	.	.			Z	
+Nüüd	nüüd	nüüd	0		D	
+om	####	####				
+  	#on	ole	0		V	b
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+tarre	@tarre	tare	0		S	adt
+     	tarre	tarre	0		S	sg n
+lännu	####	####				
+     	läinud	mine	nu		V	nud
+     	#läinud	mine	nnu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+wanna	####	####				
+     	vana	vana	0		A	sg n
+     	#vana	vana	0		A	sg g
+     	vana	vana	0		A	sg p
+     	vana	vana	0		S	sg n
+     	vana	vana	0		S	sg g
+     	vana	vana	0		S	sg p
+kubbia	####	####				
+      	#kubja	kubjas	0		S	sg g
+Jacob	Jakob	Jakob	0		H	sg n
+Drees	####	####				
+     	#Drees	Drees	0		H	sg n
+ulles	####	####				
+     	#üles	üles	0		D	
+ärratanu	####	####				
+        	#äratanud	ärata	nu		V	nud
+,	,	,			Z	
+to	####	####				
+  	#too	too	0		P	sg n
+om	####	####				
+  	#on	ole	0		V	b
+henda	####	####				
+     	enda	ise	0		P	sg g
+     	#end	ise	0		P	sg p
+röiwide	####	####				
+       	#rõivastesse	rõivas	ide		S	pl ill
+pannu	pan=nu	pan=nu	0		S	sg g
+     	pan=nu	pan=nu	0		S	sg n
+     	@pannud	pane	nu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+Tischleri	####	####				
+         	#tisleri	tisler	0		S	sg g
+perra	####	####				
+     	perra	perra	0		D	
+     	#perra	perra	0		K	
+lännu	####	####				
+     	läinud	mine	nu		V	nud
+     	#läinud	mine	nnu		V	nud	
+,	,	,			Z	
+kes	kes	kes	0		P	pl n
+   	@kes	kes	0		P	sg n
+mäelt	mäelt	mägi	lt		S	sg abl
+tullen	####	####				
+      	#tulles	tule	en		V	des
+nida	####	####				
+    	#nõnda	nõnda	0		D	
+läwwe	####	####				
+     	#läve	lävi	0		S	sg g
+een	####	####				
+   	#ees	ees	0		K	
+   	ees	ees	0		D	
+Karl	Karl	Karl	0		H	sg n
+Jereti	####	####				
+      	#Jereti	Jeret	0		H	sg g
+,	,	,			Z	
+kes	kes	kes	0		P	pl n
+   	@kes	kes	0		P	sg n
+tare	@tare	tare	0		S	sg g
+    	tare	tare	0		S	sg n
+poolt	poolt	poolt	0		D	
+     	@poolt	poolt	0		K	
+     	pool	pool	t		N	sg p
+     	pool	pool	t		S	sg p
+winakoa	####	####				
+       	#viinakoja	viina_koda	0		S	sg g
+pole	ole	ole	0		V	neg o
+    	£poole	poole	0		K	
+om	####	####				
+  	#on	ole	0		V	b
+joosknu	####	####				
+       	#jooksnud	jooks	nu		V	nud
+,	,	,			Z	
+kinni	kinni	kinni	0		D	
+wötnu	####	####				
+     	#võtnud	võt	nu		V	nud
+,	,	,			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+ommawa	####	####				
+      	#on	ole	wa		V	vad
+Tischler	####	####				
+        	#tisler	tisler	0		S	sg n
+wanna	####	####				
+     	vana	vana	0		A	sg n
+     	#vana	vana	0		A	sg g
+     	vana	vana	0		A	sg p
+     	vana	vana	0		S	sg n
+     	vana	vana	0		S	sg g
+     	vana	vana	0		S	sg p
+kubbiaga	####	####				
+        	#kubjaga	kubjas	ga		S	sg kom
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+kinni	kinni	kinni	0		D	
+pannuwa	####	####				
+        	#pannud	pane	nuva		V	nuvad
+.	.	.			Z	
+Karl	Karl	Karl	0		H	sg n
+Jeret	####	####				
+     	#Jeret	Jeret	0		H	sg n
+selletas	####	####				
+        	#seletas	seleta	s		V	s
+et	et	et	0		J	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+kül	####	####				
+   	#küll	küll	0		D	
+om	####	####				
+  	#on	ole	0		V	b
+joosknu	####	####				
+       	#jooksnud	jooks	nu		V	nud
+,	,	,			Z	
+ruttaten	####	####				
+        	#rutates	rutta	ten		V	des
+et	et	et	0		J	
+temmal	####	####				
+      	#temal	tema	l		P	sg ad
+om	####	####				
+  	#on	ole	0		V	b
+weel	@veel	veel	0		D	
+    	vesi	vesi	l		S	sg ad
+    	veel	vesi	l		S	sg ad
+rehhe	####	####				
+     	#rehe	rehe	0		S	sg g
+man	man	man	0		D	
+   	@man	man	0		K	
+tööd	töö	töö	d		S	pl n
+    	@tööd	töö	d		S	sg p
+olnu	olnu	olnu	0		S	sg g
+    	olnu	olnu	0		S	sg n
+    	@olnud	ole	nu		V	nud
+,	,	,			Z	
+ent	ent	ent	0		J	
+Tischler	####	####				
+        	#tisler	tisler	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+taggasi	####	####				
+       	#tagasi	tagasi	0		D	
+       	tagasi	tagasi	0		K	
+tonu	####	####				
+    	#toonud	too	nu		V	nud
+ja	ja	ja	0		J	
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+Jakob	Jakob	Jakob	0		H	sg n
+Drees	####	####				
+     	#Drees	Drees	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+ka	ka	ka	0		D	
+sinna	sinna	sinna	0		D	
+mannu	####	####				
+     	#manu	manu	0		D	
+tulnu	tulnu	tulnu	0		S	sg g
+     	tulnu	tulnu	0		S	sg n
+     	£tulnud	tule	nu		V	nud
+,	,	,			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+ommawa	####	####				
+      	#on	ole	wa		V	vad
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+köki	####	####				
+    	#kööki	köök	0		S	adt
+kinni	kinni	kinni	0		D	
+pannuwa	####	####				
+       	#pannud	pane	nuva		V	nuvad
+kos	####	####				
+   	#kus	kus	0		D	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+hommungo	####	####				
+        	#hommiku	hommong	0		S	sg g
+kella	kell	kell	0		S	adt
+     	@kella	kell	0		S	sg g
+     	kell	kell	0		S	sg p
+     	kella	kella	0		V	o
+3ni	3ni	3	ni		N	sg ter
+kinni	kinni	kinni	0		D	
+olnu	olnu	olnu	0		S	sg g
+    	olnu	olnu	0		S	sg n
+    	@olnud	ole	nu		V	nud
+,	,	,			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+kubbias	####	####				
+       	#kubjas	kubjas	0		S	sg n
+Juhhan	####	####				
+      	#Juhan	Juhhan	0		H	sg n
+Pepernik	####	####				
+        	#Pepernik	Pepernik	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+temma	####	####				
+     	#tema	tema	0		P	sg g
+     	tema	tema	0		P	sg n
+kübbara	####	####				
+       	#kübara	kübar	0		S	sg g
+arrawötnu	####	####				
+         	#ära_võtnud	ära_võt	nu		V	nud
+.	.	.			Z	
