@@ -1,0 +1,642 @@
+Tulli	tull	tull	0		S	adt
+     	tull	tull	0		S	sg g
+     	tull	tull	0		S	sg p
+     	@tuli	tule	i		V	s
+     	tuli	tuli	0		S	sg n
+kaibussega	####	####				
+          	#kaebusega	kaebus	ga		S	sg kom
+moisawallitsus	####	####				
+              	#mõisavalitsus	mõisa_valitsus	0		S	sg n
+ette	esi	esi	tte		S	adt
+    	@ette	ette	0		D	
+    	ette	ette	0		K	
+wargusse	vargus	vargus	se		S	adt
+        	£varguse	vargus	0		S	sg g
+perrast	####	####				
+       	#pärast	pärast	0		K	
+       	pärast	pärast	0		D	
+,	,	,			Z	
+et	et	et	0		J	
+soldat	soldat	soldat	0		S	sg n
+Karl	Karl	Karl	0		H	sg n
+Zirk	####	####				
+    	#Tsirk	Zirk	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+moisa	####	####				
+     	#mõisa	mõis	0		S	sg g
+sawwikoa	####	####				
+        	#savikoja	savi_koda	0		S	sg g
+mant	mant	mant	0		D	
+    	@mant	mant	0		K	
+    	mant	mant	0		S	sg n
+sawwi	savi	savi	0		S	adt
+     	£savi	savi	0		S	sg g
+kiwwisid	####	####				
+        	#kivisid	kivi	sid		S	pl p
+warrastanu	varrasta=nu	varrasta=nu	0		S	sg g
+          	varrasta=nu	varrasta=nu	0		S	sg n
+          	£varastanud	varasta	nu		V	nud
+.	.	.			Z	
+-	-	-			Z	
+Eddimalt	####	####				
+        	#esmalt	edimalt	0		D	
+om	####	####				
+  	#on	ole	0		V	b
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+een	####	####				
+   	ees	ees	0		K	
+   	ees	ees	0		D	
+   	#enne	enne	0		K	
+õddakut	####	####				
+       	#õhtut	õdak	t		S	sg p
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+löuna	####	####				
+     	#lõunat	lõuna	0		S	sg p
+hobbesega	####	####				
+         	#hobusega	hobune	ga		S	sg kom
+sawwi	savi	savi	0		S	adt
+     	£savi	savi	0		S	sg g
+koa	####	####				
+   	#koja	koda	0		S	sg g
+mannu	####	####				
+     	#manu	manu	0		K	
+lännu	####	####				
+     	läinud	mine	nu		V	nud
+     	#läinud	mine	nnu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+nakkanu	####	####				
+       	#nakanud	nakka	nu		V	nud
+kiwwisid	####	####				
+        	#kivisid	kivi	sid		S	pl p
+päle	####	####				
+    	peale	peale	0		K	
+    	#peale	peale	0		D	
+pannema	pann_ema	pann_ema	0		S	sg g
+       	pann_ema	pann_ema	0		S	sg n
+       	pann_ema	pann_ema	0		S	sg p
+       	£panema	pane	ma		V	ma
+;	;	;			Z	
+(	(	(			Z	
+wennelanne	####	####				
+          	#venelane	venelane	0		S	sg n
+)	)	)			Z	
+kiwwiteggija	####	####				
+            	#kivitegija	kivi_tegija	0		S	sg n
+Philip	Philip	Philip	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+temma	####	####				
+     	#tema	tema	0		P	sg g
+     	tema	tema	0		P	sg n
+käest	@käest	käest	0		K	
+     	käsi	käsi	st		S	sg el
+küssinu	####	####				
+       	#küsinud	küsi	nu		V	nud
+kus	kus	kus	0		D	
+ta	tema	tema	0		P	sg g
+  	@ta	tema	0		P	sg n
+neid	neid	neid	0		S	sg n
+    	@neid	see	d		P	pl p
+    	tema	tema	d		P	pl p
+kiwwisid	####	####				
+        	#kivisid	kivi	sid		S	pl p
+wiip	####	####				
+    	#viib	vii	p		V	b
+?	?	?			Z	
+-	-	-			Z	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+üttelnu	####	####				
+       	#ütelnud	ütle	nu		V	nud
+:	:	:			Z	
+""""	""""	""""			Z	
+moisa	####	####				
+     	mõisa	mõis	0		S	sg g
+     	#mõisa	mõis	0		S	adt
+""""	""""	""""			Z	
+!	!	!			Z	
+ent	ent	ent	0		J	
+moisa-wallitsus	####	####				
+               	#mõisavalitsus	mõisa_valitsus	0		S	sg n
+es	es	es			H	?
+  	@ei	ei	s		V	neg s
+olle	####	####				
+    	#ole	ole	0		V	o
+mitte	mitte	mitte	0		D	
+koggoni	####	####				
+       	#koguni	koguni	0		D	
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+kiwwide	####	####				
+       	#kivide	kivi	de		S	pl g
+perra	####	####				
+     	perra	perra	0		D	
+     	#perra	perra	0		K	
+saatnu	saat=nu	saat=nu	0		S	sg g
+      	saat=nu	saat=nu	0		S	sg n
+      	@saatnud	saat	nu		V	nud
+.	.	.			Z	
+-	-	-			Z	
+Töistkorda	####	####				
+          	#teist_korda	teine_kord	0		S	sg p
+om	####	####				
+  	#on	ole	0		V	b
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+keskööse	kesk_öös	kesk_öös	e		S	pl p
+        	£keskööl	kesk_öö	0		S	sg g
+jälle	jälle	jälle	0		D	
+tulnu	tulnu	tulnu	0		S	sg g
+     	tulnu	tulnu	0		S	sg n
+     	£tulnud	tule	nu		V	nud
+:	:	:			Z	
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+om	####	####				
+  	#on	ole	0		V	b
+wennelanne	####	####				
+          	#venelane	venelane	0		S	sg n
+Philip	Philip	Philip	0		H	sg n
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+kinni	kinni	kinni	0		D	
+wötnu	####	####				
+     	#võtnud	võt	nu		V	nud
+.	.	.			Z	
+Ent	ent	ent	0		J	
+soldat	soldat	soldat	0		S	sg n
+Karl	Karl	Karl	0		H	sg n
+Zirk	####	####				
+    	#Tsirk	Zirk	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+hobbese	####	####				
+       	#hobuse	hobune	0		S	sg g
+mant	mant	mant	0		D	
+    	@mant	mant	0		K	
+    	mant	mant	0		S	sg n
+ärrawissanu	####	####				
+           	#ära_visanud	ära_viska	nu		V	nud
+.	.	.			Z	
+Karl	Karl	Karl	0		H	sg n
+Zirkul	####	####				
+      	#Tsirgul	Zirk	0		H	sg ad
+om	####	####				
+  	#on	ole	0		V	b
+Otsa	ots	ots	0		S	adt
+    	ots	ots	0		S	sg g
+    	ots	ots	0		S	sg p
+    	otsa	otsa	0		D	
+    	otsa	otsa	0		K	
+    	otsa	otsa	0		V	o
+    	£Otsa	Otsa	0		H	sg g
+perrenaise	####	####				
+          	#perenaise	pere_naine	0		S	sg g
+Leno	####	####				
+    	#Leena	Leno	0		H	sg n
+Trooni	troon	troon	0		S	adt
+      	troon	troon	0		S	sg g
+      	troon	troon	0		S	sg p
+      	trooni	trooni	0		V	o
+      	£Trooni	Troon	0		H	sg g
+hobbene	####	####				
+       	#hobune	hobune	0		S	sg g
+olnu	olnu	olnu	0		S	sg g
+    	olnu	olnu	0		S	sg n
+    	@olnud	ole	nu		V	nud
+kellega	kes	kes	ga		P	pl kom
+       	@kellega	kes	ga		P	sg kom
+temma	####	####				
+     	#tema	tema	0		P	sg g
+     	tema	tema	0		P	sg n
+neid	neid	neid	0		S	sg n
+    	@neid	see	d		P	pl p
+    	tema	tema	d		P	pl p
+kiwwisid	####	####				
+        	#kivisid	kivi	sid		S	pl p
+om	####	####				
+  	#on	ole	0		V	b
+weddanu	####	####				
+       	#vedanud	veda	nu		V	nud
+,	,	,			Z	
+ent	ent	ent	0		J	
+kas	kas	kas	0		D	
+ta	tema	tema	0		P	sg g
+  	@ta	tema	0		P	sg n
+need	need	see	d		P	pl n
+kiwwid	####	####				
+      	#kivid	kivi	d		S	pl n
+Leno	####	####				
+    	#Leena	Leno	0		H	sg n
+Tronile	####	####				
+       	#Troonile	Troon	le		H	sg all
+om	####	####				
+  	#on	ole	0		V	b
+winu	vinu	vinu	0		S	sg g
+    	vinu	vinu	0		S	sg n
+    	vinu	vinu	0		S	sg p
+    	£viinud	vii	nu		V	nud
+wai	vai	vai	0		S	sg n
+   	£või	või	0		J	
+mitte	mitte	mitte	0		D	
+,	,	,			Z	
+sedda	####	####				
+     	#seda	see	da		P	sg p
+es	es	es			H	?
+  	@ei	ei	s		V	neg s
+tija	####	####				
+    	#tea	tead	0		V	o
+moisa	####	####				
+     	#mõisa	mõis	0		S	sg g
+wallitsus	####	####				
+         	#valitsus	valitsus	0		S	sg n
+mitte	mitte	mitte	0		D	
+.	.	.			Z	
+Soldat	soldat	soldat	0		S	sg n
+Karl	Karl	Karl	0		H	sg n
+Zirk	####	####				
+    	#Tsirk	Zirk	0		H	sg n
+selletas	####	####				
+        	#seletas	seleta	s		V	s
+kohto	####	####				
+     	kohtu	kohtu	0		V	o
+     	#kohtu	kohus	0		S	sg g
+een	####	####				
+   	#ees	ees	0		K	
+   	ees	ees	0		D	
+et	et	et	0		J	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+kül	####	####				
+   	#küll	küll	0		D	
+om	####	####				
+  	#on	ole	0		V	b
+kiwwisid	####	####				
+        	#kivisid	kivi	sid		S	pl p
+warrastanu	varrasta=nu	varrasta=nu	0		S	sg g
+          	varrasta=nu	varrasta=nu	0		S	sg n
+          	£varastanud	varasta	nu		V	nud
+,	,	,			Z	
+ent	ent	ent	0		J	
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+olle	####	####				
+    	#ole	ole	0		V	o
+mitte	mitte	mitte	0		D	
+katte	kate	kate	0		S	sg g
+     	katt	katt	e		S	pl p
+     	kätte	käsi	tte		S	adt
+     	kätte	kätte	0		K	
+     	kätte	kätte	0		D	
+     	£kahte	kaks	0		S	sg p
+korda	kord	kord	0		S	adt
+     	@korda	kord	0		S	sg p
+     	korda	korda	0		V	o
+kiwwisid	####	####				
+        	#kivisid	kivi	sid		S	pl p
+winu	vinu	vinu	0		S	sg g
+    	vinu	vinu	0		S	sg n
+    	vinu	vinu	0		S	sg p
+    	£viinud	vii	nu		V	nud
+enge	####	####				
+    	#ainult	enne	0		D	
+ütskörd	####	####				
+       	#ükskord	üks_kord	0		D	
+.	.	.			Z	
+Temmal	####	####				
+      	#temal	tema	l		P	sg ad
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+olle	####	####				
+    	#ole	ole	0		V	o
+kuskil	kuskil	kuskil	0		D	
+korteri	korter	korter	0		S	sg g
+       	£korterit	korter	0		S	sg p
+olnu	olnu	olnu	0		S	sg g
+    	olnu	olnu	0		S	sg n
+    	@olnud	ole	nu		V	nud
+,	,	,			Z	
+sis	####	####				
+   	siis	siis	0		D	
+   	#siis	siis	0		J	
+om	####	####				
+  	#on	ole	0		V	b
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+Otsa	ots	ots	0		S	adt
+    	ots	ots	0		S	sg g
+    	ots	ots	0		S	sg p
+    	otsa	otsa	0		D	
+    	otsa	otsa	0		K	
+    	otsa	otsa	0		V	o
+    	£Otsa	Otsa	0		H	sg g
+perrenaist	####	####				
+          	#perenaist	pere_naine	t		S	sg p
+Leno	####	####				
+    	#Leena	Leno	0		H	sg n
+Troni	####	####				
+     	#Trooni	Troon	0		H	sg p
+pallelnu	####	####				
+        	#palunud	palu	nu		V	nud
+et	et	et	0		J	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+lasses	####	####				
+      	#laseks	lask	s		V	ks
+täl	####	####				
+   	#tal	tema	l		P	sg ad
+omman	####	####				
+     	#omas	oma	n		P	sg in
+sannan	####	####				
+      	#saunas	sann	n		S	sg in
+olla	olla	ole	a		V	da
+;	;	;			Z	
+Leno	####	####				
+    	#Leena	Leno	0		H	sg n
+Troon	troon	troon	0		S	sg n
+     	£Troon	Troon	0		H	sg n
+üttelnu	####	####				
+       	#ütelnud	ütle	nu		V	nud
+,	,	,			Z	
+et	et	et	0		J	
+ta	tema	tema	0		P	sg g
+  	@ta	tema	0		P	sg n
+kül	####	####				
+   	#küll	küll	0		D	
+woip	####	####				
+    	#võib	või	p		V	b
+nikawwa	####	####				
+       	#niikaua	nii_kaua	0		D	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+sannan	####	####				
+      	#saunas	sann	n		S	sg in
+olla	olla	ole	a		V	da
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+tenistust	####	####				
+         	#teenistust	teenistus	t		S	sg p
+saap	####	####				
+    	#saab	saa	p		V	b
+,	,	,			Z	
+ent	ent	ent	0		J	
+üttelnu	####	####				
+       	#ütelnud	ütle	nu		V	nud
+sanna	####	####				
+     	#sauna	sann	0		S	sg g
+ahjo	####	####				
+    	#ahju	ahi	0		S	sg g
+laggonu	####	####				
+       	#lagunenud	lagune	nu		V	nud
+ollewa	####	####				
+      	#olevat	ole	va		V	vat
+.	.	.			Z	
+Töisel	töine	töine	l		A	sg ad
+      	£teisel	teine	l		P	sg ad
+ööl	ööl	öö	l		S	sg ad
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+to	####	####				
+  	#tolle	too	0		P	sg g
+om	####	####				
+  	#on	ole	0		V	b
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+ilma	ilm	ilm	0		S	adt
+    	ilm	ilm	0		S	sg g
+    	ilm	ilm	0		S	sg p
+    	ilma	ilma	0		D	
+    	@ilma	ilma	0		K	
+perrenaise	####	####				
+          	#perenaise	pere_naine	0		S	sg g
+teedmatta	####	####				
+         	#teadmata	tead	matta		V	mata
+hobbese	####	####				
+       	#hobuse	hobune	0		S	sg g
+tallist	tallist	tall	st		S	sg el
+wötnu	####	####				
+     	#võtnud	võt	nu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+lännu	####	####				
+     	läinud	mine	nu		V	nud
+     	#läinud	mine	nnu		V	nud
+sawwi	savi	savi	0		S	adt
+     	£savi	savi	0		S	sg g
+koa	####	####				
+   	#koja	koda	0		S	sg g
+mannu	####	####				
+     	#manu	manu	0		K	
+kiwwisid	####	####				
+        	#kivisid	kivi	sid		S	pl p
+wargile	vargile	vargile	0		D	
+nink	####	####				
+    	#ning	ning	0		J	
+tahtnu	taht=nu	taht=nu	0		S	sg g
+      	taht=nu	taht=nu	0		S	sg n
+      	@tahtnud	taht	nu		V	nud
+noist	noist	too	st		P	pl el
+kiwwist	####	####				
+       	#kividest	kivi	st		S	pl el
+sanna	####	####				
+     	#sauna	sann	0		S	sg g
+ahjo	####	####				
+    	#ahju	ahi	0		S	sg g
+essi	####	####				
+    	ise	ise	0		P	pl n
+    	#ise	ise	0		P	sg n
+parrandata	####	####				
+          	#parandada	paranda	ta		V	da
+.	.	.			Z	
+-	-	-			Z	
+Sawwi	savi	savi	0		S	adt
+     	£savi	savi	0		S	sg g
+koa	####	####				
+   	#koja	koda	0		S	sg g
+man	man	man	0		D	
+   	@man	man	0		K	
+om	####	####				
+  	#on	ole	0		V	b
+kiwwi	kivi	kivi	0		S	adt
+     	£kivi	kivi	0		S	sg g
+teggija	####	####				
+       	#tegija	tegija	0		S	sg n
+Philip	Philip	Philip	0		H	sg n
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+kinni	kinni	kinni	0		D	
+wötnu	####	####				
+     	#võtnud	võt	nu		V	nud
+,	,	,			Z	
+hobbest	####	####				
+       	#hobust	hobune	t		S	sg p
+eest	@eest	eest	0		D	
+    	eest	eest	0		K	
+    	esi	esi	st		S	sg el
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+wötnu	####	####				
+     	#võtnud	võt	nu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+hobbese	####	####				
+       	#hobuse	hobune	0		S	sg g
+sälga	####	####				
+     	#selga	selg	0		S	adt
+istnu	####	####				
+     	#istunud	istu	nu		V	nud
+ja	ja	ja	0		J	
+hobbest	####	####				
+       	#hobust	hobune	t		S	sg p
+moisa	####	####				
+     	mõisa	mõis	0		S	sg g
+     	#mõisa	mõis	0		S	adt
+kinni	kinni	kinni	0		D	
+tonu	####	####				
+    	#toonud	too	nu		V	nud
+.	.	.			Z	
+Soldat	soldat	soldat	0		S	sg n
+Karl	Karl	Karl	0		H	sg n
+Zirk	####	####				
+    	#Tsirk	Zirk	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+hobbest	####	####				
+       	#hobust	hobune	t		S	sg p
+suwerest	suve_rest	suve_rest	0		S	sg n
+        	£suuveerest	suu_veer	st		S	sg el
+weddanu	####	####				
+       	#vedanud	veda	nu		V	nud
+,	,	,			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+nida	####	####				
+    	#nõnda	nõnda	0		D	
+ommawa	####	####				
+      	#on	ole	va		V	vad
+nemma	####	####				
+     	#nemad	tema	0		P	pl n
+kesköse	####	####				
+       	#keskööl	kesk_öö	0		S	sg g
+möisa	####	####				
+     	#mõisa	mõis	0		S	adt
+tulnu	tulnu	tulnu	0		S	sg g
+     	tulnu	tulnu	0		S	sg n
+     	£tulnud	tule	nu		V	nud
+:	:	:			Z	
+tee-pääl	tee	tee	0		S	sg g
+        	tee	tee	0		S	sg n
+        	tege	tege	0		V	o
+        	£tee_peal	tee_peal	0		K	
+om	####	####				
+  	#on	ole	0		V	b
+wennelanne	####	####				
+          	#venelane	venelane	0		S	sg n
+Philip	Philip	Philip	0		H	sg n
+ütten	####	####				
+     	#ühes	üks	n		P	sg in
+paigan	####	####				
+      	#paigas	paik	n		S	sg in
+essi	####	####				
+    	ise	ise	0		P	pl n
+    	#ise	ise	0		P	sg n
+säljast	####	####				
+       	#seljast	selg	st		S	sg el
+mahha	####	####				
+     	#maha	maha	0		D	
+tulnu	tulnu	tulnu	0		S	sg g
+     	tulnu	tulnu	0		S	sg n
+     	£tulnud	tule	nu		V	nud
+nink	####	####				
+    	#ning	ning	0		J	
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+olle	####	####				
+    	#ole	ole	0		V	o
+Karl	Karl	Karl	0		H	sg n
+Zirk	####	####				
+    	#Tsirk	Zirk	0		H	sg n
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+mitte	mitte	mitte	0		D	
+töuganu	####	####				
+       	#tõuganud	tõuka	nu		V	nud
+.	.	.			Z	
+-	-	-			Z	
+Et	et	et	0		J	
+se	####	####				
+  	#see	see	0		P	sg n
+warras	varras	varras	0		S	sg n
+üts	####	####				
+   	üks	üks	0		N	sg n
+   	#üks	üks	0		P	sg n
+pilleti	####	####				
+       	#pileti	pilet	0		S	sg g
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+lastu	las=tu	las=tu	0		S	sg g
+     	las=tu	las=tu	0		S	sg n
+     	£lastud	lask	tu		V	tud
+soldat	soldat	soldat	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+,	,	,			Z	
+es	es	es			H	?
+  	@ei	ei	s		V	neg s
+olle	####	####				
+    	#ole	ole	0		V	o
+koggokonna	####	####				
+          	#kogukonna	kogukond	0		S	sg g
+kohtul	kohtul	kohus	l		S	sg ad
+mitte	mitte	mitte	0		D	
+melewald	####	####				
+        	#meelevald	meele_vald	0		S	sg n
+sepäle	####	####				
+      	#seepeale	see_peale	0		D	
+middage	####	####				
+       	#midagi	miski	dagi		P	sg p
+möista	####	####				
+      	#mõista	mõist	a		V	da
+,	,	,			Z	
+enge	####	####				
+    	#ainult	enne	0		D	
+pallep	####	####				
+      	#palub	palu	p		V	b
+Keisrilikko	####	####				
+           	#keiserlikku	keiserlik	0		A	sg p
+Wörromakonna	####	####				
+            	#Võru_maakonna	Võru_maakond	0		S	sg g
+silla	silla	sild	0		S	sg g
+kohhut	####	####				
+      	#kohut	kohus	t		S	sg p
+se	####	####				
+  	#see	see	0		P	sg n
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+otsust	otsust	otsus	t		S	sg p
+tetta	####	####				
+     	#teha	tege	tta		V	da
+.	.	.			Z	

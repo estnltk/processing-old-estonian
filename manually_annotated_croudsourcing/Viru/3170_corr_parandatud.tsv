@@ -1,0 +1,797 @@
+Kauksist	####	####				
+        	#Kauksist	Kauksi	st		H	sg el
+Hindriku	####	####				
+        	#Hendriku	Hindrik	0		H	sg g
+naene	####	####				
+     	#naine	naine	0		S	sg n
+Kaij	####	####				
+    	#Kai	Kaij	0		H	sg n
+ja	ja	ja	0		J	
+tema	@tema	tema	0		P	sg g
+    	tema	tema	0		P	sg n
+minija	####	####				
+      	#minia	minia	0		S	sg n
+Madis	Madis	Madis	0		H	sg n
+     	madis	madis	0		S	sg n
+     	£Madise	Madis	0		H	sg g
+naene	####	####				
+     	#naine	naine	0		S	sg n
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Beleiew	####	####				
+       	#Beleiev	Beleiew	0		H	sg n
+kaebasid	kaebasid	kaeba	sid		V	sid
+Iisaku	@Iisaku	Iisaku	0		H	sg g
+      	Iisaku	Iisaku	0		H	sg n
+kogukonna	kogukonna	kogukond	0		S	sg g
+kohtu	kohtu	kohtu	0		V	o
+     	kohus	kohus	0		S	sg g
+     	£kohtusse	kohus	0		S	adt
+,	,	,			Z	
+et	et	et	0		J	
+Iisaku	@Iisaku	Iisaku	0		H	sg g
+      	Iisaku	Iisaku	0		H	sg n
+walla	vald	vald	0		S	sg g
+     	valla	valla	0		D	
+     	@valla	vald	0		S	sg g
+liike	liik	liik	e		S	pl p
+     	£liikme	liige	0		S	sg g
+Alexander	Alexander	Alexander	0		H	sg n
+naene	####	####				
+     	#naine	naine	0		S	sg n
+Sakalow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+püha	püha	püha	0		A	sg g
+    	@püha	püha	0		A	sg n
+    	püha	püha	0		A	sg p
+    	püha	püha	0		S	sg g
+    	püha	püha	0		S	sg n
+    	püha	püha	0		S	sg p
+päeval	päeval	päev	l		S	sg ad
+sell	sell	sell	0		S	sg n
+    	£sel	see	l		P	sg ad
+13	13	13	0		N	?
+Julil	####	####				
+     	#juulil	juuli	l		S	sg ad
+s	s	s	0		Y	?
+.	.	.			Z	
+a	a	a	0		Y	?
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+meie	mina	mina	0		P	pl g
+    	@meie	mina	0		P	pl n
+minijaga	####	####				
+        	#miniaga	minia	ga		S	sg kom
+kiriku	kirik	kirik	0		S	sg g
+      	£kirikusse	kirik	0		S	adt
+läksime	läksime	mine	sime		V	sime
+,	,	,			Z	
+siis	@siis	siis	0		D	
+    	siis	siis	0		J	
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Sakalow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+meid	meid	mina	d		P	pl p
+Kaij	####	####				
+    	#Kai	Kaij	0		H	sg n
+Beleiweid	####	####				
+         	#Beleieveid	Beleiew	eid		H	pl p
+söimanud	####	####				
+        	#sõimanud	sõima	nud		V	nud
+,	,	,			Z	
+ja	ja	ja	0		J	
+ütles	ütles	ütle	s		V	s
+soik	####	####				
+    	#soik	soik	0		A	sg n
+lits	lits	lits	0		A	sg n
+    	@lits	lits	0		S	sg n
+,	,	,			Z	
+ja	ja	ja	0		J	
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+kirikust	kirikust	kirik	st		S	sg el
+kodu	kodu	kodu	0		S	sg g
+    	kodu	kodu	0		S	sg n
+    	kodu	kodu	0		S	sg p
+    	£koju	kodu	0		S	adt
+tulime	tulime	tule	ime		V	sime
+oma	oma	oma	0		A	sg g
+   	oma	oma	0		A	sg n
+   	oma	oma	0		A	sg p
+   	oma	oma	0		D	
+   	@oma	oma	0		P	sg g
+   	oma	oma	0		P	sg n
+   	oma	oma	0		P	sg p
+   	oma	oma	0		S	sg g
+   	oma	oma	0		S	sg n
+   	oma	oma	0		S	sg p
+   	oma	oma	0		V	o
+miniaga	miniaga	minia	ga		S	sg kom
+siis	@siis	siis	0		D	
+    	siis	siis	0		J	
+joksis	####	####				
+      	#jooksis	jooks	is		V	s
+meile	meil	meil	e		S	pl p
+     	@meile	mina	le		P	pl all
+järele	@järele	järele	0		D	
+      	järele	järele	0		K	
+Alexander	Alexander	Alexander	0		H	sg n
+Sakolowi	sako_lovi	sako_lovi	0		S	sg n
+        	£Sakolovi	Sakalow	0		H	sg g
+karjane	karjane	karjane	0		S	sg n
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Mägi	Mägi	Mägi	0		H	sg g
+    	@Mägi	Mägi	0		H	sg n
+    	mägi	mägi	0		S	sg n
+,	,	,			Z	
+ja	ja	ja	0		J	
+tema	@tema	tema	0		P	sg g
+    	tema	tema	0		P	sg n
+tütar	tütar	tütar	0		S	sg n
+Olga	Olga	Olga	0		H	sg g
+    	@Olga	Olga	0		H	sg n
+,	,	,			Z	
+karjapois	karja_poi	karja_poi	s		S	sg in
+         	£karjapoiss	karja_poiss	0		S	sg n
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Mägi	Mägi	Mägi	0		H	sg g
+    	@Mägi	Mägi	0		H	sg n
+    	mägi	mägi	0		S	sg n
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+mind	mind	mina	d		P	sg p
+Madis	Madis	Madis	0		H	sg n
+     	madis	madis	0		S	sg n
+     	£Madise	Madis	0		H	sg g
+naest	####	####				
+     	#naist	naine	t		S	sg p
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Beleiewid	####	####				
+         	#Beleievit	Beleiew	d		H	sg p
+eest	@eest	eest	0		D	
+    	eest	eest	0		K	
+    	esi	esi	st		S	sg el
+kinni	kinni	kinni	0		D	
+pidanud	pida=nud	pida=nud	0		A	
+       	pida=nud	pida=nud	0		A	sg n
+       	pida=nu	pida=nu	d		S	pl n
+       	pida=nud	pida=nud	d		A	pl n
+       	@pidanud	pida	nud		V	nud
+,	,	,			Z	
+ja	ja	ja	0		J	
+rätiku	rätiku	rätik	0		S	sg g
+rebinud	rebi=nud	rebi=nud	0		A	
+       	rebi=nud	rebi=nud	0		A	sg n
+       	rebi=nu	rebi=nu	d		S	pl n
+       	rebi=nud	rebi=nud	d		A	pl n
+       	@rebinud	rebi	nud		V	nud
+,	,	,			Z	
+ja	ja	ja	0		J	
+peale	peale	peale	0		D	
+     	@peale	peale	0		K	
+     	pea	pea	le		S	sg all
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+Alexander	Alexander	Alexander	0		H	sg n
+n	n	n	0		Y	?
+.	.	.			Z	
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Sakalow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+tulnud	tul=nud	tul=nud	0		A	
+      	tul=nud	tul=nud	0		A	sg n
+      	tul=nud	tul=nud	d		A	pl n
+      	@tulnud	tule	nud		V	nud
+      	tulnu	tulnu	d		S	pl n
+tagant	@tagant	tagant	0		D	
+      	tagant	tagant	0		K	
+ja	ja	ja	0		J	
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+mind	mind	mina	d		P	sg p
+raputanud	raputa=nud	raputa=nud	0		A	
+         	raputa=nud	raputa=nud	0		A	sg n
+         	raputa=nu	raputa=nu	d		S	pl n
+         	raputa=nud	raputa=nud	d		A	pl n
+         	@raputanud	raputa	nud		V	nud
+ja	ja	ja	0		J	
+wiimaks	@viimaks	viimaks	0		D	
+       	vii	vii	maks		V	maks
+wastu	vastu	vastu	0		D	
+     	@vastu	vastu	0		K	
+kandu	kandu	kandu	0		V	o
+     	@kandu	kand	u		S	pl p
+müksanud	müksa=nud	müksa=nud	0		A	
+        	müksa=nud	müksa=nud	0		A	sg n
+        	müksa=nu	müksa=nu	d		S	pl n
+        	müksa=nud	müksa=nud	d		A	pl n
+        	@müksanud	müksa	nud		V	nud
+nenda	####	####				
+     	#nõnda	nõnda	0		D	
+,	,	,			Z	
+et	et	et	0		J	
+ma	mina	mina	0		P	sg n
+hädas	hädas	hädas	0		A	
+     	@hädas	hädas	0		D	
+     	häda	häda	s		S	sg in
+üles	üles	üles	0		D	
+töusin	####	####				
+      	#tõusin	tõus	in		V	sin
+ja	ja	ja	0		J	
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+wahe	vahe	vahe	0		A	sg n
+    	@vahe	vahe	0		S	sg g
+    	vahe	vahe	0		S	sg n
+sees	sees	sees	0		D	
+    	@sees	sees	0		K	
+Alex	Alex	Alex	0		H	sg n
+.	.	.			Z	
+tütar	tütar	tütar	0		S	sg n
+Olga	Olga	Olga	0		H	sg g
+    	@Olga	Olga	0		H	sg n
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+minu	minu	mina	0		P	sg g
+ämmale	ämmale	ämm	le		S	sg all
+kepiga	kepiga	kepp	ga		S	sg kom
+wastu	vastu	vastu	0		D	
+     	@vastu	vastu	0		K	
+pead	pea	pea	d		S	pl n
+    	@pead	pea	d		S	sg p
+    	pida	pida	d		V	d
+wisanud	visa=nud	visa=nud	0		A	
+       	visa=nud	visa=nud	0		A	sg n
+       	visa=nu	visa=nu	d		S	pl n
+       	visa=nud	visa=nud	d		A	pl n
+       	@visanud	viska	nud		V	nud
+,	,	,			Z	
+ja	ja	ja	0		J	
+rätiku	rätiku	rätik	0		S	sg g
+pealt	pealt	pealt	0		D	
+     	pealt	pealt	0		K	
+     	@pealt	pea	lt		S	sg abl
+riisunud	riisu=nud	riisu=nud	0		A	
+        	riisu=nud	riisu=nud	0		A	sg n
+        	riisu=nu	riisu=nu	d		S	pl n
+        	riisu=nud	riisu=nud	d		A	pl n
+        	@riisunud	riisu	nud		V	nud
+,	,	,			Z	
+ja	ja	ja	0		J	
+seda	seda	see	da		P	sg p
+wiisi	viis	viis	0		S	adt
+     	viis	viis	0		S	sg g
+     	viis	viis	0		S	sg p
+     	viisi	viisi	0		K	
+     	viis	viis	i		N	pl p
+     	£viisi	viisi	0		D	
+läksime	läksime	mine	sime		V	sime
+?	?	?			Z	
+kodu	kodu	kodu	0		S	sg g
+    	kodu	kodu	0		S	sg n
+    	kodu	kodu	0		S	sg p
+    	£koju	kodu	0		S	adt
+.	.	.			Z	
+Kohtu	kohtu	kohtu	0		V	o
+     	@kohtu	kohus	0		S	sg g
+küsimiste	küsimiste	küsimine	te		S	pl g
+peale	peale	peale	0		D	
+     	@peale	peale	0		K	
+     	pea	pea	le		S	sg all
+mis	mis	mis	0		P	pl n
+   	@mis	mis	0		P	sg n
+öiguste	####	####				
+       	#õiguste	õigus	te		S	pl g
+peale	peale	peale	0		D	
+     	@peale	peale	0		K	
+     	pea	pea	le		S	sg all
+sina	@sina	sina	0		P	sg n
+    	sina	sina	0		S	sg g
+    	sina	sina	0		S	sg n
+    	sina	sina	0		S	sg p
+    	sina	sina	0		V	o
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Sakalow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+oma	oma	oma	0		A	sg g
+   	oma	oma	0		A	sg n
+   	oma	oma	0		A	sg p
+   	oma	oma	0		D	
+   	@oma	oma	0		P	sg g
+   	oma	oma	0		P	sg n
+   	oma	oma	0		P	sg p
+   	oma	oma	0		S	sg g
+   	oma	oma	0		S	sg n
+   	oma	oma	0		S	sg p
+   	oma	oma	0		V	o
+karjapoisiga	karjapoisiga	karja_poiss	ga		S	sg kom
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Mägi	Mägi	Mägi	0		H	sg g
+    	@Mägi	Mägi	0		H	sg n
+    	mägi	mägi	0		S	sg n
+ja	ja	ja	0		J	
+oma	oma	oma	0		A	sg g
+   	oma	oma	0		A	sg n
+   	oma	oma	0		A	sg p
+   	oma	oma	0		D	
+   	@oma	oma	0		P	sg g
+   	oma	oma	0		P	sg n
+   	oma	oma	0		P	sg p
+   	oma	oma	0		S	sg g
+   	oma	oma	0		S	sg n
+   	oma	oma	0		S	sg p
+   	oma	oma	0		V	o
+tütar	tütar	tütar	0		S	sg n
+Olgaga	Olgaga	Olga	ga		H	sg kom
+nende	see	see	de		P	pl g
+     	@nende	tema	de		P	pl g
+kahe	kahe	kaks	0		N	sg g
+naeste	####	####				
+      	#naiste	naine	te		S	pl g
+kallale	kallale	kallale	0		D	
+       	@kallale	kallale	0		K	
+       	kalla	kalla	le		S	sg all
+läksite	läksite	mine	site		V	site
+,	,	,			Z	
+kes	kes	kes	0		P	pl n
+   	@kes	kes	0		P	sg n
+kirikust	kirikust	kirik	st		S	sg el
+kodu	@kodu	kodu	0		S	sg g
+    	kodu	kodu	0		S	sg n
+    	kodu	kodu	0		S	sg p
+poole	pool	pool	0		N	sg g
+     	pool	pool	0		S	sg g
+     	@poole	poole	0		K	
+     	poole	poole	0		S	sg n
+     	pool	pool	e		S	pl p
+läksiwad	####	####				
+        	#läksid	mine	sivad		V	sid
+?	?	?			Z	
+Kostab	kostab	kost	b		V	b
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Sakalow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+pärast	pärane	pärane	t		A	sg p
+      	pärast	pärast	0		D	
+      	@pärast	pärast	0		K	
+      	pära	pära	st		S	sg el
+,	,	,			Z	
+et	et	et	0		J	
+nemad	nemad	tema	d		P	pl n
+üle	üle	üle	0		D	
+   	@üle	üle	0		K	
+meie	@meie	mina	0		P	pl g
+    	mina	mina	0		P	pl n
+krunti	krunt	krunt	0		S	adt
+      	krunt	krunt	0		S	sg p
+      	£krundi	krunt	0		S	sg g
+käivad	@käivad	käi	vad		V	vad
+      	käiv	käiv	d		A	pl n
+,	,	,			Z	
+mina	@mina	mina	0		P	sg n
+    	mina	mina	0		S	sg g
+    	mina	mina	0		S	sg n
+    	mina	mina	0		S	sg p
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+ole	ole	ole	0		V	o
+neid	neid	neid	0		S	sg n
+    	see	see	d		P	pl p
+    	@neid	tema	d		P	pl p
+peksand	peks_and	peks_and	0		S	sg n
+       	£peksnud	peks	nd		V	nud
+vaid	vaid	vaid	0		D	
+    	@vaid	vaid	0		J	
+lükanud	lüka=nud	lüka=nud	0		A	
+       	lüka=nud	lüka=nud	0		A	sg n
+       	lüka=nu	lüka=nu	d		S	pl n
+       	lüka=nud	lüka=nud	d		A	pl n
+       	@lükanud	lükka	nud		V	nud
+enesest	endast	ise	st		P	sg el
+ära	@ära	ära	0		D	
+   	ära	ära	0		V	neg o
+.	.	.			Z	
+Kohtu	kohtu	kohtu	0		V	o
+     	@kohtu	kohus	0		S	sg g
+küsimiste	küsimiste	küsimine	te		S	pl g
+peale	peale	peale	0		D	
+     	@peale	peale	0		K	
+     	pea	pea	le		S	sg all
+mis	mis	mis	0		P	pl n
+   	@mis	mis	0		P	sg n
+öiguste	####	####				
+       	#õiguste	õigus	te		S	pl g
+pärast	pärane	pärane	t		A	sg p
+      	pärast	pärast	0		D	
+      	@pärast	pärast	0		K	
+      	pära	pära	st		S	sg el
+sina	@sina	sina	0		P	sg n
+    	sina	sina	0		S	sg g
+    	sina	sina	0		S	sg n
+    	sina	sina	0		S	sg p
+    	sina	sina	0		V	o
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Mägi	Mägi	Mägi	0		H	sg g
+    	@Mägi	Mägi	0		H	sg n
+    	mägi	mägi	0		S	sg n
+neid	neid	neid	0		S	sg n
+    	@neid	see	d		P	pl p
+    	tema	tema	d		P	pl p
+kaks	kaks	kaks	0		N	sg n
+naest	####	####				
+     	#naist	naine	t		S	sg p
+oled	oled	ole	d		V	d
+tee	@tee	tee	0		S	sg g
+   	tee	tee	0		S	sg n
+   	tege	tege	0		V	o
+peal	peal	peal	0		D	
+    	@peal	peal	0		K	
+    	pea	pea	l		S	sg ad
+kinni	kinni	kinni	0		D	
+pidanud	pida=nud	pida=nud	0		A	
+       	pida=nud	pida=nud	0		A	sg n
+       	pida=nu	pida=nu	d		S	pl n
+       	pida=nud	pida=nud	d		A	pl n
+       	@pidanud	pida	nud		V	nud
+ja	ja	ja	0		J	
+nii	nii	nii	0		D	
+käitunud	käitu=nud	käitu=nud	0		A	
+        	käitu=nud	käitu=nud	0		A	sg n
+        	käitu=nu	käitu=nu	d		S	pl n
+        	käitu=nud	käitu=nud	d		A	pl n
+        	@käitunud	käitu	nud		V	nud
+?	?	?			Z	
+Sepärast	####	####				
+        	#seepärast	see_pärast	0		D	
+,	,	,			Z	
+et	et	et	0		J	
+Madis	@Madis	Madis	0		H	sg n
+     	madis	madis	0		S	sg n
+Beleiew	####	####				
+       	#Beleiev	Beleiew	0		H	sg n
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+minu	minu	mina	0		P	sg g
+loomad	loomad	loom	d		S	pl n
+kinni	kinni	kinni	0		D	
+vötnud	####	####				
+      	#võtnud	võt	nud		V	nud
+ja	ja	ja	0		J	
+60	60	60	0		N	?
+?	?	?			Z	
+vötnud	####	####				
+      	#võtnud	võt	nud		V	nud
+.	.	.			Z	
+Kohtu	kohtu	kohtu	0		V	o
+     	@kohtu	kohus	0		S	sg g
+küsimiste	küsimiste	küsimine	te		S	pl g
+peale	peale	peale	0		D	
+     	@peale	peale	0		K	
+     	pea	pea	le		S	sg all
+,	,	,			Z	
+kas	kas	kas	0		D	
+sina	@sina	sina	0		P	sg n
+    	sina	sina	0		S	sg g
+    	sina	sina	0		S	sg n
+    	sina	sina	0		S	sg p
+    	sina	sina	0		V	o
+Alexander	Alexander	Alexander	0		H	sg n
+Sakalow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+oled	oled	ole	d		V	d
+naese	####	####				
+     	#naise	naine	0		S	sg g
+ja	ja	ja	0		J	
+tütrele	tütrele	tütar	le		S	sg all
+ja	ja	ja	0		J	
+karja	kari	kari	0		S	adt
+     	@karja	kari	0		S	sg g
+     	kari	kari	0		S	sg p
+poisile	poisile	poiss	le		S	sg all
+se	####	####				
+  	#see	see	0		P	sg n
+nöu	####	####				
+   	#nõu	nõu	0		S	sg n
+annud	####	####				
+     	#andnud	and	nud		V	nud
+,	,	,			Z	
+et	et	et	0		J	
+neid	neid	neid	0		S	sg n
+    	see	see	d		P	pl p
+    	@neid	tema	d		P	pl p
+kiriku	kiriku	kirik	0		S	sg g
+tee	@tee	tee	0		S	sg g
+   	tee	tee	0		S	sg n
+   	tege	tege	0		V	o
+peal	peal	peal	0		D	
+    	@peal	peal	0		K	
+    	pea	pea	l		S	sg ad
+riisuda	riisuda	riisu	da		V	da
+?	?	?			Z	
+Kostab	kostab	kost	b		V	b
+A. Sakalow	####	####				
+          	#A._Sakalov	A._Sakalow	0		H	sg n
+-	-	-			Z	
+olen	olen	ole	n		V	n
+annud	####	####				
+     	#andnud	and	nud		V	nud
+se	####	####				
+  	#see	see	0		P	sg n
+pärast	pärane	pärane	t		A	sg p
+      	@pärast	pärast	0		D	
+      	pärast	pärast	0		K	
+      	pära	pära	st		S	sg el
+,	,	,			Z	
+et	et	et	0		J	
+nemad	nemad	tema	d		P	pl n
+üle	üle	üle	0		D	
+   	@üle	üle	0		K	
+minu	minu	mina	0		P	sg g
+krundi	@krundi	krunt	0		S	sg g
+      	krunti	krunti	0		V	o
+käivad	@käivad	käi	vad		V	vad
+      	käiv	käiv	d		A	pl n
+.	.	.			Z	
+Hindrik	####	####				
+       	#Hendrik	Hindrik	0		H	sg n
+Beleiew	####	####				
+       	#Beleiev	Beleiew	0		H	sg n
+tunistab	####	####				
+        	#tunnistab	tunnista	b		V	b
+,	,	,			Z	
+et	et	et	0		J	
+13ndal	13ndal	13=s	l		O	sg ad
+Julil	####	####				
+     	#juulil	juuli	l		S	sg ad
+s	s	s	0		Y	?
+.	.	.			Z	
+a	a	a	0		Y	?
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+mina	@mina	mina	0		P	sg n
+    	mina	mina	0		S	sg g
+    	mina	mina	0		S	sg n
+    	mina	mina	0		S	sg p
+kohtu	kohtu	kohtu	0		V	o
+     	@kohtu	kohus	0		S	sg g
+körwameest	####	####				
+          	#kõrvameest	kõrva_mees	t		S	sg p
+Andres	@Andres	Andres	0		H	sg n
+      	Andre	Andre	s		H	sg in
+Rebina	####	####				
+      	#Rebinat	Rebina	0		H	sg p
+omma	####	####				
+    	#oma	oma	0		P	sg g
+    	on	ole	0		V	vad
+majase	####	####				
+      	#majasse	maja	se		S	sg ill
+olen	olen	ole	n		V	n
+kutsunud	kutsu=nud	kutsu=nud	0		A	
+        	kutsu=nud	kutsu=nud	0		A	sg n
+        	kutsu=nu	kutsu=nu	d		S	pl n
+        	kutsu=nud	kutsu=nud	d		A	pl n
+        	@kutsunud	kutsu	nud		V	nud
+neid	neid	neid	0		S	sg n
+    	see	see	d		P	pl p
+    	@neid	tema	d		P	pl p
+ära	@ära	ära	0		D	
+   	ära	ära	0		V	neg o
+peksta	@peksta	peks	ta		V	da
+      	peks	peks	ta		V	ta
+?	?	?			Z	
+läbi	@läbi	läbi	0		D	
+    	läbi	läbi	0		K	
+    	läbi	läbi	0		V	o
+waatame	vaatame	vaata	me		V	me
+,	,	,			Z	
+ja	ja	ja	0		J	
+A. Sakalowi	####	####				
+           	#A._Sakalovi	A._Sakalow	0		H	sg g
+öuest	####	####				
+     	#õuest	õu	st		S	sg el
+läbi	läbi	läbi	0		D	
+    	@läbi	läbi	0		K	
+    	läbi	läbi	0		V	o
+läksime	läksime	mine	sime		V	sime
+siis	@siis	siis	0		D	
+    	siis	siis	0		J	
+ütles	ütles	ütle	s		V	s
+A. Sakalow	####	####				
+          	#A._Sakalov	A._Sakalow	0		H	sg n
+,	,	,			Z	
+et	et	et	0		J	
+mina	@mina	mina	0		P	sg n
+    	mina	mina	0		S	sg g
+    	mina	mina	0		S	sg n
+    	mina	mina	0		S	sg p
+murran	murran	murd	n		V	n
+teile	@teile	sina	le		P	pl all
+     	tee	tee	ile		S	pl all
+jalad	jalad	jalg	d		S	pl n
+alt	@alt	alt	0		D	
+   	alt	alt	0		K	
+   	alt	alt	0		S	sg n
+ära	@ära	ära	0		D	
+   	ära	ära	0		V	neg o
+.	.	.			Z	
+Kohtu	kohtu	kohtu	0		V	o
+     	@kohtu	kohus	0		S	sg g
+küsimiste	küsimiste	küsimine	te		S	pl g
+peale	peale	peale	0		D	
+     	@peale	peale	0		K	
+     	pea	pea	le		S	sg all
+,	,	,			Z	
+kuidas	kuidas	kuidas	0		D	
+teie	sina	sina	0		P	pl g
+    	@teie	sina	0		P	pl n
+Hindriku	####	####				
+        	#Hendriku	Hindrik	0		H	sg g
+n	n	n	0		Y	?
+.	.	.			Z	
+Kaij	####	####				
+    	#Kai	Kaij	0		H	sg n
+ja	ja	ja	0		J	
+Madise	@Madise	Madis	0		H	sg g
+      	madis	madis	0		S	sg g
+n	n	n	0		Y	?
+.	.	.			Z	
+Beleiew	####	####				
+       	#Beleiev	Beleiew	0		H	sg n
+tahate	tahate	taht	te		V	te
+Sakalowiga	####	####				
+          	#Sakaloviga	Sakalow	ga		H	sg kom
+leppida	leppida	leppi	da		V	da
+?	?	?			Z	
+Kostavad	kostavad	kost	vad		V	vad
+,	,	,			Z	
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Sakalow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+maksab	maksab	maks	b		V	b
+10	10	10	0		N	?
+rubla	rubla	rubla	0		S	sg g
+     	rubla	rubla	0		S	sg n
+     	@rubla	rubla	0		S	sg p
+ja	ja	ja	0		J	
+nätsikule	####	####				
+         	#näitsikule	näitsik	le		S	sg all
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+70	70	70	0		N	?
+kop	kop	kop	0		Y	?
+.	.	.			Z	
+siis	@siis	siis	0		D	
+    	siis	siis	0		J	
+leppime	lepp_ime	lepp_ime	0		S	sg g
+       	lepp_ime	lepp_ime	0		S	sg n
+       	£lepime	leppi	me		V	me
+.	.	.			Z	
+Iisaku	@Iisaku	Iisaku	0		H	sg g
+      	Iisaku	Iisaku	0		H	sg n
+kogukonna	kogukonna	kogukond	0		S	sg g
+kohus	@kohus	kohus	0		S	sg n
+     	kohu	kohu	s		V	s
+arvas	arvas	arva	s		V	s
+,	,	,			Z	
+et	et	et	0		J	
+Mari	Mari	Mari	0		H	sg g
+    	@Mari	Mari	0		H	sg n
+    	mari	mari	0		S	sg g
+    	mari	mari	0		S	sg n
+    	mari	mari	0		S	sg p
+Sakolow	####	####				
+       	#Sakalov	Sakalow	0		H	sg n
+maksab	maksab	maks	b		V	b
+3	3	3	0		N	?
+rubl	####	####				
+    	#rubl	rubl	0		Y	?
+.	.	.			Z	
+tütar	tütar	tütar	0		S	sg n
+Olga	Olga	Olga	0		H	sg g
+    	@Olga	Olga	0		H	sg n
+1	1	1	0		N	?
+rubl	####	####				
+    	#rubl	rubl	0		Y	?
+.	.	.			Z	
+70	70	70	0		N	?
+kop	kop	kop	0		Y	?
+.	.	.			Z	
+ja	ja	ja	0		J	
+karjapois	karja_poi	karja_poi	s		S	sg in
+         	£karjapoiss	karja_poiss	0		S	sg n
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Mägi	Mägi	Mägi	0		H	sg g
+    	@Mägi	Mägi	0		H	sg n
+    	mägi	mägi	0		S	sg n
+1	1	1	0		N	?
+rubl	####	####				
+    	#rubl	rubl	0		Y	?
+.	.	.			Z	
+nende	@nende	see	de		P	pl g
+     	tema	tema	de		P	pl g
+naestele	####	####				
+        	#naistele	naine	tele		S	pl all
+.	.	.			Z	
+(	(	(			Z	
+Allakirjutatud	alla_kirjutatud	alla_kirjutatud	0		A	
+              	alla_kirjutatud	alla_kirjutatud	0		A	sg n
+              	alla_kirjutatud	alla_kirjutatud	d		A	pl n
+              	£allakirjutatud	alla_kirjuta	tud		V	tud
+)	)	)			Z	
+Protokoll	protokoll	protokoll	0		S	sg n
+on	@on	ole	0		V	b
+  	ole	ole	0		V	vad
+wälja	väli	väli	0		S	adt
+     	väli	väli	0		S	sg g
+     	väli	väli	0		S	sg p
+     	@välja	välja	0		D	
+     	välja	välja	0		V	o
+     	välja	väli	0		S	adt
+     	välja	väli	0		S	sg g
+     	välja	väli	0		S	sg p
+jäetud	jäe=tud	jäe=tud	0		A	
+      	jäe=tud	jäe=tud	0		A	sg n
+      	jäe=tu	jäe=tu	d		S	pl n
+      	jäe=tud	jäe=tud	d		A	pl n
+      	@jäetud	jät	tud		V	tud
+sel	@sel	see	l		P	sg ad
+   	sel	sel	0		Y	?
+26ndal	26ndal	26=s	l		O	sg ad
+Julil	####	####				
+     	#juulil	juuli	l		S	sg ad
+1886.	1886.	1886.	0		O	?
+Hakemiseks	####	####				
+          	#hagemiseks	hagemine	ks		S	sg tr
+?	?	?			Z	

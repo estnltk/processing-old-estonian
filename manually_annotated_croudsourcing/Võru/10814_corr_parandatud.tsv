@@ -1,0 +1,558 @@
+Ette	esi	esi	tte		S	adt
+    	@ette	ette	0		D	
+    	ette	ette	0		K	
+tulli	tull	tull	0		S	adt
+     	tull	tull	0		S	sg g
+     	tull	tull	0		S	sg p
+     	@tuli	tule	i		V	s
+     	tuli	tuli	0		S	sg n
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+walla	@valla	vald	0		S	sg g
+     	valla	valla	0		D	
+     	valla	vald	0		S	sg g
+wöörmündri	vöörmünder	vöörmünder	0		S	sg g
+          	£vöörmünder	vöörmünder	0		S	sg n
+Karli	Karl	Karl	0		H	adt
+     	Karl	Karl	0		H	sg g
+     	Karl	Karl	0		H	sg p
+     	£Karl	Karl	0		H	sg n
+Krahw	krahv	krahv	0		S	sg n
+     	£Krahv	Krahw	0		H	sg n
+nink	####	####				
+    	#ning	ning	0		J	
+kaibas	####	####				
+      	#kaebas	kaeba	s		V	s
+,	,	,			Z	
+et	et	et	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+ollew	####	####				
+     	#olevat	ole	v		V	vat
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+häbbemadas	####	####				
+          	#häbematuks	häbematu	s		A	sg tr
+,	,	,			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+wargas	varas	varas	s		S	sg in
+      	£vargaks	varas	s		S	sg tr
+sõimano	####	####				
+       	#sõimanud	sõima	no		V	nud
+:	:	:			Z	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeksi	####	####				
+           	#Stiipneeksi	Stiipneeks	0		H	sg g
+welli	####	####				
+     	#veli	veli	0		S	sg n
+olno	####	####				
+    	#olnud	ole	no		V	nud
+tälle	####	####				
+     	#talle	tema	le		P	sg all
+2	2	2	0		N	?
+mõõto	####	####				
+     	#mõõtu	mõõt	0		S	sg p
+rükki	####	####				
+     	#rukist	rukis	0		S	sg p
+wõlgo	####	####				
+     	#võlgu	võlgu	0		D	
+nink	####	####				
+    	#ning	ning	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+lubbano	####	####				
+       	#lubanud	luba	no		V	nud
+tälle	####	####				
+     	#talle	tema	le		P	sg all
+omma	####	####				
+    	#oma	oma	0		P	sg g
+    	on	ole	0		V	vad
+ramato	####	####				
+      	#raamatu	raamat	0		S	sg g
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+Maggast	####	####				
+       	#magasinist	magasin	st		S	sg el
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+massa	####	####				
+     	maksa	maks	0		V	o
+     	#maksta	maks	a		V	da
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+ollew	####	####				
+     	#olevat	ole	v		V	vat
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+wõtno	####	####				
+     	#võtnud	võt	no		V	nud
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeksi	####	####				
+           	#Stiipneeksi	Stiipneeks	0		H	sg g
+pois	poi	poi	s		S	sg in
+    	£poiss	poiss	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+ramatuga	####	####				
+        	#raamatuga	raamat	ga		S	sg kom
+Maggasi	####	####				
+       	#magasini	magasin	0		S	sg g
+man	man	man	0		D	
+   	@man	man	0		K	
+olno	####	####				
+    	#olnud	ole	no		V	nud
+ka	ka	ka	0		D	
+ne	####	####				
+  	#need	see	0		P	pl n
+2	2	2	0		N	?
+mõõto	####	####				
+     	#mõõtu	mõõt	0		S	sg p
+rükki	####	####				
+     	#rukist	rukis	0		S	sg p
+Stiipneksi	####	####				
+          	#Stiipneeksi	Stiipneeks	0		H	sg g
+ramato	####	####				
+      	#raamatu	raamat	0		S	sg g
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+tolleperrast	####	####				
+            	#tollepärast	tolle_pärast	0		D	
+sõimano	####	####				
+       	#sõimanud	sõima	no		V	nud
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+tedda	####	####				
+     	#teda	tema	da		P	sg p
+.	.	.			Z	
+Ette	esi	esi	tte		S	adt
+    	@ette	ette	0		D	
+    	ette	ette	0		K	
+kutsuti	kutsuti	kutsu	ti		V	ti
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+nink	####	####				
+    	#ning	ning	0		J	
+loeti	loeti	luge	ti		V	ti
+eenseiswa	####	####				
+         	#eesseisva	ees_seis	va		V	v sg g
+kaibus	####	####				
+      	#kaebus	kaebus	0		S	sg n
+ette	esi	esi	tte		S	adt
+    	@ette	ette	0		D	
+    	ette	ette	0		K	
+,	,	,			Z	
+ent	ent	ent	0		J	
+tema	tema	tema	0		P	sg g
+    	@tema	tema	0		P	sg n
+ütles	ütles	ütle	s		V	s
+,	,	,			Z	
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+ollew	####	####				
+     	#olevat	ole	v		V	vat
+mitte	mitte	mitte	0		D	
+häbbemadas	####	####				
+          	#häbematuks	häbematu	s		A	sg tr
+,	,	,			Z	
+wargas	varas	varas	s		S	sg in
+      	£vargaks	varas	s		S	sg tr
+sõimano	####	####				
+       	#sõimanud	sõima	no		V	nud
+,	,	,			Z	
+waid	vaid	vaid	0		D	
+    	@vaid	vaid	0		J	
+üttelno	####	####				
+       	#ütelnud	ütle	no		V	nud
+Karl	Karl	Karl	0		H	sg n
+Krahwile	krahv	krahv	le		S	sg all
+        	£Krahvile	Krahw	le		H	sg all
+kuidas	kuidas	kuidas	0		D	
+sinna	sinna	sinna	0		D	
+     	£sina	sina	0		P	sg n
+ni	####	####				
+  	#nii	nii	0		D	
+häbbematta	####	####				
+          	#häbematut	häbematu	0		A	sg p
+teggo	####	####				
+     	#tegu	tegu	0		S	sg p
+teet	####	####				
+    	#teed	tege	t		V	d
+nink	####	####				
+    	#ning	ning	0		J	
+minno	####	####				
+     	#mind	mina	0		P	sg p
+     	minu	mina	0		P	sg g
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+warrast	varras	varras	t		S	sg p
+       	£varast	varas	t		S	sg p
+riisut	####	####				
+      	#riisud	riisu	t		V	d
+ilma	ilm	ilm	0		S	adt
+    	ilm	ilm	0		S	sg g
+    	ilm	ilm	0		S	sg p
+    	ilma	ilma	0		D	
+    	@ilma	ilma	0		K	
+lubbata	####	####				
+       	#loata	luba	ta		S	sg ab
+,	,	,			Z	
+ja	ja	ja	0		J	
+toiselt	####	####				
+       	#teiseks	teiseks	0		D	
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+ollew	####	####				
+     	#olevat	ole	v		V	vat
+temma	####	####				
+     	tema	tema	0		P	sg g
+     	#tema	tema	0		P	sg n
+ka	ka	ka	0		D	
+mitte	mitte	mitte	0		D	
+lubbano	####	####				
+       	#lubanud	luba	no		V	nud
+omma	####	####				
+    	#oma	oma	0		P	sg g
+    	on	ole	0		V	vad
+welle	####	####				
+     	#velje	veli	0		S	sg g
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+2	2	2	0		N	?
+mõõto	####	####				
+     	#mõõtu	mõõt	0		S	sg p
+rükki	####	####				
+     	#rukist	rukis	0		S	sg p
+massa	####	####				
+     	maksa	maks	0		V	o
+     	#maksta	maks	a		V	da
+.	.	.			Z	
+Wallawannemb	####	####				
+            	#vallavanem	valla_vanem	0		S	sg n
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Hussar	####	####				
+      	#Hussar	Hussar	0		H	sg n
+andis	andis	and	is		V	s
+tunnistust	tunnistust	tunnistus	t		S	sg p
+et	et	et	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+ollew	####	####				
+     	#olevat	ole	v		V	vat
+Karli	Karl	Karl	0		H	adt
+     	Karl	Karl	0		H	sg g
+     	Karli	Karl	0		H	sg p
+     	£Karl	Karl	0		H	sg n
+Krahwi	krahv	krahv	0		S	adt
+      	krahv	krahv	0		S	sg g
+      	krahv	krahv	0		S	sg p
+      	£Krahvi	Krahw	0		S	sg p
+häbbemattas	####	####				
+           	#häbematuks	häbematu	s		S	sg tr
+ja	ja	ja	0		J	
+wargas	varas	varas	s		S	sg in
+      	£vargaks	varas	s		S	sg tr
+sõimano	####	####				
+       	#sõimanud	sõima	no		V	nud
+.	.	.			Z	
+Johann	Johann	Johann	0		H	sg n
+Purge	####	####				
+     	#Purge	Purge	0		H	sg n
+andis	andis	and	is		V	s
+tunnistust	tunnistust	tunnistus	t		S	sg p
+et	et	et	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+ollew	####	####				
+     	#olevat	ole	v		V	vat
+lubbano	####	####				
+       	#lubanud	luba	no		V	nud
+omma	####	####				
+    	#oma	oma	0		P	sg g
+    	on	ole	0		V	vad
+welle	####	####				
+     	#velje	veli	0		S	sg g
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+2	2	2	0		N	?
+mõõto	####	####				
+     	#mõõtu	mõõt	0		S	sg p
+rükki	####	####				
+     	#rukist	rukis	0		S	sg p
+Maggasist	####	####				
+         	#magasinist	magasin	st		S	sg el
+omma	####	####				
+    	#oma	oma	0		P	sg g
+    	on	ole	0		V	vad
+ramato	####	####				
+      	#raamatu	raamat	0		S	sg g
+päle	####	####				
+    	#peale	peale	0		K	
+    	peale	peale	0		D	
+Karl	Karl	Karl	0		H	sg n
+Krahwil	krahv	krahv	l		S	sg ad
+       	£Krahvil	Krahw	l		H	sg ad
+wõtta	võt	võt	a		V	da
+     	võta	võt	0		V	o
+     	@võtta	võt	a		V	da
+.	.	.			Z	
+Kohtomõistus	####	####				
+            	#kohtumõistus	kohtu_mõistus	0		S	sg n
+:	:	:			Z	
+Kunna	####	####				
+     	#kuna	kuna	0		J	
+nüüd	nüüd	nüüd	0		D	
+karl	####	####				
+    	#Karl	Karl	0		H	sg n
+Krahw	krahv	krahv	0		S	sg n
+     	£Krahv	Krahw	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+röa	####	####				
+   	#rukki	rukis	0		S	sg g
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+wõtno	####	####				
+     	#võtnud	võt	no		V	nud
+kui	kui	kui	0		D	
+   	@kui	kui	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeksi	####	####				
+           	#Stiipneeksi	Stiipneeks	0		H	sg g
+pois	poi	poi	s		S	sg in
+    	£poiss	poiss	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+Maggasi	####	####				
+       	#magasini	magasin	0		S	sg g
+man	man	man	0		D	
+   	@man	man	0		K	
+olno	####	####				
+    	#olnud	ole	no		V	nud
+ilma	ilm	ilm	0		S	adt
+    	ilm	ilm	0		S	sg g
+    	ilm	ilm	0		S	sg p
+    	@ilma	ilma	0		D	
+    	ilma	ilma	0		K	
+et	et	et	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+neid	neid	neid	0		S	sg n
+    	@neid	see	d		P	pl p
+    	tema	tema	d		P	pl p
+essi	####	####				
+    	ise	ise	0		P	pl n
+    	#ise	ise	0		P	sg n
+olles	ole	ole	es		V	des
+     	£oleks	ole	s		V	ks
+andno	####	####				
+     	#andnud	and	no		V	nud
+,	,	,			Z	
+mõistis	mõistis	mõist	is		V	s
+kohhus	####	####				
+      	kohus	kohu	s		V	s
+      	#kohus	kohus	0		S	sg n
+sedda	####	####				
+     	#seda	see	da		P	sg p
+asja	asi	asi	0		S	adt
+    	asi	asi	0		S	sg g
+    	@asi	asi	0		S	sg p
+tühjas	tühi	tühi	s		A	sg in
+      	£tühjaks	tühi	s		A	sg tr
+,	,	,			Z	
+ent	ent	ent	0		J	
+2	2	2	0		N	?
+mõõto	####	####				
+     	#mõõtu	mõõt	0		S	sg p
+rükki	####	####				
+     	#rukist	rukis	0		S	sg p
+jäiwa	####	####				
+     	#jäävad	jää	va		V	vad
+Karl	Karl	Karl	0		H	sg n
+Krahwile	krahv	krahv	le		S	sg all
+        	£Krahvile	Krahw	le		H	sg all
+.	.	.			Z	
+Se	####	####				
+  	#see	see	0		P	sg n
+kohto	####	####				
+     	kohtu	kohtu	0		V	o
+     	#kohtu	kohus	0		S	sg g
+mõistus	mõistus	mõistus	0		S	sg n
+sai	@sai	saa	i		V	s
+   	sai	sai	0		S	sg n
+kohtonkäüjile	####	####				
+             	#kohtuskäijatele	kohtus_käija	ile		S	pl all
+kuulutedus	####	####				
+          	#kuulutatud	kuuluta	dus		V	tud tr
+nink	####	####				
+    	#ning	ning	0		J	
+§	§	§	0		Y	?
+773	773	773	0		N	?
+ja	ja	ja	0		J	
+774.	774.	774.	0		O	?
+Tal	tema	tema	l		P	sg ad
+   	£tal	tal	0		Y	?
+.	.	.			Z	
+säd	####	####				
+   	#säd	säd	0		Y	?
+.	.	.			Z	
+ram	####	####				
+   	#ram	ram	0		Y	?
+.	.	.			Z	
+1860.	1860.	1860.	0		O	?
+a.	a.	a	0		Y	?
+mis	mis	mis	0		P	pl n
+   	@mis	mis	0		P	sg n
+oppust	####	####				
+      	#õppust	õppus	t		S	sg p
+andwa	andev	andev	0		A	sg g
+     	£andvat	and	va		V	vat
+suremba	####	####				
+       	#suurema	suurem	0		C	sg g
+kohton	####	####				
+      	#kohtus	kohus	n		S	sg in
+käümissest	####	####				
+          	#käimisest	käimine	st		S	sg el
+ent	ent	ent	0		J	
+Karl	Karl	Karl	0		H	sg n
+Krahw	krahv	krahv	0		S	sg n
+     	£Krahv	Krahw	0		H	sg n
+es	es	es			H	?
+  	@ei	ei	s		V	neg s
+olle	####	####				
+    	#ole	ole	0		V	o
+sellega	sellega	see	ga		P	sg kom
+rahhul	####	####				
+      	rahul	rahu	l		S	sg ad
+      	#rahul	rahul	0		D	
+tolleperrast	####	####				
+            	#tollepärast	tolle_pärast	0		D	
+et	et	et	0		J	
+tema	tema	tema	0		P	sg g
+    	@tema	tema	0		P	sg n
+sõimamisse	sõimamine	sõimamine	se		S	adt
+          	£sõimamise	sõimamine	0		S	sg g
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeksi	####	####				
+           	#Stiipneeksi	Stiipneeks	0		H	sg g
+Trahwi	trahv	trahv	0		S	adt
+      	trahv	trahv	0		S	sg g
+      	@trahvi	trahv	0		S	sg p
+      	trahvi	trahvi	0		V	o
+es	es	es			H	?
+  	@ei	ei	s		V	neg s
+mõisteta	mõiste	mõiste	ta		S	sg ab
+        	@mõisteta	mõist	ta		V	ta
+,	,	,			Z	
+ent	ent	ent	0		J	
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Stiipneeks	####	####				
+          	#Stiipneeks	Stiipneeks	0		H	sg n
+olli	####	####				
+    	#oli	ole	i		V	s
+sellega	sellega	see	ga		P	sg kom
+rahhul	####	####				
+      	rahul	rahu	l		S	sg ad
+      	#rahul	rahul	0		D	
+,	,	,			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+wimate	####	####				
+      	#viimati	viimati	0		D	
+sai	@sai	saa	i		V	s
+   	sai	sai	0		S	sg n
+neile	see	see	le		P	pl all
+     	@neile	tema	le		P	pl all
+ka	ka	ka	0		D	
+§	§	§	0		Y	?
+881	881	881	0		N	?
+perra	####	####				
+     	perra	perra	0		D	
+     	#perra	perra	0		K	
+se	####	####				
+  	#see	see	0		P	sg n
+trükkito	####	####				
+        	#trükitud	trükki	to		V	tud
+oppusse	####	####				
+       	#õppuse	õppus	0		S	sg g
+leht	leht	leht	0		S	sg n
+wälja	väli	väli	0		S	adt
+     	väli	väli	0		S	sg g
+     	väli	väli	0		S	sg p
+     	@välja	välja	0		D	
+     	välja	välja	0		V	o
+     	välja	väli	0		S	adt
+     	välja	väli	0		S	sg g
+     	välja	väli	0		S	sg p
+antus	antud	antud	s		A	sg in
+     	£antud	and	s		V	tud tr
+.	.	.			Z	
+Päkohtomees	####	####				
+           	#peakohtumees	pea_kohtu_mees	0		S	sg n
+Jürri	####	####				
+     	#Jüri	Jürri	0		H	sg n
+Waldmann	vald_mann	vald_mann	0		S	sg n
+        	£Valdmann	Waldmann	0		H	sg n
+Kohtomees	####	####				
+         	#kohtumees	kohtu_mees	0		S	sg n
+Tannil	####	####				
+      	#Tanel	Tannil	0		H	sg n
+Oinas	oinas	oinas	0		S	sg n
+     	oinas	oinas	s		S	sg in
+     	£Oinas	Oinas	0		H	sg n
+Kohtomees	####	####				
+         	#kohtumees	kohtu_mees	0		S	sg n
+Tannil	####	####				
+      	#Tanel	Tannil	0		H	sg n
+Purde	purd	purd	e		S	pl p
+     	purre	purre	0		S	sg g
+     	£Purde	Purde	0		H	sg n
+Kirjotaja	####	####				
+         	kirjutaja	kirjutaja	0		S	sg n
+         	#kirjutaja	kirjutaja	0		S	sg g
+/	/	/			Z	
+allkiri	allkiri	all_kiri	0		S	sg n
+/	/	/			Z	

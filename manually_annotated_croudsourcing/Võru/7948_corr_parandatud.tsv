@@ -1,0 +1,769 @@
+Ette	esi	esi	tte		S	adt
+    	@ette	ette	0		D	
+    	ette	ette	0		K	
+tulli	tull	tull	0		S	adt
+     	tull	tull	0		S	sg g
+     	tull	tull	0		S	sg p
+     	@tuli	tule	i		V	s
+     	tuli	tuli	0		S	sg n
+Wastselina	vastse_lina	vastse_lina	0		S	sg g
+          	vastse_lina	vastse_lina	0		S	sg n
+          	vastse_lina	vastse_lina	0		S	sg p
+          	£Vastseliina	Wastselina	0		H	sg g
+moisa	####	####				
+     	#mõisa	mõis	0		S	sg g
+walitseja	valitseja	valitseja	0		S	sg g
+         	@valitseja	valitseja	0		S	sg n
+herra	####	####				
+     	#härra	härra	0		S	sg n
+C.Brown	####	####				
+       	#C._Brown	C._Brown	0		H	sg n
+ja	ja	ja	0		J	
+kaibas	####	####				
+      	#kaebas	kaeba	s		V	s
+et	et	et	0		J	
+Mõttus	Mõttus	Mõttus	0		S	sg n
+kottuse	####	####				
+       	#kotuse	kotus	0		S	sg g
+rentnik	rentnik	rentnik	0		S	sg n
+Peter	Peeter	Peter	0		H	sg n
+Horn	####	####				
+    	#Horn	Horn	0		H	sg n
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+piddawat	####	####				
+        	#pidavat	pida	vat		V	vat
+oma	oma	oma	0		A	sg g
+   	oma	oma	0		A	sg n
+   	oma	oma	0		A	sg p
+   	oma	oma	0		D	
+   	@oma	oma	0		P	sg g
+   	oma	oma	0		P	sg n
+   	oma	oma	0		P	sg p
+   	oma	oma	0		S	sg g
+   	oma	oma	0		S	sg n
+   	oma	oma	0		S	sg p
+   	oma	oma	0		V	o
+kontrakti	####	####				
+         	#kontrahi	kontraht	0		S	sg g
+perra	####	####				
+     	perra	perra	0		D	
+     	#perra	perra	0		K	
+neid	neid	neid	0		S	sg n
+    	@neid	see	d		P	pl p
+    	tema	tema	d		P	pl p
+honid	####	####				
+     	#hooneid	hoone	id		P	pl p
+kõrran	####	####				
+      	#korras	kord	n		S	sg in
+nink	####	####				
+    	#ning	ning	0		J	
+olewat	ole	ole	vat		V	vat
+      	olev	olev	t		A	sg p
+      	olev	olev	t		S	sg p
+      	@olevat	ole	vat		V	vat
+ne	####	####				
+  	#need	see	0		P	pl n
+hone	####	####				
+    	#hooned	hoone	0		S	pl n
+ennämbast	####	####				
+         	#enamasti	enamasti	0		D	
+kiik	kiik	kiik	0		S	sg n
+    	£kõik	kõik	0		P	sg n
+halwa	@halva	halb	0		A	sg g
+     	halva	halva	0		V	o
+kattustega	katt_uks	katt_uks	tega		S	pl kom
+          	£katustega	katus	tega		S	pl kom
+ütsinda	####	####				
+       	#üksinda	üksinda	0		D	
+rehhe	####	####				
+      	#rehed	rehe	0		S	pl n
+olewat	ole	ole	vat		V	vat
+      	olev	olev	t		A	sg p
+      	olev	olev	t		S	sg p
+      	@olevat	ole	vat		V	vat
+kõrran	####	####				
+      	#korras	kord	n		S	sg in
+nink	####	####				
+    	#ning	ning	0		J	
+ka	ka	ka	0		D	
+alumatse	####	####				
+        	#alumised	alumine	0		A	pl n
+palgi	palk	palk	0		S	sg g
+     	£palgid	palk	0		S	pl n
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+maddänü	####	####				
+       	#mädanenud	mädane	nü		V	nud
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+nõwwap	####	####				
+      	#nõuab	nõud	p		V	b
+herra	####	####				
+     	#härra	härra	0		S	sg n
+Brown	####	####				
+     	#Brown	Brown	0		H	sg n
+et	et	et	0		J	
+ne	####	####				
+  	#need	see	0		P	pl n
+honed	####	####				
+     	#hooned	hoone	d		S	pl n
+kiik	kiik	kiik	0		S	sg n
+    	£kõik	kõik	0		P	sg n
+kuu	@kuu	kuu	0		S	sg g
+   	kuu	kuu	0		S	sg n
+aja	@aja	aeg	0		S	sg g
+   	aja	aja	0		V	o
+sissen	####	####				
+      	#sees	sees	0		D	
+kõrda	####	####				
+     	#korda	kord	0		S	adt
+omma	####	####				
+    	oma	oma	0		P	sg g
+    	#on	ole	0		V	vad
+säetü	####	####				
+     	#seatud	sead	tü		V	tud
+nink	####	####				
+    	#ning	ning	0		J	
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+et	et	et	0		J	
+ne	####	####				
+  	#need	see	0		P	pl n
+honet	####	####				
+     	#hooned	hoone	t		S	pl n
+tõtteste	####	####				
+        	#tõesti	tõesti	0		D	
+kõrda	####	####				
+     	#korda	kord	0		S	adt
+sawa	####	####				
+    	#saavad	saa	va		V	vad
+pantus	####	####				
+      	#pandud	pane	tus		V	tud tr
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+200	200	200	0		N	?
+Rbla	####	####				
+    	#rbl	rbl	0		Y	?
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+Peter	Peeter	Peter	0		H	sg n
+Horni	####	####				
+     	#Horni	Horn	0		H	sg g
+warrandust	varr_and_uks	varr_and_uks	t		S	sg p
+          	£varandust	varandus	t		S	sg p
+kinni	kinni	kinni	0		D	
+panda	pand	pand	0		S	adt
+     	pand	pand	0		S	sg p
+     	panda	panda	0		S	sg g
+     	panda	panda	0		S	sg n
+     	pane	pane	da		V	ta
+     	£panna	pane	da		V	da
+kuni	@kuni	kuni	0		J	
+    	kuni	kuni	0		K	
+se	####	####				
+  	#see	see	0		P	sg n
+nõudmine	nõudmine	nõudmine	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+täüdetü	####	####				
+       	#täidetud	täit	tud		V	tud
+.	.	.			Z	
+II	@II	II	0		O	?
+  	II	II	0		Y	?
+olewat	ole	ole	vat		V	vat
+      	olev	olev	t		A	sg p
+      	olev	olev	t		S	sg p
+      	@olevat	ole	vat		V	vat
+Peter	Peeter	Peter	0		H	sg n
+Horn	####	####				
+    	#Horn	Horn	0		H	sg n
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+kattuse	####	####				
+       	#katuse	katus	0		S	sg g
+päält	####	####				
+     	#pealt	pealt	0		K	
+     	pealt	pealt	0		D	
+mõtsa	####	####				
+     	metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	#metsa	mets	0		S	sg p
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+raggonu	####	####				
+       	#raiunud	ragu	nu		V	nud
+260	260	260	0		N	?
+puud	puud	puud	0		S	sg n
+    	puu	puu	d		S	pl n
+    	@puud	puu	d		S	sg p
+üle	üle	üle	0		D	
+   	@üle	üle	0		K	
+oma	oma	oma	0		A	sg g
+   	oma	oma	0		A	sg n
+   	oma	oma	0		A	sg p
+   	oma	oma	0		D	
+   	@oma	oma	0		P	sg g
+   	oma	oma	0		P	sg n
+   	oma	oma	0		P	sg p
+   	oma	oma	0		S	sg g
+   	oma	oma	0		S	sg n
+   	oma	oma	0		S	sg p
+   	oma	oma	0		V	o
+kontrakti	####	####				
+         	#kontrahi	kontraht	0		S	sg g
+kostest	koste	koste	st		S	sg el
+       	¤					
+enne	@enne	enne	0		D	
+    	enne	enne	0		K	
+    	enne	enne	0		S	sg n
+40	40	40	0		N	?
+ladwa	latva	latv	0		S	sg g
+palki	palk	palk	0		S	adt
+     	@palki	palk	0		S	sg p
+lauda	laud	laud	0		S	adt
+     	laud	laud	0		S	sg p
+     	@lauda	laut	0		S	sg g
+laes	laad	laad	s		S	sg in
+    	@laes	lagi	s		S	sg in
+om	####	####				
+  	#on	ole	0		V	b
+pruuknu	####	####				
+       	#pruukinud	pruuki	nu		V	nud
+ent	ent	ent	0		J	
+muido	####	####				
+     	#muidu	muidu	0		D	
+om	####	####				
+  	#on	ole	0		V	b
+kiik	kiik	kiik	0		S	sg n
+    	£kõik	kõik	0		P	sg n
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+häotedu	####	####				
+       	#hävitatud	häötä	du		V	tud
+,	,	,			Z	
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+nõwwap	####	####				
+      	#nõuab	nõud	p		V	b
+herra	####	####				
+     	#härra	härra	0		S	sg n
+C.Brown	####	####				
+       	#C._Brown	C._Brown	0		H	sg n
+220	220	220	0		N	?
+Rbl	####	####				
+   	#rbl	rbl	0		Y	?
+.	.	.			Z	
+nink	####	####				
+    	#ning	ning	0		J	
+weel	@veel	veel	0		D	
+    	vesi	vesi	l		S	sg ad
+    	veel	vesi	l		S	sg ad
+mõtsa	####	####				
+     	#metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	metsa	mets	0		S	sg p
+wargus	vargus	vargus	0		S	sg n
+      	£varguse	vargus	0		S	sg g
+eest	eest	eest	0		D	
+    	@eest	eest	0		K	
+    	esi	esi	st		S	sg el
+trahwida	trahvida	trahvi	da		V	da
+.	.	.			Z	
+Peter	Peeter	Peter	0		H	sg n
+Horn	####	####				
+    	#Horn	Horn	0		H	sg n
+ütles	ütles	ütle	s		V	s
+et	et	et	0		J	
+talli	tall	tall	0		S	adt
+     	@talli	tall	0		S	sg g
+     	tall	tall	0		S	sg p
+     	tall	tall	i		S	pl p
+kattuse	####	####				
+       	#katuse	katus	0		S	sg g
+ja	ja	ja	0		J	
+aida	aida	ait	0		S	sg g
+kattuse	####	####				
+       	#katuse	katus	0		S	sg g
+ja	ja	ja	0		J	
+elotarre	####	####				
+        	#elutare	elu_tare	0		S	sg g
+kattuse	####	####				
+       	#katuse	katus	0		S	sg g
+ole	ole	ole	0		V	o
+   	£olen	ole	0		V	n
+mina	@mina	mina	0		P	sg n
+    	mina	mina	0		S	sg g
+    	mina	mina	0		S	sg n
+    	mina	mina	0		S	sg p
+säädnü	####	####				
+      	#seadnud	sead	nü		V	nud
+ja	ja	ja	0		J	
+ne	####	####				
+  	#need	see	0		P	pl n
+omma	####	####				
+    	oma	oma	0		P	sg g
+    	#on	ole	0		V	vad
+kõralise	####	####				
+        	#korralised	korraline	0		A	pl n
+ent	ent	ent	0		J	
+laut	laut	laut	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+hobis	hobi	hobi	s		S	sg in
+     	£hoops	hoopis	0		D	
+kühn	####	####				
+    	#küün	küün	0		S	sg n
+sedda	####	####				
+     	#seda	see	da		P	sg p
+ennämb	####	####				
+      	#enam	enam	0		D	
+parrandada	####	####				
+          	#parandada	paranda	da		V	da
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+sa	sina	sina	0		P	sg n
+  	£saa	saa	0		V	o
+enge	####	####				
+     	#ega	ega	0		D	
+om	####	####				
+  	#on	ole	0		V	b
+ümbre	####	####				
+     	#ümber	ümber	0		D	
+tetta	####	####				
+     	#teha	tege	tta		V	da
+nink	####	####				
+    	#ning	ning	0		J	
+mõnel	mõnel	mõni	l		P	sg ad
+honel	####	####				
+     	#hoonel	hoone	l		S	sg ad
+omma	####	####				
+    	oma	oma	0		P	sg g
+    	#on	ole	0		V	vad
+enne	@enne	enne	0		D	
+    	enne	enne	0		K	
+    	enne	enne	0		S	sg n
+saina	####	####				
+     	#seina	sein	0		S	sg g
+al	####	####				
+  	#all	all	0		K	
+  	all	all	0		D	
+ne	####	####				
+  	#need	see	0		P	pl n
+puu	@puu	puu	0		S	sg g
+   	puu	puu	0		S	sg n
+tükki	tükk	tükk	0		S	adt
+     	tükk	tükk	0		S	sg p
+     	tükki	tükki	0		D	
+     	£tükid	tükk	0		S	pl n
+mäddanü	####	####				
+       	#mädanenud	mädane	nü		V	nud
+mes	####	####				
+   	mis	mis	0		P	pl n
+   	#mis	mis	0		P	sg n
+saina	####	####				
+     	#seina	sein	0		S	sg g
+alutse	####	####				
+      	#alused	alune	0		S	pl n
+kinni	kinni	kinni	0		D	
+panda	pand	pand	0		S	adt
+     	pand	pand	0		S	sg p
+     	panda	panda	0		S	sg g
+     	panda	panda	0		S	sg n
+     	pane	pane	da		V	ta
+     	£panna	pane	da		V	da
+olliwa	####	####				
+      	#olid	ole	iva		V	sid
+.	.	.			Z	
+II	@II	II	0		O	?
+  	II	II	0		Y	?
+Süggisel	####	####				
+        	#sügisel	sügis	l		S	sg ad
+1883	1883	1883	0		N	?
+lätsi	lätsi	lätsi	0		V	o
+     	£läksi	mine	tsi		V	sin
+mina	@mina	mina	0		P	sg n
+    	mina	mina	0		S	sg g
+    	mina	mina	0		S	sg n
+    	mina	mina	0		S	sg p
+mõtsa	####	####				
+     	metsa	mets	0		S	sg g
+     	#metsa	mets	0		S	adt
+     	metsa	mets	0		S	sg p
+herr	####	####				
+    	#härra	härra	0		S	sg g
+Klingenderi	####	####				
+           	#Klingenderi	Klingender	0		H	sg g
+mano	####	####				
+    	#manu	manu	0		K	
+palke	palke	palk	e		S	pl p
+küsima	küsima	küsi	ma		V	ma
+lawwus	####	####				
+      	#ladvas	latv	s		S	sg in
+lõigata	@lõigata	lõika	ta		V	da
+       	lõika	lõika	ta		V	ta
+et	et	et	0		J	
+mina	@mina	mina	0		P	sg n
+    	mina	mina	0		S	sg g
+    	mina	mina	0		S	sg n
+    	mina	mina	0		S	sg p
+neide	neid	neid	e		S	pl p
+     	£nende	see	de		P	pl g
+honete	####	####				
+      	#hoonete	hoone	te		S	pl g
+usset	####	####				
+     	#uksed	uks	t		S	pl n
+wõis	või	või	s		S	sg in
+    	või	või	s		V	s
+    	£võiks	või	s		V	ks
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+parrandada	####	####				
+          	#parandada	paranda	da		V	da
+ent	ent	ent	0		J	
+mõtsa	####	####				
+     	#metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	metsa	mets	0		S	sg p
+herra	####	####				
+     	#härra	härra	0		S	sg n
+es	es	es			H	?
+  	@ei	ei	s		V	neg s
+anna	@anna	and	0		V	o
+    	anna	anna	0		S	sg g
+    	anna	anna	0		S	sg n
+minole	####	####				
+      	#minule	mina	le		P	sg all
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+üttel	üte	üte	l		S	sg ad
+     	£ütles	ütle	0		V	s
+Misso	@Misso	Misso	0		H	sg g
+     	Misso	Misso	0		H	sg n
+mõtsa	####	####				
+     	#metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	metsa	mets	0		S	sg p
+herra	####	####				
+     	#härra	härra	0		S	sg n
+minole	####	####				
+      	#minule	mina	le		P	sg all
+kewwäde	####	####				
+       	#kevade	kevad	0		S	sg g
+et	et	et	0		J	
+sina	@sina	sina	0		P	sg n
+    	sina	sina	0		S	sg g
+    	sina	sina	0		S	sg n
+    	sina	sina	0		S	sg p
+    	sina	sina	0		V	o
+woit	####	####				
+    	#võid	või	t		V	d
+jo	####	####				
+  	#ju	ju	0		D	
+  	juba	juba	0		D	
+oma	oma	oma	0		A	sg g
+   	oma	oma	0		A	sg n
+   	oma	oma	0		A	sg p
+   	oma	oma	0		D	
+   	@oma	oma	0		P	sg g
+   	oma	oma	0		P	sg n
+   	oma	oma	0		P	sg p
+   	oma	oma	0		S	sg g
+   	oma	oma	0		S	sg n
+   	oma	oma	0		S	sg p
+   	oma	oma	0		V	o
+maa	@maa	maa	0		S	sg g
+   	maa	maa	0		S	sg n
+päält	####	####				
+     	#pealt	pealt	0		K	
+     	pealt	pealt	0		D	
+mõtsa	####	####				
+     	#metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	metsa	mets	0		S	sg p
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+raggoda	####	####				
+       	#raiuda	ragu	da		V	da
+ja	ja	ja	0		J	
+neid	neid	neid	0		S	sg n
+    	@neid	see	d		P	pl p
+    	tema	tema	d		P	pl p
+palke	palke	palk	e		S	pl p
+ja	ja	ja	0		J	
+puid	puid	puu	id		S	pl p
+tarwitada	tarvitada	tarvita	da		V	da
+nink	####	####				
+    	#ning	ning	0		J	
+sedda	####	####				
+     	#seda	see	da		P	sg p
+maad	maa	maa	d		S	pl n
+    	@maad	maa	d		S	sg p
+põllus	põld	põld	s		S	sg in
+      	£põlluks	põld	s		S	sg tr
+tetta	####	####				
+     	#teha	tege	tta		V	da
+ent	ent	ent	0		J	
+müwwa	####	####				
+      	#müüa	müü	a		V	da
+es	es	es			H	?
+  	@ei	ei	s		V	neg s
+tohhi	####	####				
+     	#tohi	tohti	0		V	o
+nink	####	####				
+    	#ning	ning	0		J	
+puu	@puu	puu	0		S	sg g
+   	puu	puu	0		S	sg n
+tarbis	tarbi	tarbi	s		V	s
+      	£tarbeks	tarve	s		S	sg tr
+ole	ole	ole	0		V	o
+mina	@mina	mina	0		P	sg n
+    	mina	mina	0		S	sg g
+    	mina	mina	0		S	sg n
+    	mina	mina	0		S	sg p
+ka	ka	ka	0		D	
+sedda	####	####				
+     	#seda	see	da		P	sg p
+mõtsa	####	####				
+     	metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	#metsa	mets	0		S	sg p
+raggonu	####	####				
+       	#raiunud	ragu	nu		V	nud
+ja	ja	ja	0		J	
+hendäle	####	####				
+       	#endale	ise	le		P	sg all
+tarwitanu	tarvita=nu	tarvita=nu	0		S	sg g
+         	tarvita=nu	tarvita=nu	0		S	sg n
+         	£tarvitanud	tarvita	nu		V	nud
+.	.	.			Z	
+Herra	####	####				
+     	#härra	härra	0		S	sg n
+     	härra	härra	0		S	sg g
+Brown	####	####				
+     	#Brown	Brown	0		H	sg n
+ütles	ütles	ütle	s		V	s
+et	et	et	0		J	
+mõtsa	####	####				
+     	#metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	metsa	mets	0		S	sg p
+herra	####	####				
+     	#härra	härra	0		S	sg n
+assi	ass	ass	0		S	adt
+    	ass	ass	0		S	sg g
+    	ass	ass	0		S	sg p
+    	£asi	asi	0		S	sg n
+ei	ei	ei	0		D	
+  	@ei	ei	0		V	neg
+ole	ole	ole	0		V	o
+se	####	####				
+  	#see	see	0		P	sg n
+mitte	mitte	mitte	0		D	
+Peter	Peeter	Peter	0		H	sg n
+Hornile	####	####				
+       	#Hornile	Horn	le		H	sg all
+mõtsa	####	####				
+     	metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	#metsa	mets	0		S	sg p
+rendi	@rendi	rent	0		S	sg g
+     	renti	renti	0		V	o
+kottuse	####	####				
+       	#kotuse	kotus	0		S	sg g
+päält	####	####				
+     	#pealt	pealt	0		K	
+     	pealt	pealt	0		D	
+lubbata	####	####				
+       	#lubada	luba	ta		V	da
+enge	####	####				
+    	#ega	ega	0		D	
+Peter	Peeter	Peter	0		H	sg n
+Horn	####	####				
+    	#Horn	Horn	0		H	sg n
+piddi	####	####				
+     	#pidi	pida	i		V	s
+     	pidi	pidi	0		K	
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+käest	@käest	käest	0		K	
+     	käsi	käsi	st		S	sg el
+küsima	küsima	küsi	ma		V	ma
+kellega	kes	kes	ga		P	pl kom
+       	@kellega	kes	ga		P	sg kom
+temäl	####	####				
+     	#temal	tema	l		P	sg ad
+kontrakt	####	####				
+        	#kontraht	kontraht	0		S	sg n
+om	####	####				
+  	#on	ole	0		V	b
+tettü	####	####				
+     	#tehtud	tege	ttü		V	tud
+.	.	.			Z	
+Peter	Peeter	Peter	0		H	sg n
+Horn	####	####				
+    	#Horn	Horn	0		H	sg n
+lubbap	####	####				
+      	#lubab	luba	p		V	b
+tall	tall	tall	0		S	sg n
+ja	ja	ja	0		J	
+laut	laut	laut	0		S	sg n
+kuni	kuni	kuni	0		J	
+    	@kuni	kuni	0		K	
+Jani	Jan	Jan	0		H	adt
+    	@Jaani	Jaan	0		H	sg g
+    	Jan	Jan	0		H	sg p
+päiwäni	####	####				
+       	#päevani	päev	ni		S	sg ter
+1886	1886	1886	0		N	?
+wastsest	vastne	vastne	st		A	sg el
+        	vastne	vastne	st		S	sg el
+        	£vastsest	vastsest	0		D	
+ümbre	####	####				
+     	#ümber	ümber	0		D	
+tetta	####	####				
+     	#teha	tege	tta		V	da
+nink	####	####				
+    	#ning	ning	0		J	
+ka	ka	ka	0		D	
+kattuset	####	####				
+        	#katused	katus	t		S	pl n
+kõrda	####	####				
+     	#korda	kord	0		S	adt
+säda	####	####				
+    	#seada	seadma	a		V	da
+.	.	.			Z	
+Herra	####	####				
+     	#härra	härra	0		S	sg n
+     	härra	härra	0		S	sg g
+C.Brown	####	####				
+       	#C._Brown	C._Brown	0		H	sg n
+om	####	####				
+  	#on	ole	0		V	b
+ka	ka	ka	0		D	
+sellega	sellega	see	ga		P	sg kom
+rahhul	####	####				
+      	rahul	rahu	l		S	sg ad
+      	#rahul	rahul	0		D	
+.	.	.			Z	
+Otsus	otsus	otsus	0		S	sg n
+:	:	:			Z	
+Et	et	et	0		J	
+Peter	Peeter	Peter	0		H	sg n
+Horn	####	####				
+    	#Horn	Horn	0		H	sg n
+sedda	####	####				
+     	#seda	see	da		P	sg p
+mõtsa	####	####				
+     	metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	#metsa	mets	0		S	sg p
+om	####	####				
+  	#on	ole	0		V	b
+raggonu	####	####				
+       	#raiunud	ragu	nu		V	nud
+sis	####	####				
+   	#siis	siis	0		D	
+   	siis	siis	0		J	
+om	####	####				
+  	#on	ole	0		V	b
+Peter	Peeter	Peter	0		H	sg n
+Hornil	####	####				
+      	#Hornil	Horn	l		H	sg ad
+üts	####	####				
+   	üks	üks	0		N	sg n
+   	#üks	üks	0		P	sg n
+lubba	####	####				
+     	#luba	luba	0		S	sg n
+     	luba	luba	0		S	sg p
+     	luba	luba	0		V	o
+     	lubab	luba	0		V	b
+kirri	####	####				
+     	#kiri	kiri	0		S	sg n
+Rosenpflanzei	####	####				
+             	#Rosenpflanze	Rosenpflanze	0		S	sg g
+herra	####	####				
+     	#härra	härra	0		S	sg n
+käest	@käest	käest	0		K	
+     	käsi	käsi	st		S	sg el
+selle	@selle	see	0		P	sg g
+     	sell	sell	e		S	pl p
+üle	üle	üle	0		D	
+   	@üle	üle	0		K	
+tuwwa	####	####				
+     	#tuua	too	a		V	da
+nink	####	####				
+    	#ning	ning	0		J	
+saap	####	####				
+    	#saab	saa	p		V	b
+ka	ka	ka	0		D	
+sedda	####	####				
+     	#seda	see	da		P	sg p
+mõtsa	####	####				
+     	metsa	mets	0		S	sg g
+     	metsa	mets	0		S	adt
+     	#metsa	mets	0		S	sg p
+kaudu	kaudu	kaudu	0		K	
+üle	@üle	üle	0		D	
+   	üle	üle	0		K	
+kaetus	kaetud	kaetud	s		A	sg in
+      	kaetus	kaetus	0		S	sg n
+      	£kaetud	kae	tus		V	tud
+sama	sama	sama	0		P	sg g
+    	@sama	sama	0		P	sg n
+    	sama	sama	0		P	sg p
+mes	####	####				
+   	mis	mis	0		P	pl n
+   	#mis	mis	0		P	sg n
+ärra	####	####				
+    	#ära	ära	0		D	
+    	ära	ära	0		V	neg o
+om	####	####				
+  	#on	ole	0		V	b
+raotu	raotu	raotu	0		A	sg g
+     	raotu	raotu	0		A	sg n
+     	£raiutud	ragu	tu		V	tud
+.	.	.			Z	
+Pääkohtumees	####	####				
+            	#peakohtumees	pea_kohtu_mees	0		S	sg n
+K.Lõhmus	####	####				
+        	#K._Lõhmus	K._Lõhmus	0		H	sg n
+[	[	[			Z	
+allkiri	allkiri	all_kiri	0		S	sg n
+]	]	]			Z	
+Kohtumees	kohtumees	kohtu_mees	0		S	sg n
+P.Prants	####	####				
+        	#P._Prants	P._Prants	0		H	sg n
+[	[	[			Z	
+allkiri	allkiri	all_kiri	0		S	sg n
+]	]	]			Z	
+Kohtumees	kohtumees	kohtu_mees	0		S	sg n
+Jaan	@Jaan	Jaan	0		H	sg n
+    	jaan	jaan	0		S	sg n
+    	jaan	jaan	0		Y	?
+Oppar	####	####				
+     	#Oppar	Oppar	0		H	sg n
+XXX	XXX	XXX	0		O	?
+   	@XXX	XXX	0		Y	?
+Kirjotaja	####	####				
+         	#kirjutaja	kirjutaja	0		S	sg n
+         	kirjutaja	kirjutaja	0		S	sg g
+J.Jõgewa	####	####				
+        	#J._Jõgeva	J._Jõgewa	0		H	sg n
