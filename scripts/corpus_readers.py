@@ -64,34 +64,19 @@ def read_from_tsv(path):
 						continue
 					with open(os.path.join(root, file), encoding="utf-8") as fin:	
 						reader=csv.reader(fin, delimiter='\t')
-						rows=[]
-						#Add the row lengths into separate list. The most frequent one should be the correct length.
-						row_lengths=[]
-						for row in reader:
-							row_lengths.append(len(row))
-							rows.append(row)
-						max_length=max(set(row_lengths), key = row_lengths.count)
 						words=[]
-						#Lines containing a word and its analysis
+						#Lines containing a word and its' analysis
 						word=[]
 						#Morphological analysis of the whole text.
 						morph_analysis=[]
 						raw_text=""
 						multiword_expressions = []
-						#Symbols that are forbidden at the beginning of a line
-						forbidden_starts=["#", "¤", "£", "@"]
-						for index, row in enumerate(rows):
+						for index, row in enumerate(reader):
 							row[0]=row[0].strip()
-							#Validate the manually tagged file
-							#check if any of these forbidden symbols are in the first column
-							if len(row[0]) > 0:
-								if row[0][0] in forbidden_starts:
-									sys.stderr.write("Something is wrong with the following file: "+file+" In the following line: "+str(index+1)+"\n"+"\t".join(row)+"\n")
-									sys.exit(1)
 							#Check if the row has correct number of elements
-							#If there are less than max_length then it is probably an adverb, abbreviation etc.
+							#If there are less than 6 then it is probably an adverb, abbreviation etc.
 							#But if there are more, then there's something wrond and the user has to be notified.
-							if len(row) > max_length:
+							if len(row) > 6:
 								#If the elements after the 6th one contain nothing, then we can continue.
 								for x in row[6:]:
 									x=x.strip()
@@ -142,11 +127,6 @@ def read_from_tsv(path):
 							analyses=[]
 							for a in word:
 								analysis={}
-								if max_length==7:
-									analysis['normalized_text']=a[1]
-									del a[1]
-								else:
-									analysis['normalized_text']=a[0]
 								analysis['root']=a[1]
 								#If it is an abbreviation some fields may be missing.
 								#Sometimes there are also missing tabs in the end of a line, so the last element has to be checked.
@@ -166,6 +146,8 @@ def read_from_tsv(path):
 									analysis['root_tokens']=None
 									analysis['lemma'] =None
 								analysis['type_of_fix']=type_of_fix
+								#If not otherwize specified the normalized_text will remain the same as the word form
+								analysis['normalized_text']=word[0][0]
 								analyses.append(analysis)
 							#if len(analyses) > 1:
 							#	print (analyses)
@@ -175,12 +157,11 @@ def read_from_tsv(path):
 							if ' ' in word[0][0]:
 								multiword_expressions.append(word[0][0])
 						text = Text(raw_text)
-						#print (text.text)
+						
 						tokens_layer=tokens_tagger.make_layer(text)
 						multiword_expressions = [mw.split() for mw in multiword_expressions]
 						compound_tokens_tagger = PretokenizedTextCompoundTokensTagger( multiword_units = multiword_expressions )
 						compound_tokens_layer=compound_tokens_tagger.make_layer(text, layers={'tokens':tokens_layer})
-						print (tokens_layer)
 						word_tagger=WordTagger()
 						words_layer=word_tagger.make_layer(text, layers={'compound_tokens':compound_tokens_layer, 'tokens':tokens_layer})
 						#text.tag_layer(['sentences'])
